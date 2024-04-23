@@ -52,6 +52,8 @@ df4 = df4[['country', 'medianage']]
 df4.rename(columns={'country': 'Country'}, inplace=True)
 # drop rows with NaN values
 df4.dropna(inplace=True)
+# Remove duplicated rows
+df4.drop_duplicates(subset='Country', inplace=True)
 
 # df4.to_csv('CleanData(1234)/cleaned-(4).csv', index=False)
 
