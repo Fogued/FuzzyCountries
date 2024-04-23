@@ -1,0 +1,73 @@
+Investigación social por países
+
+
+Vamos a tomar datos del año 2023 de X países, y de España hacer varios años y extrapolarlos a futuro/países. 
+
+¿En qué medida afectan los aspectos socioeconómicos a la felicidad por país? (Compararlo con el World Happiness Report) 
+Será una de las muchas preguntas que iremos abordando a lo largo del trabajo.
+
+Variables a tener en cuenta:
+
+- Densidad de población (P/Km2)1
+- Población total (1)
+- Superficie país (km2)1
+- Emisiones C02 (ton)1
+- PIB (1)
+- IPC (1)
+- Fertilidad (hijos/mujer)(1)
+- Escolarización Primaria (%)(1)
+- Escolarización estudios superiores (%)(1)
+- Mortalidad Infantil (muertes/1000nac)(1)
+- Salario minimo ($)(3)
+- Impuestos (%PIB)(1)
+- Población en nucleos urbanos(%)(1)
+- Zonas verdes (%)(1)
+- Latitud (1)
+- Longitud (1)
+- Renta per cápita (poblacion/PIB)(1)
+- Energías renovables (%)(2)
+- Efectivos militares (Personas)(1)
+- Paro (%)(1)
+- Poblacion Activa (%)(1)
+- Terreno usado para agricultura (%)(1)
+- Esperanza de vida (1)
+- Natalidad (nacimientos/1000hab)(1)
+- Edad promedio (4)
+- Libertad economica (5)
+- Temperatura media de la superficie (6)
+- Muertes por suicidio (7)
+- Densidad de médicos (7)
+- Violencia de género (7)
+- Obesidad en adultos (7)
+- Corrupción (8)
+- Salud mental
+- ¿Enfermedades provocadas por cambio climatico? ¿Database?
+- Lluvias
+- ODS, pactos agenda 2030
+- Emancipación
+- Contaminación acústica
+- Catástrofes naturales
+- Inversion en sanidad
+
+
+Bases de datos:
+
+https://www.kaggle.com/datasets/nelgiriyewithana/countries-of-the-world-2023 (1)
+-
+Analyze population density and land area to study spatial distribution patterns.
+Investigate the relationship between agricultural land and food security.
+Examine carbon dioxide emissions and their impact on climate change.
+Explore correlations between economic indicators such as GDP and various socio-economic factors.
+Investigate educational enrollment rates and their implications for human capital development.
+Analyze healthcare metrics such as infant mortality and life expectancy to assess overall well-being.
+Study labor market dynamics through indicators such as labor force participation and unemployment rates.
+Investigate the role of taxation and its impact on economic development.
+Explore urbanization trends and their social and environmental consequences.
+-
+https://www.kaggle.com/datasets/belayethossainds/renewable-energy-world-wide-19652022(2)
+https://www.kaggle.com/datasets/peipeichen/minimum-wage-by-country(3)
+https://www.kaggle.com/datasets/koryto/countryinfo (4)
+https://www.fraserinstitute.org/economic-freedom/dataset?geozone=world&min-year=2&max-year=0&filter=0&page=dataset&year=2021 (5)
+https://www.kaggle.com/datasets/palinatx/mean-temperature-for-countries-by-year-2014-2022/suggestions?status=pending&yourSuggestions=true (6)
+https://data.who.int/es/indicators (7)
+https://www.kaggle.com/datasets/joebeachcapital/world-happiness-report-2013-2023(8)
