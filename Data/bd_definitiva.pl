@@ -1,7 +1,7 @@
  :- module(bd_definitiva ,_, [rfuzzy, clpr]).
 define_database(bd_definitiva/30,
-[(, rfuzzy_string_type),
-(country, rfuzzy_string_type),
+[(country_number, rfuzzy_string_type),
+(country_name, rfuzzy_string_type),
 (libertad economica, rfuzzy_float_type),
 (temperatura media superficie (2021), rfuzzy_float_type),
 (tasa de suicidios (/100.000hab), rfuzzy_float_type),
