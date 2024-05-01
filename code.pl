@@ -95,3 +95,13 @@ gdp_per_capita(country) :~ function(gdp(country), [(1000,0),(5000,0.2),(10000,0.
 life_expectancy(country) :~ function(life_exp(country), [(50,0),(60,0.2),(70,0.4),(75,0.6),(80,0.8),(85,1)]).
 
 
+
+% Modifiers
+define_modifier(rather/2, TV_In, TV_Out) :-
+	TV_Out .=. TV_In * TV_In.
+define_modifier(very/2, TV_In, TV_Out) :-
+	TV_Out .=. TV_In * TV_In * TV_In.
+define_modifier(little/2, TV_In, TV_Out) :-
+	TV_Out * TV_Out .=. TV_In.
+define_modifier(very_little/2, TV_In, TV_Out) :-
+	TV_Out * TV_Out * TV_Out .=. TV_In.
