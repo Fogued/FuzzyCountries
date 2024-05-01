@@ -23,7 +23,7 @@ define_database(country/30,
 (infant_mortality, rfuzzy_float_type),
 (life_expectancy, rfuzzy_float_type),
 (population, rfuzzy_integer_type),
-(population: labor force participation, rfuzzy_float_type),
+(labor_force, rfuzzy_float_type), % población activa
 (tax_revenue , rfuzzy_float_type),
 (unemployment_rate, rfuzzy_float_type),
 (urban_population, rfuzzy_integer_type),
