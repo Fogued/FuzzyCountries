@@ -85,16 +85,119 @@ country_name(47, Thailand, 7.07, 26.9, 8.929766666666666, 0.895, 137, 43.30, 513
 country_name(48, Ukraine, 6.17, 9.37, 31.930233333333334, 0.924, 75, 71.70, 603, 550, 297, 000, 8.7, 202, 250, 281.66, 1.3, 16.70, 153, 781, 069, 118 , 99.00, 82.70, 7.5, 71.6, 44, 385, 155, 54.20, 20.10, 8.88, 30, 835, 699, 48.379433, 31.16558, 6.1008415, 2131.0, 41.0).
 
 % FUZZY FUNCTIONS
-% Population density (comprobar qué valores poner)
+% Population density (Personas por km^2)
 pop_density(country) :~ function(density(country), [(10,0),(30,0.2),(80,0.4),(150,0.6),(200,0.8),(600,1)]).
 
 % GDP per capita
 gdp_per_capita(country) :~ function(gdp(country), [(1000,0),(5000,0.2),(10000,0.4),(20000,0.6),(30000,0.8),(50000,1)]).
 
 % Life expectancy
-life_expectancy(country) :~ function(life_exp(country), [(50,0),(60,0.2),(70,0.4),(75,0.6),(80,0.8),(85,1)]).
+life_exp(country) :~ function(life_expectancy(country), [(50,0),(60,0.2),(70,0.4),(75,0.6),(80,0.8),(85,1)]).
 
 
+%C02 emissions
+co2_emissions(country) :~ function(co2(country), [(2000,0),(50000,0.2),(100000,0.4),(200000,0.6),(300000,0.8),(400000,1)]).
+
+%cpi
+cpi(country) :~ function(cpi(country), [(25,0), (50,0.2), (75,0.4), (100,0.6), (125,0.8), (150,1)]).
+
+%fertility_rate
+fertility_rate(country) :~ function(fertility_rate(country), [(0.5,0), (1,0.2), (1.5,0.4), (2,0.6), (2.5,0.8), (3,1)]).
+
+%forested_area
+forested_area(country) :~ function(forested_area(country), [(0,0), (11, 0.2), (22, 0.4), (33, 0.6), (44, 0.8), (55, 1)]).
+
+%GDP 
+gdp(country) :~ function(gdp(country), [(100000000000,0), (200000000000,0.2), (300000000000,0.4), (400000000000,0.6), (500000000000,0.8), (750000000000,1)]).
+
+%Gross primary education errollment 
+%Enrollment indicators are based on annual school surveys, but do not necessarily reflect actual attendance or dropout rates during the year. Also, the length of education differs
+across countries and can influence enrollment rates, although the International Standard Classification of Education (ISCED) tries to minimize the difference. 
+For example, a shorter duration for primary education tends to increase the rate; a longer one to decrease it (in part because older 
+children are more at risk of dropping out). Moreover, age at enrollment may be inaccurately estimated or misstated, especially in communities where registration of births is not strictly enforced.
+
+education_primary(country) :~ function(enrollment(country), [(70,0), (80,0.2), (90,0.4), (95,0.6), (100,0.8), (105,1)]).
+
+%Gross Tertiary Education Enrollment
+
+education_tertiary(country) :~ function(enrollment_tertiary(country), [(10,0), (20,0.2), (30,0.4), (40,0.6), (50,0.8), (60,1)]).
+
+%Infant mortality rate
+
+infant_mortality(country) :~ function(infant_mortality(country), [(2,0), (5,0.2), (10,0.4), (15,0.6), (20,0.8), (25,1)]).
+
+%Life expectancy
+
+life_expectancy(country) :~ function(life_exp(country), [(55,0), (60,0.2), (65,0.4), (70,0.6), (75,0.8), (80,1)]).
+
+%Population
+
+population(country) :~ function(population(country), [(2000000,0), (10000000,0.2), (20000000,0.4), (30000000,0.6), (40000000,0.8), (50000000,1)]).
+
+
+% Población activa (porcentaje)
+active_workers(country) :~ function(labor_force(country), [(40,0),(45,0.2),(55,0.4),(65,0.6),(75,0.8),(80,1)]).
+
+% Tax revenue: porcentaje del PIB
+tax_revenue_percentage(country) :~ function(tax_revenue(country), [(5,0),(10,0.2),(15,0.4),(20,0.6),(25,0.8),(30,1)]).
+
+% Unemployment rate
+unemployment(country) :~ function(unemployment_rate(country), [(1,0),(3,0.2),(5,0.4),(7,0.6),(9,0.8),(11,1)]).
+
+% Urban population TODO: Estan los valores totales, obtener porcentajes y actualizar base de datos
+urban_pop(country) :~ function(urban_population(country), [(10,0),(30,0.2),(50,0.4),(70,0.6),(80,0.8),(90,1)]).
+
+% Latitude y longitud
+% Creo que no tiene sentido una funcion difusa (no hay mucho o poco, etc) Ademas hay valores negativos
+
+% Renewables (porcentaje del total de energía)
+renewable_energy(country) :~ function(renewables(country), [(1,0),(3,0.2),(10,0.4),(18,0.6),(35,0.8),(85,1)]).
+
+% Minimum wage (en dólares)
+min_wage(country) :~ function(minimum_wage(country), [(1000,0.2),(5000,0.4),(10000,0.6),(20000,0.8),(25000,1)]).
+
+% Median age
+mid_age(country) :~ function(median_age(country), [(20,0),(25,0.2),(30,0.4),(35,0.6),(40,0.8),(45,1)]).
+
+
+
+% RULES
+% Clean country: relation between renewable energy and urban population
+clean_country(country) :~ rule(min, (very(renewable_energy(country)), little(urban_pop(country)))) with_credibility (min, 0.7).
+
+% Developed country: relation between GDP per capita and life expectancy (I'd add more variables)
+developed_country(country) :~ rule(min, (very(gdp_per_capita(country)), very(life_exp(country)))) with_credibility (min, 0.7).
+
+% Strong labor market: relation between minimum wage and unemployment rate, and more...
+strong_labor_market(country) :~ rule(min, (very(min_wage(country)), very_little(unemployment(country)), very(active_workers(country)))) with_credibility (min, 0.7).
+
+
+% TODO: Revisar y corregir nombres de las funciones. Ver si tienen sentido y que credibilidad ponerles
+economically_free_country(country) :~ rule(min, (very(libertad_economica(country)), very_little(poblacion_percibe_corrupcion(country)))) with_credibility (min, 0.7).
+
+environmentally_friendly_country(country) :~ rule(min, (very(renewables(country)), very_little(co2_emissions(country)))) with_credibility (min, 0.7).
+
+high_quality_of_life_country(country) :~ rule(min, (very(life_expectancy(country)), very_little(tasa_de_suicidios(country)))) with_credibility (min, 0.7).
+
+strong_education_system_country(country) :~ rule(min, (very(gross_tertiary_education_enrollment(country)), very_little(unemployment_rate(country)))) with_credibility (min, 0.7).
+
+high_population_growth_country(country) :~ rule(min, (very(birth_rate(country)), very(fertility_rate(country)))) with_credibility (min, 0.7).
+
+urbanized_country(country) :~ rule(min, (very(urban_population(country)), very_little(agricultural_land(country)))) with_credibility (min, 0.7).
+
+militarily_strong_country(country) :~ rule(min, (very(armed_forces_size(country)), very_little(density(country)))) with_credibility (min, 0.7).
+
+economically_stable_country(country) :~ rule(min, (very(cpi(country)), very_little(unemployment_rate(country)))) with_credibility (min, 0.7).
+
+high_income_country(country) :~ rule(min, (very(gdp(country)), very(minimum_wage(country)))) with_credibility (min, 0.7).
+
+aging_population_country(country) :~ rule(min, (very(median_age(country)), very_little(birth_rate(country)))) with_credibility (min, 0.7).
+
+
+
+
+
+% TODO: Define modifiers higher, lower, much higher, much lower, etc
 
 % Modifiers
 define_modifier(rather/2, TV_In, TV_Out) :-
