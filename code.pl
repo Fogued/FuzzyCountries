@@ -4,18 +4,18 @@
 define_database(country/30,
 [(country_number, rfuzzy_string_type),
 (country_name, rfuzzy_string_type),
-(libertad_economica, rfuzzy_float_type),
-(temperatura_media_superficie, rfuzzy_float_type), % Datos del 2021
-(tasa_de_suicidios, rfuzzy_float_type), % Por cada 100,000 habitantes
-(poblacion_percibe_corrupcion, rfuzzy_float_type),
-(density, rfuzzy_integer_type), % Personas por km2
+(economic_freedom_index, rfuzzy_float_type),
+(surface_temperature, rfuzzy_float_type), % Datos del 2021
+(suicidice_rate, rfuzzy_float_type), % Por cada 100,000 habitantes
+(people_percive_corruption, rfuzzy_float_type),
+(population_density, rfuzzy_integer_type), % Personas por km2
 (agricultural_land, rfuzzy_float_type),
 (land_area, rfuzzy_integer_type), % Km2
 (armed_forces_size, rfuzzy_integer_type),
 (birth_rate, rfuzzy_float_type),
 (co2_emissions, rfuzzy_integer_type),
 (cpi, rfuzzy_float_type), % Consumer Price Index
-(fertility_rate, rfuzzy_float_type),
+(fertility, rfuzzy_float_type),
 (forested_area, rfuzzy_float_type),
 (gdp, rfuzzy_integer_type), % Gross Domestic Product (PIB)
 (gross_primary_education_enrollment, rfuzzy_float_type),
@@ -85,54 +85,69 @@ country_name(47, Thailand, 7.07, 26.9, 8.929766666666666, 0.895, 137, 43.30, 513
 country_name(48, Ukraine, 6.17, 9.37, 31.930233333333334, 0.924, 75, 71.70, 603, 550, 297, 000, 8.7, 202, 250, 281.66, 1.3, 16.70, 153, 781, 069, 118 , 99.00, 82.70, 7.5, 71.6, 44, 385, 155, 54.20, 20.10, 8.88, 30, 835, 699, 48.379433, 31.16558, 6.1008415, 2131.0, 41.0).
 
 % FUZZY FUNCTIONS
+
+% Economic freedom index
+economic_freedom(country) :~ function(economic_freedom_index(country), [(4,0),(5,0.2),(6,0.4),(7,0.6),(8,0.8),(9,1)]).
+
+% Surface temperature
+temperature(country) :~ function(surface_temperature(country), [(2,0):(28,1)]).
+
+% Suicide rate
+suicides(country) :~ funcion(suicidice_rate(country), [(2,0):(35,1)]).
+
+%People Perceive Corruption
+corruption_concern(country) :~ function(people_percive_corruption(country), [(0.2,0):(0.9,1)]).
+
 % Population density (Personas por km^2)
 pop_density(country) :~ function(density(country), [(10,0),(30,0.2),(80,0.4),(150,0.6),(200,0.8),(600,1)]).
 
-% GDP per capita
-gdp_per_capita(country) :~ function(gdp(country), [(1000,0),(5000,0.2),(10000,0.4),(20000,0.6),(30000,0.8),(50000,1)]).
+% Agricultural Land //RULE W/ TEMPERATURE
+agricultural_land_percentage(country) :~ function(agricultural_land(country), [(5,0):(80,1)]).
 
-% Life expectancy
-life_exp(country) :~ function(life_expectancy(country), [(50,0),(60,0.2),(70,0.4),(75,0.6),(80,0.8),(85,1)]).
+% Land Area
+surface(country) :~ function(land_area(country), [(50000,0),(9000000,1)]).
 
+%Armed Force Size
+army_size(country) :~ function(army_force_size(country), [(10000,0),(700000,1)]).
+
+%Birth rate
+birth(country) :~ function(birth_rate(country), [(7,0),(25,0)]).
 
 %C02 emissions
-co2_emissions(country) :~ function(co2(country), [(2000,0),(50000,0.2),(100000,0.4),(200000,0.6),(300000,0.8),(400000,1)]).
+co2(country) :~ function(co2_emissions(country), [(2000,0),(50000,0.2),(100000,0.4),(200000,0.6),(300000,0.8),(400000,1)]).
 
 %cpi
-cpi(country) :~ function(cpi(country), [(25,0), (50,0.2), (75,0.4), (100,0.6), (125,0.8), (150,1)]).
+cpi_rate(country) :~ function(cpi(country), [(25,0), (50,0.2), (75,0.4), (100,0.6), (125,0.8), (150,1)]).
 
 %fertility_rate
-fertility_rate(country) :~ function(fertility_rate(country), [(0.5,0), (1,0.2), (1.5,0.4), (2,0.6), (2.5,0.8), (3,1)]).
+fertility_rate(country) :~ function(fertility(country), [(0.5,0), (1,0.2), (1.5,0.4), (2,0.6), (2.5,0.8), (3,1)]).
 
 %forested_area
-forested_area(country) :~ function(forested_area(country), [(0,0), (11, 0.2), (22, 0.4), (33, 0.6), (44, 0.8), (55, 1)]).
+woodland(country) :~ function(forested_area(country), [(0,0), (11, 0.2), (22, 0.4), (33, 0.6), (44, 0.8), (55, 1)]).
 
 %GDP 
-gdp(country) :~ function(gdp(country), [(100000000000,0), (200000000000,0.2), (300000000000,0.4), (400000000000,0.6), (500000000000,0.8), (750000000000,1)]).
+gdp_per_capita(country) :~ function(gdp(country), [(100000000000,0), (200000000000,0.2), (300000000000,0.4), (400000000000,0.6), (500000000000,0.8), (750000000000,1)]).
 
 %Gross primary education errollment 
 %Enrollment indicators are based on annual school surveys, but do not necessarily reflect actual attendance or dropout rates during the year. Also, the length of education differs
-across countries and can influence enrollment rates, although the International Standard Classification of Education (ISCED) tries to minimize the difference. 
-For example, a shorter duration for primary education tends to increase the rate; a longer one to decrease it (in part because older 
-children are more at risk of dropping out). Moreover, age at enrollment may be inaccurately estimated or misstated, especially in communities where registration of births is not strictly enforced.
+%across countries and can influence enrollment rates, although the International Standard Classification of Education (ISCED) tries to minimize the difference. 
+%For example, a shorter duration for primary education tends to increase the rate; a longer one to decrease it (in part because older 
+%children are more at risk of dropping out). Moreover, age at enrollment may be inaccurately estimated or misstated, especially in communities where registration of births is not strictly enforced.
 
-education_primary(country) :~ function(enrollment(country), [(70,0), (80,0.2), (90,0.4), (95,0.6), (100,0.8), (105,1)]).
+education_primary_percentage(country) :~ function(enrollment(country), [(70,0), (80,0.2), (90,0.4), (95,0.6), (100,0.8), (105,1)]).
 
 %Gross Tertiary Education Enrollment
 
-education_tertiary(country) :~ function(enrollment_tertiary(country), [(10,0), (20,0.2), (30,0.4), (40,0.6), (50,0.8), (60,1)]).
+education_tertiary_percentage(country) :~ function(enrollment_tertiary(country), [(10,0), (20,0.2), (30,0.4), (40,0.6), (50,0.8), (60,1)]).
 
-%Infant mortality rate
-
-infant_mortality(country) :~ function(infant_mortality(country), [(2,0), (5,0.2), (10,0.4), (15,0.6), (20,0.8), (25,1)]).
+%Infant mortality
+infant_mortality_rate(country) :~ function(infant_mortality(country), [(2,0), (5,0.2), (10,0.4), (15,0.6), (20,0.8), (25,1)]).
 
 %Life expectancy
-
-life_expectancy(country) :~ function(life_exp(country), [(55,0), (60,0.2), (65,0.4), (70,0.6), (75,0.8), (80,1)]).
+life_expectancy_rate(country) :~ function(life_exp(country), [(55,0), (60,0.2), (65,0.4), (70,0.6), (75,0.8), (80,1)]).
 
 %Population
-
-population(country) :~ function(population(country), [(2000000,0), (10000000,0.2), (20000000,0.4), (30000000,0.6), (40000000,0.8), (50000000,1)]).
+citizens(country) :~ function(population(country), [(2000000,0), (10000000,0.2), (20000000,0.4), (30000000,0.6), (40000000,0.8), (50000000,1)]).
 
 
 % Población activa (porcentaje)
@@ -173,7 +188,7 @@ strong_labor_market(country) :~ rule(min, (very(min_wage(country)), very_little(
 
 
 % TODO: Revisar y corregir nombres de las funciones. Ver si tienen sentido y que credibilidad ponerles
-economically_free_country(country) :~ rule(min, (very(libertad_economica(country)), very_little(poblacion_percibe_corrupcion(country)))) with_credibility (min, 0.7).
+economically_free_country(country) :~ rule(min, (very(libertad_economica(country)), very_little(corruption_concern(country)))) with_credibility (min, 0.7).
 
 environmentally_friendly_country(country) :~ rule(min, (very(renewables(country)), very_little(co2_emissions(country)))) with_credibility (min, 0.7).
 
