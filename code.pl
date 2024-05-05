@@ -6,13 +6,13 @@ define_database(country/30,
 (country_name, rfuzzy_string_type),
 (economic_freedom_index, rfuzzy_float_type),
 (surface_temperature, rfuzzy_float_type), % Datos del 2021
-(suicidice_rate, rfuzzy_float_type), % Por cada 100,000 habitantes
+(suicidices, rfuzzy_float_type), % Por cada 100,000 habitantes
 (people_percive_corruption, rfuzzy_float_type),
 (population_density, rfuzzy_integer_type), % Personas por km2
 (agricultural_land, rfuzzy_float_type),
 (land_area, rfuzzy_integer_type), % Km2
 (armed_forces_size, rfuzzy_integer_type),
-(birth_rate, rfuzzy_float_type),
+(birth, rfuzzy_float_type),
 (co2_emissions, rfuzzy_integer_type),
 (cpi, rfuzzy_float_type), % Consumer Price Index
 (fertility, rfuzzy_float_type),
@@ -25,7 +25,7 @@ define_database(country/30,
 (population, rfuzzy_integer_type),
 (labor_force, rfuzzy_float_type), % población activa
 (tax_revenue , rfuzzy_float_type),
-(unemployment_rate, rfuzzy_float_type),
+(unemployment, rfuzzy_float_type),
 (urban_population, rfuzzy_integer_type),
 (latitude, rfuzzy_float_type),
 (longitude, rfuzzy_float_type),
@@ -33,7 +33,9 @@ define_database(country/30,
 (minimum_wage, rfuzzy_integer_type),
 (median_age, rfuzzy_integer_type)]).
 
-% DATABASE
+
+%%%%%%%%%%%%%  DATABASE %%%%%%%%%%%%%%
+
 country_name(0, Algeria, 4.82, 23.92, 3.6833333333333336, 0.752, 18, 17.40, 2, 381, 741, 317, 000, 24.28, 150, 006, 151.36, 3.02, 0.80, 169, 988, 236, 398 , 109.90, 51.40, 20.1, 76.7, 43, 053, 054, 41.20, 37.20, 11.70, 31, 510, 100, 28.033886, 1.659626, 0.26136735, 2163.0, 29.0).
 country_name(1, Argentina, 4.77, 15.4, 8.7029, 0.834, 17, 54.30, 2, 780, 400, 105, 000, 17.02, 201, 348, 232.75, 2.26, 9.80, 449, 663, 446, 954 , 109.70, 90.00, 8.8, 76.5, 44, 938, 712, 61.30, 10.10, 9.79, 41, 339, 571, -38.416097, -63.616672, 11.329249, 7108.0, 32.0).
 country_name(2, Australia, 8.05, 22.05, 10.650033333333333, 0.442, 3, 48.20, 7, 741, 220, 58, 000, 12.6, 375, 908, 119.8, 1.74, 16.30, 1, 392, 680, 589, 329 , 100.30, 113.10, 3.1, 82.7, 25, 766, 605, 65.50, 23.00, 5.27, 21, 844, 756, -25.274398, 133.775136, 12.933532, 30152.0, 38.0).
@@ -84,7 +86,9 @@ country_name(46, Switzerland, 8.47, 6.39, 18.9183, 0.292, 219, 38.40, 41, 277, 2
 country_name(47, Thailand, 7.07, 26.9, 8.929766666666666, 0.895, 137, 43.30, 513, 120, 455, 000, 10.34, 283, 763, 113.27, 1.53, 32.20, 543, 649, 976, 166 , 99.80, 49.30, 7.8, 76.9, 69, 625, 582, 67.30, 14.90, 0.75, 35, 294, 600, 15.870032, 100.992541, 7.113618, 3034.0, 40.0).
 country_name(48, Ukraine, 6.17, 9.37, 31.930233333333334, 0.924, 75, 71.70, 603, 550, 297, 000, 8.7, 202, 250, 281.66, 1.3, 16.70, 153, 781, 069, 118 , 99.00, 82.70, 7.5, 71.6, 44, 385, 155, 54.20, 20.10, 8.88, 30, 835, 699, 48.379433, 31.16558, 6.1008415, 2131.0, 41.0).
 
-% FUZZY FUNCTIONS
+
+
+%%%%%%%%%%%%%  FUZZY FUNCTIONS %%%%%%%%%%%%%%
 
 % Economic freedom index
 economic_freedom(country) :~ function(economic_freedom_index(country), [(4,0),(5,0.2),(6,0.4),(7,0.6),(8,0.8),(9,1)]).
@@ -93,25 +97,25 @@ economic_freedom(country) :~ function(economic_freedom_index(country), [(4,0),(5
 temperature(country) :~ function(surface_temperature(country), [(2,0):(28,1)]).
 
 % Suicide rate
-suicides(country) :~ funcion(suicidice_rate(country), [(2,0):(35,1)]).
+suicide_rate(country) :~ funcion(suicidices(country), [(2,0):(35,1)]).
 
 %People Perceive Corruption
 corruption_concern(country) :~ function(people_percive_corruption(country), [(0.2,0):(0.9,1)]).
 
 % Population density (Personas por km^2)
-pop_density(country) :~ function(density(country), [(10,0),(30,0.2),(80,0.4),(150,0.6),(200,0.8),(600,1)]).
+density(country) :~ function(population_density(country), [(10,0),(30,0.2),(80,0.4),(150,0.6),(200,0.8),(600,1)]).
 
-% Agricultural Land //RULE W/ TEMPERATURE
+% Agricultural Land (Percentage) //RULE W/ TEMPERATURE
 agricultural_land_percentage(country) :~ function(agricultural_land(country), [(5,0):(80,1)]).
 
 % Land Area
 surface(country) :~ function(land_area(country), [(50000,0),(9000000,1)]).
 
 %Armed Force Size
-army_size(country) :~ function(army_force_size(country), [(10000,0),(700000,1)]).
+armed_force_rate(country) :~ function(armed_force_size(country), [(10000,0),(700000,1)]).
 
 %Birth rate
-birth(country) :~ function(birth_rate(country), [(7,0),(25,0)]).
+birth_rate(country) :~ function(birth(country), [(7,0),(25,0)]).
 
 %C02 emissions
 co2(country) :~ function(co2_emissions(country), [(2000,0),(50000,0.2),(100000,0.4),(200000,0.6),(300000,0.8),(400000,1)]).
@@ -128,27 +132,26 @@ woodland(country) :~ function(forested_area(country), [(0,0), (11, 0.2), (22, 0.
 %GDP 
 gdp_per_capita(country) :~ function(gdp(country), [(100000000000,0), (200000000000,0.2), (300000000000,0.4), (400000000000,0.6), (500000000000,0.8), (750000000000,1)]).
 
-%Gross primary education errollment 
+%Gross primary education errollment (Percentage)
 %Enrollment indicators are based on annual school surveys, but do not necessarily reflect actual attendance or dropout rates during the year. Also, the length of education differs
 %across countries and can influence enrollment rates, although the International Standard Classification of Education (ISCED) tries to minimize the difference. 
 %For example, a shorter duration for primary education tends to increase the rate; a longer one to decrease it (in part because older 
 %children are more at risk of dropping out). Moreover, age at enrollment may be inaccurately estimated or misstated, especially in communities where registration of births is not strictly enforced.
 
-education_primary_percentage(country) :~ function(enrollment(country), [(70,0), (80,0.2), (90,0.4), (95,0.6), (100,0.8), (105,1)]).
+education_primary(country) :~ function(enrollment(country), [(70,0), (80,0.2), (90,0.4), (95,0.6), (100,0.8), (105,1)]).
 
-%Gross Tertiary Education Enrollment
+%Gross Tertiary Education Enrollment (Percentage)
 
-education_tertiary_percentage(country) :~ function(enrollment_tertiary(country), [(10,0), (20,0.2), (30,0.4), (40,0.6), (50,0.8), (60,1)]).
+education_tertiary(country) :~ function(enrollment_tertiary(country), [(10,0), (20,0.2), (30,0.4), (40,0.6), (50,0.8), (60,1)]).
 
 %Infant mortality
 infant_mortality_rate(country) :~ function(infant_mortality(country), [(2,0), (5,0.2), (10,0.4), (15,0.6), (20,0.8), (25,1)]).
 
 %Life expectancy
-life_expectancy_rate(country) :~ function(life_exp(country), [(55,0), (60,0.2), (65,0.4), (70,0.6), (75,0.8), (80,1)]).
+life_expectancy_rate(country) :~ function(life_expectancy(country), [(55,0), (60,0.2), (65,0.4), (70,0.6), (75,0.8), (80,1)]).
 
 %Population
 citizens(country) :~ function(population(country), [(2000000,0), (10000000,0.2), (20000000,0.4), (30000000,0.6), (40000000,0.8), (50000000,1)]).
-
 
 % Población activa (porcentaje)
 active_workers(country) :~ function(labor_force(country), [(40,0),(45,0.2),(55,0.4),(65,0.6),(75,0.8),(80,1)]).
@@ -157,7 +160,7 @@ active_workers(country) :~ function(labor_force(country), [(40,0),(45,0.2),(55,0
 tax_revenue_percentage(country) :~ function(tax_revenue(country), [(5,0),(10,0.2),(15,0.4),(20,0.6),(25,0.8),(30,1)]).
 
 % Unemployment rate
-unemployment(country) :~ function(unemployment_rate(country), [(1,0),(3,0.2),(5,0.4),(7,0.6),(9,0.8),(11,1)]).
+unemployment_rate(country) :~ function(unemployment(country), [(1,0),(3,0.2),(5,0.4),(7,0.6),(9,0.8),(11,1)]).
 
 % Urban population TODO: Estan los valores totales, obtener porcentajes y actualizar base de datos
 urban_pop(country) :~ function(urban_population(country), [(10,0),(30,0.2),(50,0.4),(70,0.6),(80,0.8),(90,1)]).
@@ -176,7 +179,8 @@ mid_age(country) :~ function(median_age(country), [(20,0),(25,0.2),(30,0.4),(35,
 
 
 
-% RULES
+%%%%%%%%%%%% RULES %%%%%%%%%%%%% 
+
 % Clean country: relation between renewable energy and urban population
 clean_country(country) :~ rule(min, (very(renewable_energy(country)), little(urban_pop(country)))) with_credibility (min, 0.7).
 
@@ -187,29 +191,40 @@ developed_country(country) :~ rule(min, (very(gdp_per_capita(country)), very(lif
 strong_labor_market(country) :~ rule(min, (very(min_wage(country)), very_little(unemployment(country)), very(active_workers(country)))) with_credibility (min, 0.7).
 
 
-% TODO: Revisar y corregir nombres de las funciones. Ver si tienen sentido y que credibilidad ponerles
-economically_free_country(country) :~ rule(min, (very(libertad_economica(country)), very_little(corruption_concern(country)))) with_credibility (min, 0.7).
+% TODO: Ver si tienen sentido y que credibilidad ponerles
+political_stable(country) :~ rule(min, (very(economic_freedom(country)), very_little(corruption_concern(country)))) with_credibility (min, 0.7).
 
-environmentally_friendly_country(country) :~ rule(min, (very(renewables(country)), very_little(co2_emissions(country)))) with_credibility (min, 0.7).
+environmentally_friendly_country(country) :~ rule(min, (very(renewable_energy(country)), very_little(co2(country)))) with_credibility (min, 0.7).
 
-high_quality_of_life_country(country) :~ rule(min, (very(life_expectancy(country)), very_little(tasa_de_suicidios(country)))) with_credibility (min, 0.7).
+high_quality_of_life_country(country) :~ rule(min, (very(life_expectancy_rate(country)), very_little(suicide_rate(country)))) with_credibility (min, 0.7).
 
-strong_education_system_country(country) :~ rule(min, (very(gross_tertiary_education_enrollment(country)), very_little(unemployment_rate(country)))) with_credibility (min, 0.7).
+strong_education_system_country(country) :~ rule(min, very(education_primary(country)), (very(education_tertiary(country)), very_little(unemployment_rate(country)))) with_credibility (min, 0.7).
 
 high_population_growth_country(country) :~ rule(min, (very(birth_rate(country)), very(fertility_rate(country)))) with_credibility (min, 0.7).
 
-urbanized_country(country) :~ rule(min, (very(urban_population(country)), very_little(agricultural_land(country)))) with_credibility (min, 0.7).
+urbanized_country(country) :~ rule(min, (very(urban_pop(country)), very_little(agricultural_land_percentage(country)))) with_credibility (min, 0.7).
 
-militarily_strong_country(country) :~ rule(min, (very(armed_forces_size(country)), very_little(density(country)))) with_credibility (min, 0.7).
+militarily_strong_country(country) :~ rule(min, (very(armed_force_rate(country)), very_little(density(country)))) with_credibility (min, 0.7).
 
-economically_stable_country(country) :~ rule(min, (very(cpi(country)), very_little(unemployment_rate(country)))) with_credibility (min, 0.7).
+economically_stable_country(country) :~ rule(min, (very(cpi_rate(country)), very_little(unemployment_rate(country)))) with_credibility (min, 0.7).
 
-high_income_country(country) :~ rule(min, (very(gdp(country)), very(minimum_wage(country)))) with_credibility (min, 0.7).
+high_income_country(country) :~ rule(min, (very(gdp_per_capita(country)), very(min_wage(country)))) with_credibility (min, 0.7).
 
-aging_population_country(country) :~ rule(min, (very(median_age(country)), very_little(birth_rate(country)))) with_credibility (min, 0.7).
+aging_population_country(country) :~ rule(min, (very(mid_age(country)), very_little(birth_rate(country)))) with_credibility (min, 0.7).
 
+quality_healthcare_country(country) :~ rule(min, (very(infant_mortality_rate(country)), very_little(life_expectancy_rate(country)))) with_credibility (min, 0.7).
 
+developed_infrastucture_country(country) :~ rule(min, (very(gdp_per_capita(country)), very_little(land_area(country)))) with_credibility (min, 0.7).
 
+sustainable_country(country) :~ rule(min, (very(forested_area(country)), very_little(co2(country)))) with_credibility (min, 0.7).
+
+attractive_tourism_destination(country) :~ rule(min, (very(surface_temperature(country)), very_little(forested_area(country)))) with_credibility (min, 0.7).
+
+economically_resilient_country(country) :~ rule(min, (very(gdp_per_capita(country)), very_little(cpi_rate(country)))) with_credibility (min, 0.7).
+
+socially_connected_country(country) :~ rule(min, (very(urban_pop(country)), very_little(density(country)))) with_credibility (min, 0.7).
+
+active_civic_participation(country) :~ rule(min, (very(tax_revenue_percentage(country)), very_little(citizens(country)))) with_credibility (min, 0.7).
 
 
 % TODO: Define modifiers higher, lower, much higher, much lower, etc
