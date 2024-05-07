@@ -226,6 +226,26 @@ socially_connected_country(country) :~ rule(min, (very(urban_pop(country)), very
 
 active_civic_participation(country) :~ rule(min, (very(tax_revenue_percentage(country)), very_little(citizens(country)))) with_credibility (min, 0.7).
 
+% Libertad economica, esperanza de vida, percepcion de la corrupcion, suicidios
+national_wellbeing_index(country) :~ rule(min, (economic_freedom(country), life_expectancy_rate(country), corruption_concern(country), suicide_rate(country))) with_credibility (min, 0.7).
+
+% Tamaño de la tierra agrícola, emisiones de CO2, porcentaje de energias renovables
+environmental_sostenibility(country) :~ rule(min, (agricultural_land_percentage(country), co2(country), renewable_energy(country))) with_credibility (min, 0.7).
+
+% PIB, densidad de poblacion, fuerza laboral, indice de fertilidad
+economic_development_potential(country) :~ rule(min, (gdp_per_capita(country), density(country), active_workers(country), fertility_rate(country))) with_credibility (min, 0.7).
+
+% Densidad de poblacion, desempleo, salario minimo, edad media
+urban_life_quality(country) :~ rule(min, (density(country), unemployment_rate(country), min_wage(country), mid_age(country))) with_credibility (min, 0.7).
+
+% Ingreso fiscal en relacion al PIB, tasa de desempleo, tamaño de las fuerzas armadas
+economic_resilience(country) :~ rule(min, (gdp_per_capita(country), unemployment_rate(country), armed_force_rate(country))) with_credibility (min, 0.7).
+
+% Matricula en educacion primaria y terciaria, tasa de mortalidad infantil
+education_and_future(country) :~ rule(min, (education_primary(country), education_tertiary(country), infant_mortality_rate(country))) with_credibility (min, 0.7).
+
+% Superficie de tierra agricola, poblacion, emisiones de CO2, superficie total de tierra
+local_and_global_agricultural_impact(country) :~ rule(min, (agricultural_land_percentage(country), citizens(country), co2(country), surface(country))) with_credibility (min, 0.7).
 
 % TODO: Define modifiers higher, lower, much higher, much lower, etc
 
