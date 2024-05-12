@@ -45,6 +45,37 @@ define_database(country/30,
 (minimum_wage, rfuzzy_integer_type),
 (median_age, rfuzzy_integer_type)]).
 
+% Las potencias utilizadas para redondear los float son, empezando desde la segunda columna [2, 2, 5, 3, 0, 1, 0, 0, 2, 0, 2, 2, 2, 0, 1, 1, 1, 1, 0, 1, 1, 2, 0, 5, 5, 5, 0, 0]
+
+% economic_freedom_index, potencia 2
+% surface_temperature, potencia 2
+% suicides, potencia 5
+% people_percive_corruption, potencia 3
+% population_density, potencia 0
+% agricultural_land, potencia 1
+% land_area, potencia 0
+% armed_forces_size, potencia 0
+% birth, potencia 2
+% co2_emissions, potencia 0
+% cpi, potencia 2
+% fertility, potencia 2
+% forested_area, potencia 2
+% gdp, potencia 0
+% gross_primary_education_enrollment, potencia 1
+% gross_tertiary_education_enrollment, potencia 1
+% infant_mortality, potencia 1
+% life_expectancy, potencia 1
+% population, potencia 0
+% labor_force, potencia 1
+% tax_revenue, potencia 1
+% unemployment, potencia 2
+% urban_population, potencia 0
+% latitude, potencia 5
+% longitude, potencia 5
+% renewables, potencia 5
+% minimum_wage, potencia 0
+% median_age, potencia 0
+
 country(0  ,'Algeria'      ,482 ,2392 , 368333 ,752 ,  18 ,174 ,2381741 ,317000 ,2428 , 150006 ,15136 ,302 ,  80 , 169988236398 ,1099 , 514 ,201 ,767 , 43053054 ,412 ,372 , 117 , 31510100 ,28.033886 ,1.659626  , 261367 , 2163 ,29).
 country(1  ,'Argentina'    ,477 ,1540 , 870290 ,834 ,  17 ,543 ,2780400 ,105000 ,1702 , 201348 ,23275 ,226 , 980 , 449663446954 ,1097 , 900 , 88 ,765 , 44938712 ,613 ,101 , 979 , 41339571 ,-3841610  ,-6361667  ,1132925 , 7108 ,32).
 country(2  ,'Australia'    ,805 ,2205 ,1065003 ,442 ,   3 ,482 ,7741220 , 58000 ,1260 , 375908 ,11980 ,174 ,1630 ,1392680589329 ,1003 ,1131 , 31 ,827 , 25766605 ,655 ,230 , 527 , 21844756 ,-2527440  ,13377514  ,1293353 ,30152 ,38).
