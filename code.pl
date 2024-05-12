@@ -221,28 +221,32 @@ mid_age(country) :~ function(median_age(country), [(20,0),(25,0.2),(30,0.4),(35,
 
  %%%%%%%%%% RULES %%%%%%%%%%  
 
- %Clean country: relation between renewable energy and urban population
-clean_country(country) :~ rule(min, (very(renewable_energy(country)), little(urban_pop(country)))) with_credibility (min, 0.7).
+%Pais limpio: Energia renovable, Poblacion urbana, Porcentaje de tierra agricola, Porcentaje de tierra forestal, Emisiones de co2
+clean_country(country) :~ rule(min, (very(renewable_energy(country)), little(urban_pop(country), very(agricultural_land_percentage(country), very(woodland(country)), very_little(co2(country)))))) with_credibility (min, 0.7).
 
- %Developed country: relation between GDP per capita and life expectancy (I'd add more variables)
-developed_country(country) :~ rule(min, (very(gdp_per_capita(country)), very(life_expectancy_rate(country)))) with_credibility (min, 0.7).
+%Pais medioambientalmente amigable: Energia renovable, Emisiones de co2, Porcentaje de tierra agricola, Porcentaje de tierra forestal
+environmentally_friendly_country(country) :~ rule(min, (very(renewable_energy(country)), very_little(co2(country), very(woodland(country)), very(agricultural_land_percentage(country))))) with_credibility (min, 0.7).
 
- %Strong labor market: relation between minimum wage and unemployment rate, and more...
-strong_labor_market(country) :~ rule(min, (very(min_wage(country)), very_little(unemployment_rate(country)), very(active_workers(country)))) with_credibility (min, 0.7).
+%Pais avanzado: PBI per capita, Esperanza de vida, Mortalidad infantil, Libertad economica
+developed_country(country) :~ rule(min, (very(gdp_per_capita(country)), very(life_expectancy_rate(country)), not(very(infant_mortality_rate(country))), very(economic_freedom(country)))) with_credibility (min, 0.7).
 
+%Mercado laboral activo: Salario minimo, Tasa de desempleo, Poblacion activa
+labor_market(country) :~ rule(min, (very(min_wage(country)), very_little(unemployment_rate(country)), very(active_workers(country)))) with_credibility (min, 0.7).
 
- %TODO: Ver si tienen sentido y que credibilidad ponerles
+%Politica estable: Libertad economica, Percepcion de corrupcion
 political_stable(country) :~ rule(min, (very(economic_freedom(country)), very_little(corruption_concern(country)))) with_credibility (min, 0.7).
 
-environmentally_friendly_country(country) :~ rule(min, (very(renewable_energy(country)), very_little(co2(country)))) with_credibility (min, 0.7).
-
+%Pais con alta calidad de vida: Esperanza de vida, Tasa de suicidios
 high_quality_of_life_country(country) :~ rule(min, (very(life_expectancy_rate(country)), very_little(suicide_rate(country)))) with_credibility (min, 0.7).
 
+%Sistema educativo fuerte: Educación Primaria, Educación Terciaria y Tasa Desempleo
 strong_education_system(country) :~ rule(min, (very(education_primary(country)), very(education_tertiary(country)), very_little(unemployment_rate(country)))) with_credibility (min, 0.7).
 
-high_population_growth_country(country) :~ rule(min, (very(birth_rate(country)), very(fertility_rate(country)))) with_credibility (min, 0.7).
+%Crecimiento poblacional bajo: Nacimientos, Fertilidad, Mortalidad infantil
+low_population_growth_country(country) :~ rule(max, (not(very(birth_rate(country))), not(very(fertility_rate(country), not(infant_mortality_rate(country)))))) with_credibility (max, 0.7).
 
-urbanized_country(country) :~ rule(min, (very(urban_pop(country)), very_little(agricultural_land_percentage(country)))) with_credibility (min, 0.7).
+%Pais urbanizado: Población urbana, Porcentaje de tierra agricola, Densidad de población, Porcentaje de tierra forestal
+urbanized_country(country) :~ rule(min, (very(urban_pop(country)), very_little(agricultural_land_percentage(country)), very(density(country)), very_little(woodland(country)))) with_credibility (min, 0.7).
 
 militarily_strong_country(country) :~ rule(min, (very(armed_forces_rate(country)), very_little(density(country)))) with_credibility (min, 0.7).
 
@@ -286,3 +290,13 @@ education_and_future(country) :~ rule(min, (education_primary(country), educatio
 
  %Superficie de tierra agricola, poblacion, emisiones de CO2, superficie total de tierra
 local_and_global_agricultural_impact(country) :~ rule(min, (agricultural_land_percentage(country), citizens(country), co2(country), surface(country))) with_credibility (min, 0.7).
+
+%Poblacion activa, tasa de desempleo, salario minimo
+labor_market(country) :~ rule(min, (active_workers(country), unemployment_rate(country), min_wage(country))) with_credibility (min, 0.7).
+
+ %Poblacion urbana, densidad de poblacion, porcentaje de tierra forestal
+urban_and_natural(country) :~ rule(min, (urban_pop(country), density(country), woodland(country))) with_credibility (min, 0.7).
+
+%Ciudadania, tasa de desempleo, ingresos fiscales
+citizens_and_economy(country) :~ rule(min, (citizens(country), unemployment_rate(country), tax_revenue_percentage(country))) with_credibility (min, 0.7).
+
