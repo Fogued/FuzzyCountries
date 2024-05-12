@@ -131,22 +131,22 @@ country(48 ,'Ukraine'      ,617 , 937 ,3193023 ,924 ,  75 ,717 , 603550 ,297000 
 %%%%%%%%%%%% FUZZY FUNCTIONS %%%%%%%%%%%%%%%
 
 % Economic freedom index
-economic_freedom(country) :~ function(economic_freedom_index(country), [(4,0),(5,0.2),(6,0.4),(7,0.6),(8,0.8),(9,1)]).
+economic_freedom(country) :~ function(economic_freedom_index(country), [(400,0),(500,0.2),(600,0.4),(700,0.6),(800,0.8),(900,1)]).
 
 % Surface temperature
-temperature(country) :~ function(surface_temperature(country), [(2,0),(28,1)]).
+temperature(country) :~ function(surface_temperature(country), [(200,0),(2800,1)]).
 
 % Suicide rate
-suicide_rate(country) :~ function(suicides(country), [(2,0),(35,1)]).
+suicide_rate(country) :~ function(suicides(country), [(200000,0),(3500000,1)]).
 
 % People Perceive Corruption
-corruption_concern(country) :~ function(people_percive_corruption(country), [(0.2,0),(0.9,1)]).
+corruption_concern(country) :~ function(people_percive_corruption(country), [(200,0),(900,1)]).
 
 % Population density (Personas por km^2)
 density(country) :~ function(population_density(country), [(10,0),(30,0.2),(80,0.4),(150,0.6),(200,0.8),(600,1)]).
 
 % Agricultural Land (Percentage) //RULE W/ TEMPERATURE
-agricultural_land_percentage(country) :~ function(agricultural_land(country), [(5,0),(80,1)]).
+agricultural_land_percentage(country) :~ function(agricultural_land(country), [(50,0),(800,1)]).
 
 % Land Area
 surface(country) :~ function(land_area(country), [(50000,0),(9000000,1)]).
@@ -155,19 +155,19 @@ surface(country) :~ function(land_area(country), [(50000,0),(9000000,1)]).
 armed_forces_rate(country) :~ function(armed_forces_size(country), [(10000,0),(700000,1)]).
 
 % Birth rate
-birth_rate(country) :~ function(birth(country), [(7,0),(25,0)]).
+birth_rate(country) :~ function(birth(country), [(700,0),(2500,0)]).
 
 % C02 emissions
 co2(country) :~ function(co2_emissions(country), [(2000,0),(50000,0.2),(100000,0.4),(200000,0.6),(300000,0.8),(400000,1)]).
 
 % cpi
-cpi_rate(country) :~ function(cpi(country), [(25,0), (50,0.2), (75,0.4), (100,0.6), (125,0.8), (150,1)]).
+cpi_rate(country) :~ function(cpi(country), [(2500,0), (5000,0.2), (7500,0.4), (10000,0.6), (12500,0.8), (15000,1)]).
 
 % fertility_rate
-fertility_rate(country) :~ function(fertility(country), [(0.5,0), (1,0.2), (1.5,0.4), (2,0.6), (2.5,0.8), (3,1)]).
+fertility_rate(country) :~ function(fertility(country), [(50,0), (100,0.2), (150,0.4), (200,0.6), (250,0.8), (300,1)]).
 
 % forested_area
-woodland(country) :~ function(forested_area(country), [(0,0), (11, 0.2), (22, 0.4), (33, 0.6), (44, 0.8), (55, 1)]).
+woodland(country) :~ function(forested_area(country), [(0,0), (1100, 0.2), (2200, 0.4), (3300, 0.6), (4400, 0.8), (5500, 1)]).
 
 %GDP 
 gdp_per_capita(country) :~ function(gdp(country), [(100000000000,0), (200000000000,0.2), (300000000000,0.4), (400000000000,0.6), (500000000000,0.8), (750000000000,1)]).
@@ -178,29 +178,29 @@ gdp_per_capita(country) :~ function(gdp(country), [(100000000000,0), (2000000000
 %For example, a shorter duration for primary education tends to increase the rate; a longer one to decrease it (in part because older 
 %children are more at risk of dropping out). Moreover, age at enrollment may be inaccurately estimated or misstated, especially in communities where registration of births is not strictly enforced.
 
-education_primary(country) :~ function(gross_primary_education_enrollment(country), [(70,0), (80,0.2), (90,0.4), (95,0.6), (100,0.8), (105,1)]).
+education_primary(country) :~ function(gross_primary_education_enrollment(country), [(700,0), (800,0.2), (900,0.4), (950,0.6), (1000,0.8), (1050,1)]).
 
 %Gross Tertiary Education Enrollment (Percentage)
 
-education_tertiary(country) :~ function(gross_tertiary_education_enrollment(country), [(10,0), (20,0.2), (30,0.4), (40,0.6), (50,0.8), (60,1)]).
+education_tertiary(country) :~ function(gross_tertiary_education_enrollment(country), [(100,0), (200,0.2), (300,0.4), (400,0.6), (500,0.8), (600,1)]).
 
 %Infant mortality
-infant_mortality_rate(country) :~ function(infant_mortality(country), [(2,0), (5,0.2), (10,0.4), (15,0.6), (20,0.8), (25,1)]).
+infant_mortality_rate(country) :~ function(infant_mortality(country), [(20,0), (50,0.2), (100,0.4), (150,0.6), (200,0.8), (250,1)]).
 
 %Life expectancy
-life_expectancy_rate(country) :~ function(life_expectancy(country), [(55,0), (60,0.2), (65,0.4), (70,0.6), (75,0.8), (80,1)]).
+life_expectancy_rate(country) :~ function(life_expectancy(country), [(550,0), (600,0.2), (650,0.4), (700,0.6), (750,0.8), (800,1)]).
 
 %Population
 citizens(country) :~ function(population(country), [(2000000,0), (10000000,0.2), (20000000,0.4), (30000000,0.6), (40000000,0.8), (50000000,1)]).
 
  %Población activa (porcentaje)
-active_workers(country) :~ function(labor_force(country), [(40,0),(45,0.2),(55,0.4),(65,0.6),(75,0.8),(80,1)]).
+active_workers(country) :~ function(labor_force(country), [(400,0),(450,0.2),(550,0.4),(650,0.6),(750,0.8),(800,1)]).
 
  %Tax revenue: porcentaje del PIB
-tax_revenue_percentage(country) :~ function(tax_revenue(country), [(5,0),(10,0.2),(15,0.4),(20,0.6),(25,0.8),(30,1)]).
+tax_revenue_percentage(country) :~ function(tax_revenue(country), [(50,0),(100,0.2),(150,0.4),(200,0.6),(250,0.8),(300,1)]).
 
  %Unemployment rate
-unemployment_rate(country) :~ function(unemployment(country), [(1,0),(3,0.2),(5,0.4),(7,0.6),(9,0.8),(11,1)]).
+unemployment_rate(country) :~ function(unemployment(country), [(100,0),(300,0.2),(500,0.4),(700,0.6),(900,0.8),(1100,1)]).
 
  %Urban population TODO: Estan los valores totales, obtener porcentajes y actualizar base de datos
 urban_pop(country) :~ function(urban_population(country), [(10,0),(30,0.2),(50,0.4),(70,0.6),(80,0.8),(90,1)]).
@@ -209,15 +209,13 @@ urban_pop(country) :~ function(urban_population(country), [(10,0),(30,0.2),(50,0
  %Creo que no tiene sentido una funcion difusa (no hay mucho o poco, etc) Ademas hay valores negativos
 
  %Renewables (porcentaje del total de energía)
-renewable_energy(country) :~ function(renewables(country), [(1,0),(3,0.2),(10,0.4),(18,0.6),(35,0.8),(85,1)]).
+renewable_energy(country) :~ function(renewables(country), [(100000,0),(300000,0.2),(1000000,0.4),(1800000,0.6),(3500000,0.8),(8500000,1)]).
 
  %Minimum wage (en dólares)
 min_wage(country) :~ function(minimum_wage(country), [(1000,0.2),(5000,0.4),(10000,0.6),(20000,0.8),(25000,1)]).
 
  %Median age
 mid_age(country) :~ function(median_age(country), [(20,0),(25,0.2),(30,0.4),(35,0.6),(40,0.8),(45,1)]).
-
-
 
  %%%%%%%%%% RULES %%%%%%%%%%  
 
