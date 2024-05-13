@@ -333,4 +333,4 @@ urban_and_natural(country) :~ rule(mean, (urban_pop(country), density(country), 
 
 %Ciudadania, tasa de desempleo, ingresos fiscales, PBI per capita
 %Este indicador proporciona una medida del nivel de riqueza promedio de los ciudadanos y puede ser útil para evaluar la relación entre la población y la economía.
-citizens_and_economy(country) :~ rule(mean, (citizens(country), unemployment_rate(country), tax_revenue_percentage(country), (gdp_per_capita(country)))) with_credibility (min, 0.7).
+citizens_and_economy(country) :~ rule(mean, (citizens(country), unemployment_rate(country), tax_revenue_percentage(country), (gdp_per_capita(country)))) with_credibility(min,0.7).
