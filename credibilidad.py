@@ -19,9 +19,29 @@ def calcular_credibilidad(valores_reales, valores_difusos):
     
     return credibilidad
 
-# Ejemplo de uso
+
+def normalizar_valores(valores):
+    """Toma una lista y normaliza los valores con el metodo min-max mapeandolos en el intervalo [0,1]"""
+
+    # Obtener el mínimo y máximo valor de la lista
+    min_val = min(valores)
+    max_val = max(valores)
+
+    # Normalizar los valores utilizando la fórmula min-max
+    valores_normalizados = [(x - min_val) / (max_val - min_val) for x in valores]
+    
+    return valores_normalizados
+
+
+# Ejemplo de uso calcular_credibilidad
 valores_reales = [0.1, 0.2, 0.3, 0.4, 0.5]
 valores_difusos = [0.1, 0.25, 0.28, 0.35, 0.52]
 
 credibilidad = calcular_credibilidad(valores_reales, valores_difusos)
 print(f"La credibilidad de la función difusa es: {credibilidad:.2f}")
+
+
+# Ejemplo de uso normalizar_valores
+valores = [10, 20, 30, 40, 50]
+valores_normalizados = normalizar_valores(valores)
+print("Valores normalizados:", valores_normalizados)
