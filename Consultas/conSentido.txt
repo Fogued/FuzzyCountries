@@ -1,0 +1,2 @@
+Clean country: Salen resultados lógicos (Islandia, Noruega, Dinamarca...). 
+                Los peores (SouthAfrica, Japon !!!!, Tailandia)
