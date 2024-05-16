@@ -1,0 +1,82 @@
+Clean country: Salen resultados lógicos (Islandia, Noruega, Dinamarca...). 
+                Croacia el 5º: https://www.euronews.com/green/2024/03/20/only-seven-countries-in-the-world-breathe-safe-air-three-of-them-are-in-europe#:~:text=Croatia%20showed%20the%20most%20progress,average%20of%2023%20per%20cent.
+               Los peores (SouthAfrica, Japon !!!!, Tailandia)
+               España 26º
+
+
+environmentally_friendly_country: parecido al anterior, pero tiene mas en cuenta bosques y agricultura.
+        Salen Brasil, Canada, Colombia...
+        España 5º. Interesante el contraste respecto a la anterior (analizar)
+
+
+Developed country: Se tienen en cuenta, ademas de factores economicos, esperanza de vida (por eso sube japon 1º y españa 7º) y baja mortalidad infantil.
+    Creemos que el exito de un pais no depende solo de su economía, por eso estos resultados son interesantes.
+    (Foto de los top10 resultados) Brasil rarete ¡!
+
+
+Political stable: Interesante mirarlo al revés. Argentina el peor, luego Iran y Ucrania.
+
+
+strong_education_system: bajo paro y buenas tasas educativas. Resultados esperables y razonables (excepto Perú)
+
+
+low_population_growth_country: medio raro. Ningun valor de verdad pasa de 0.62
+
+
+urbanized_country: poco sentido en general xd
+
+
+militarily_strong_country: sin sentido, la quitaría.
+
+
+economically_stable_country: Tiene en cuenta inflacion y desempleo
+Resultado interesante, Tailandia aparece primero por un paro bajísimo (0.75)
+https://www.lavanguardia.com/economia/20150627/54433066697/los-problemas-tras-el-insignificante-dato-de-desempleo-de-tailandia-el-0-85.html
+
+
+high_income_country: Resultados lógicos, pero como tiene en cuenta el sueldo mínimo,
+    los países que no tienen (Sweden, Norway, Austria, Denmark, Finland), aparecen últimos a pesar de
+    tener sueldos muy altos. También por eso España está alto, por buen sueldo mínimo.
+
+
+aging_population_country: alta edad media, alta esperanza de vida y baja natalidad.
+    Buenos resultados.
+
+
+quality_healthcare_country: Baja mortalidad infantil y mucha esperanza de vida.
+    Explicar por qué la supervivencia de los bebes es uno de los mayores indicadores de la calidad y eficiencia de un sistema de salud.
+    Resultados lógicos, españa 7º
+
+
+sustainable_country: Lo quitaría, se solapa con clean country y environmentally_friendly
+
+
+attractive_tourism_destination: Tiene en cuenta muchas variables y no sé hasta que punto tiene sentido.
+    TODO: Revisar       Si se pueden justificar los resultados (ver foto) podria ser interesante.
+
+
+active_civic_participation_country: Altos ingresos fiscales y Libertad economica, Baja percepcion de corrupcion
+    Resultados lógicos. Se puede interpretar como los países donde la poblacion confia en la política (ver foto).
+
+
+high_wellbeing_country: Tiene en cuenta un monton de variables. Podría tener que ver mucho con la felicidad.
+
+
+good_education_and_future_country: Cosas con sentido, curioso España 3º
+
+
+strong_labor_market: No entiendo demasiado los resultados (Islandia, peru, nueva zelanda, ecuador)
+    Podría quitarse y ya está
+
+
+big_economy: (ver foto)
+
+
+
+
+
+
+
+
+
+
