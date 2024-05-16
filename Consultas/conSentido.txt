@@ -15,6 +15,13 @@ Political stable: Interesante mirarlo al revés. Argentina el peor, luego Iran y
 
 strong_education_system: bajo paro y buenas tasas educativas. Resultados esperables y razonables (excepto Perú)
 
+low_population_growth_country: medio raro. Ningun valor de verdad pasa de 0.62
+
+urbanized_country: poco sentido en general xd
+
+
+
+
 
 
 

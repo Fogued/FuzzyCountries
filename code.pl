@@ -277,7 +277,7 @@ militarily_strong_country(country) :~ rule(mean, ((strong_armed_forces_rate(coun
 economically_stable_country(country) :~ rule(mean, (fnot(high_cpi_rate(country)), fnot(significant_population_unemployed(country)))) with_credibility (min, 1).
 
 %Pais con grandes ingresos: PBI per capita, Sueldo minimo
-high_income_country(country) :~ rule(mean, ((wealthy_gdp_per_capita(country)), (high_min_wage(country)))) with_credibility (prod, 0.9).
+high_income_country(country) :~ rule(mean, ((wealthy_gdp_per_capita(country)), (high_min_wage(country)))) with_credibility (min, 1).
 
 %Pais con poblacion envejecida: Edad media, Tasa de natalidad, Poblacion
 aging_population_country(country) :~ rule(mean, (high_median_age(country), high_birth_rate(country), big_population_size(country))) with_credibility (min, 1).
