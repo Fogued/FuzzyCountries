@@ -26,11 +26,11 @@ define_database(country/30,
 (armed_forces_size, rfuzzy_integer_type),
 (birth, rfuzzy_integer_type),
 (co2_emissions, rfuzzy_integer_type),
-(cpi, rfuzzy_integer_type), % Consumer price index
+(cpi, rfuzzy_integer_type), % Consumer price index (indice de precios al consumidor)
 (fertility, rfuzzy_integer_type),
 (forested_area, rfuzzy_integer_type),
 (gdp, rfuzzy_integer_type), % Gross domestic product (PIB)
-(gross_primary_education_enrollment, rfuzzy_integer_type),
+(gross_primary_education_enrollment, rfuzzy_integer_type), % Gross enrollment ratio for primary education. (numero de niños matriculados en la escuela primaria entre el total de niños de esa edad)
 (gross_tertiary_education_enrollment, rfuzzy_integer_type),
 (infant_mortality, rfuzzy_integer_type),
 (life_expectancy, rfuzzy_integer_type),
@@ -139,7 +139,7 @@ risk_high_temperature(country) :~ function(surface_temperature(country), [(200,0
 
 % VALORES LOGICOS
 % Suicide rate
-alarming_suicide_rate(country) :~ function(suicides(country), [(200000,0),(300000,0.1),(400000,0.2),(500000,0.2),(6000000,1)]) with_credibility (max, 0.1).
+alarming_suicide_rate(country) :~ function(suicides(country), [(200000,0),(300000,0.1),(400000,0.2),(500000,0.2),(6000000,1)]).
 
 % VALORES LOGICOS
 % People Perceive Corruption
@@ -147,7 +147,7 @@ high_corruption_concern(country) :~ function(people_percive_corruption(country),
 
 % VALORES LOGICOS
 % Population density (Personas por km^2)
-dangerous_population_density(country) :~ function(population_density(country), [(10,0),(30,0.2),(80,0.4),(150,0.6),(200,0.8),(600,1)]) with_credibility (prod, 0.9).
+dangerous_population_density(country) :~ function(population_density(country), [(10,0),(30,0.2),(80,0.4),(150,0.6),(200,0.8),(600,1)]).
 
 % VALORES LOGICOS
 % Agricultural Land (Percentage) //RULE W/ TEMPERATURE
@@ -228,8 +228,7 @@ significant_population_unemployed(country) :~ function(unemployment(country), [(
 %Urban population (valores totales, no porcentajes)
 large_urban_population(country) :~ function(urban_population(country), [(0,0),(5000000,0.1),(10000000,0.4),(40000000,0.6),(60000000,0.8),(120000000,0.9), (200000000, 1)]).
 
- %Latitude y longitud
- %Creo que no tiene sentido una funcion difusa (no hay mucho o poco, etc) Ademas hay valores negativos
+%Latitud y longitud. NOT USED
 
 % VALORES LOGICOS
 %Renewables (porcentaje del total de energía)
@@ -260,13 +259,13 @@ developed_country(country) :~ rule(mean, ((wealthy_gdp_per_capita(country)), (lo
 political_stable_country(country) :~ rule(mean, ((high_economic_freedom(country)), fnot(high_corruption_concern(country)))) with_credibility (min, 1).
 
 %Pais con alta calidad de vida: Esperanza de vida, Tasa de suicidios
-high_quality_of_life_country(country) :~ rule(mean, ((long_life_expectancy(country)), fnot(alarming_suicide_rate(country)))) with_credibility (min, 1).
+% high_quality_of_life_country(country) :~ rule(mean, ((long_life_expectancy(country)), fnot(alarming_suicide_rate(country)))) with_credibility (min, 1).
 
 %Sistema educativo fuerte: Educación Primaria, Educación Terciaria y Tasa Desempleo
 strong_education_system(country) :~ rule(mean, ((high_education_primary(country)), (high_education_tertiary(country)), fnot(significant_population_unemployed(country)))) with_credibility (min, 1).
 
 %Crecimiento poblacional bajo: Nacimientos, Fertilidad, Mortalidad infantil
-low_population_growth_country(country) :~ rule(mean, (fnot(high_birth_rate(country)), fnot(high_fertility_rate(country)), (high_infant_mortality_rate(country)))) with_credibility (max, 0.7).
+low_population_growth_country(country) :~ rule(mean, (fnot(high_birth_rate(country)), fnot(high_fertility_rate(country)), (high_infant_mortality_rate(country)))) with_credibility (min, 1).
 
 %Pais urbanizado: Población urbana, Porcentaje de tierra agricola, Densidad de población, Porcentaje de tierra forestal
 urbanized_country(country) :~ rule(mean, ((large_urban_population(country)), fnot(huge_agricultural_land_percentage(country)), (dangerous_population_density(country)), fnot(vast_forested_area_percentage(country)))) with_credibility (min, 1).
