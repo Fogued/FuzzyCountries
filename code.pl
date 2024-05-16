@@ -270,8 +270,8 @@ low_population_growth_country(country) :~ rule(mean, (fnot(high_birth_rate(count
 %Pais urbanizado: Población urbana, Porcentaje de tierra agricola, Densidad de población, Porcentaje de tierra forestal
 urbanized_country(country) :~ rule(mean, ((large_urban_population(country)), fnot(huge_agricultural_land_percentage(country)), (dangerous_population_density(country)), fnot(vast_forested_area_percentage(country)))) with_credibility (min, 1).
 
-%Pais con gran fuerza militar: Tasa fuerzas armadas, Densidad
-militarily_strong_country(country) :~ rule(mean, ((strong_armed_forces_rate(country)), (dangerous_population_density(country)))) with_credibility (min, 1).
+%Pais con gran fuerza militar: Tasa fuerzas armadas.
+militarily_strong_country(country) :~ rule(mean, ((strong_armed_forces_rate(country)))) with_credibility (min, 1).
 
 %Pais economicamente estable: Tasa de inflacion, Tasa de desempleo
 economically_stable_country(country) :~ rule(mean, (fnot(high_cpi_rate(country)), fnot(significant_population_unemployed(country)))) with_credibility (min, 1).

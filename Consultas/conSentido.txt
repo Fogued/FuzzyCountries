@@ -19,6 +19,7 @@ low_population_growth_country: medio raro. Ningun valor de verdad pasa de 0.62
 
 urbanized_country: poco sentido en general xd
 
+militarily_strong_country: solo tiene en cuenta el tamaño del ejercito, asi que los resultados son razonables pero muy obvios, asi que poco interesantes
 
 
 
