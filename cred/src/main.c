@@ -12,13 +12,13 @@ char** read_lines_from_file(const char *filename, int *line_count) {
     }
 
     char **lines = NULL;
-    char buffer[1024];
+    char buffer[64];
     *line_count = 0;
 
-    while (fgets(buffer, sizeof(buffer), file)) {
-        buffer[strcspn(buffer, "\n")] = '\0';
+    while (fgets(buffer, sizeof(buffer), file) != NULL) {
 
         char *line = (char *)malloc(strlen(buffer) + 1);
+        
         if (!line) {
             perror("Failed to allocate memory for line");
             fclose(file);
@@ -73,19 +73,25 @@ char* concatenar(const char *str1, const char *str2) {
     return result;
 }
 
-int main(){
+int main(int argc, char *argv[]){
 
-    const char *txt_funciones = "../data/funciones.txt";
+    char *funcion_a_consultar;
+
+    if (argc != 2){
+        perror("error argumentos");
+        exit(-1);
+    }
+    else{
+        funcion_a_consultar = argv[1];
+    }
+
+    const char *txt_funciones = "data/funciones.txt";
     int line_count = 0;
     char **funciones = read_lines_from_file(txt_funciones, &line_count);
 
-    Diccionario *dicc;
-    char *txt_resultados;
-    for (int i = 0; i < line_count; i++) {
-        txt_resultados = concatenar("../data/", concatenar(funciones[i], "_resultados.txt"));
-        dicc = consultar_valores_verdad(funciones[i]);
-        write_dicc_to_file(dicc, txt_resultados);
-    }
+    Diccionario *dicc = consultar_valores_verdad(funcion_a_consultar);
+    char *txt_resultados = concatenar("data/", concatenar(funcion_a_consultar, "_resultados.txt"));;
+    write_dicc_to_file(dicc, txt_resultados);
 
     free_lines(funciones, line_count);
     free_diccionario(dicc);

@@ -110,8 +110,8 @@ void free_diccionario(Diccionario *dicc) {
     while (actual != NULL) 
     {
         sig = actual->siguiente;
-        free(actual->clave);
-        free(actual->valor);
+        //free(actual->clave);
+        //free(actual->valor);
         free(actual);
         actual = sig;
     }

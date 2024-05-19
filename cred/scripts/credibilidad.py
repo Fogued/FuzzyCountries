@@ -1,47 +1,27 @@
-from sklearn.metrics import mean_absolute_error
+import pandas as pd
+from scripts.consultas_a_csv import leer_archivo_como_diccionario
+from scripts.algoritmos import normalizar_valores, calcular_credibilidad
 
-def calcular_credibilidad(valores_reales, valores_difusos):
-    """
-    Los valores reales son el mapeo de los datos reales que hallemos en las BD asociadas a la funcion difusa cuya credibilidad queramos hallar
-    Los valores difusos son los resultados obtenidos por la funcion difusa
-    Ambos son valores entre 0 y 1
-    Usamos el error absoluto medio como criterio para definir la desviacion y la funcion devuelve la credibilidad de la funcion que queremos analizar
-    """
-    # Verificar que las listas tienen el mismo tamaño
-    if len(valores_reales) != len(valores_difusos):
-        raise ValueError("Los conjuntos de datos deben tener el mismo número de elementos.")
-    
-    # Calcular el Error Absoluto Medio (MAE)
-    mae = mean_absolute_error(valores_reales, valores_difusos)
-    
-    # Calcular la credibilidad como 1 - MAE, asumiendo que los valores están normalizados [0, 1]
-    credibilidad = max(0, (1 - mae))
-    
-    return credibilidad
+def get_diccionario_normalizado(parametro):
+    return pd.read_csv('data/bdd_int.csv').set_index('Country name')[parametro].to_dict()
 
+def normalizar_parametros():
+    df = pd.read_csv('data/bdd_int.csv').set_index('Country_name')
+    df_normalizado = df.drop(columns=['Country_number', 'Latitude', 'Longitude'])
+    for col in df_normalizado.columns:
+        df_normalizado[col] = normalizar_valores(df_normalizado[col].tolist())
+    df_normalizado.index = [ pais.strip().replace("'","") for pais in df_normalizado.index ]
+    df_normalizado.to_csv('data/bdd_normalizada.csv')
 
-def normalizar_valores(valores):
-    """Toma una lista y normaliza los valores con el metodo min-max mapeandolos en el intervalo [0,1]"""
+def hallar_credibilidades():
+    credibilidades = {}
+    df_verdad = pd.read_csv('data/valores_verdad.csv')
+    df_normalizado = pd.read_csv('data/bdd_normalizada.csv')
+    mapa_col_fun = leer_archivo_como_diccionario('data/mapa_columnas_funciones.txt')
 
-    # Obtener el mínimo y máximo valor de la lista
-    min_val = min(valores)
-    max_val = max(valores)
+    for parametro in mapa_col_fun:
+        credibilidades[mapa_col_fun[parametro]] = str(calcular_credibilidad(df_verdad[mapa_col_fun[parametro]], df_normalizado[parametro]))
 
-    # Normalizar los valores utilizando la fórmula min-max
-    valores_normalizados = [(x - min_val) / (max_val - min_val) for x in valores]
-    
-    return valores_normalizados
-
-
-# Ejemplo de uso calcular_credibilidad
-valores_reales = [0.1, 0.2, 0.3, 0.4, 0.5]
-valores_difusos = [0.1, 0.25, 0.28, 0.35, 0.52]
-
-credibilidad = calcular_credibilidad(valores_reales, valores_difusos)
-print(f"La credibilidad de la función difusa es: {credibilidad:.2f}")
-
-
-# Ejemplo de uso normalizar_valores
-valores = [10, 20, 30, 40, 50]
-valores_normalizados = normalizar_valores(valores)
-print("Valores normalizados:", valores_normalizados)
+    with open('data/credibilidades.txt', 'w') as archivo:
+        for funcion in credibilidades:
+            archivo.write(f"{funcion}: {credibilidades[funcion]}\n")

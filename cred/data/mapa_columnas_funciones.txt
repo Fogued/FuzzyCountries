@@ -1,0 +1,26 @@
+Libertad Economica: high_economic_freedom
+Temperatura media superficie (2021): risk_high_temperature
+Tasa de suicidios (/100.000hab): alarming_suicide_rate
+Poblacion percibe corrupcion: high_corruption_concern
+Density (P/Km2): dangerous_population_density
+Agricultural Land( %): huge_agricultural_land_percentage
+Land Area(Km2): extensive_surface
+Armed Forces size: strong_armed_forces_rate
+Birth Rate: high_birth_rate
+Co2-Emissions: critical_co2
+CPI: high_cpi_rate
+Fertility Rate: high_fertility_rate
+Forested Area (%): vast_forested_area_percentage
+GDP: wealthy_gdp_per_capita
+Gross primary education enrollment (%): high_education_primary
+Gross tertiary education enrollment (%): high_education_tertiary
+Infant mortality: high_infant_mortality_rate
+Life expectancy: long_life_expectancy
+Population: big_population_size
+Labor force participation (%): numerous_active_workers
+Tax revenue (%): high_tax_revenue_percentage
+Unemployment rate: significant_population_unemployed
+Urban_population: large_urban_population
+Renewables (% equivalent primary energy): abundant_renewable_energy
+Minimum wage: high_min_wage
+medianage: high_median_age

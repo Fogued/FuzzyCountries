@@ -14,7 +14,7 @@ void handle_error(const char *msg) {
 
 char* generate_query(const char* predicate) {
     // Partes del string original
-    const char* part1 = "consult('../../code.pl').\n";
+    const char* part1 = "consult('../code.pl').\n";
     const char* part2 = "(X, Prob).\n";
 
     // Calcular el tamaño necesario para el string resultante
@@ -117,6 +117,11 @@ PatternNode* extract_pattern_multiple(const char* source, const char* start, con
 }
 
 Diccionario *consultar_valores_verdad(char *funcion) {
+
+    size_t length = strlen(funcion);
+    if (length > 0 && funcion[length - 1] == '\n') {
+        funcion[length - 1] = '\0';
+    }
 
     Diccionario *dicc;
 
@@ -222,7 +227,7 @@ Diccionario *consultar_valores_verdad(char *funcion) {
         FALTA GESTION DE ERRORES POR SI LAS LONGITUDES NO SON IGUALES
         */
 
-        print_diccionario(dicc);
+        //print_diccionario(dicc);
 
         // Liberar la memoria del buffer dinámico y la lista de patrones
         free(stdout_content);
