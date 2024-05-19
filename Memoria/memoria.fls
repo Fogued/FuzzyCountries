@@ -243,6 +243,18 @@ INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tf
 OUTPUT memoria.toc
 INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl10.tfm
 INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT memoria.aux
 INPUT .\memoria.out
 INPUT .\memoria.out
@@ -250,6 +262,8 @@ INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
@@ -260,3 +274,5 @@ INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsl10.pfb
 INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\TP420\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb

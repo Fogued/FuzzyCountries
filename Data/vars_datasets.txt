@@ -64,8 +64,8 @@ Study labor market dynamics through indicators such as labor force participation
 Investigate the role of taxation and its impact on economic development.
 Explore urbanization trends and their social and environmental consequences.
 -
-https://www.kaggle.com/datasets/belayethossainds/renewable-energy-world-wide-19652022(2)
-https://www.kaggle.com/datasets/peipeichen/minimum-wage-by-country(3)
+https://www.kaggle.com/datasets/belayethossainds/renewable-energy-world-wide-19652022 (2)
+https://www.kaggle.com/datasets/peipeichen/minimum-wage-by-country (3)
 https://www.kaggle.com/datasets/koryto/countryinfo (4)
 https://www.fraserinstitute.org/economic-freedom/dataset?geozone=world&min-year=2&max-year=0&filter=0&page=dataset&year=2021 (5)
 https://www.kaggle.com/datasets/palinatx/mean-temperature-for-countries-by-year-2014-2022/suggestions?status=pending&yourSuggestions=true (6)
