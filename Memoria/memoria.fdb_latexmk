@@ -1,12 +1,12 @@
 # Fdb version 4
-["makeindex memoria.idx"] 1715948636.54856 "memoria.idx" "memoria.ind" "memoria" 1715948683.14108 0
-  "memoria.idx" 1715948682 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex memoria.idx"] 1716116785.69888 "memoria.idx" "memoria.ind" "memoria" 1716116790.44638 0
+  "memoria.idx" 1716116789 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "memoria.ilg"
   "memoria.ind"
   (rewritten before read)
-["pdflatex"] 1715948681.28864 "c:/Users/TP420/Desktop/FuzzyCountries/Memoria/memoria.tex" "memoria.pdf" "memoria" 1715948683.14179 0
-  "C:/Users/TP420/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1715866925 82507 a9eef8696c92627b87e9975edea03b2a ""
+["pdflatex"] 1716116788.45984 "c:/Users/TP420/Desktop/FuzzyCountries/Memoria/memoria.tex" "memoria.pdf" "memoria" 1716116790.44727 0
+  "C:/Users/TP420/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1716116372 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/TP420/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1706613348 24210787 751e3a8f16363b57939e456ce4cd47fe ""
   "C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -119,15 +119,15 @@
   "C:/Users/TP420/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/TP420/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/TP420/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/TP420/Desktop/FuzzyCountries/Memoria/memoria.tex" 1715948635 1490 aabca820d472e9196f7ca0c85e8c56aa ""
-  "memoria.aux" 1715948682 476 12125758ee595aa6b971956f5900ba72 "pdflatex"
-  "memoria.ind" 1715948636 0 d41d8cd98f00b204e9800998ecf8427e "makeindex memoria.idx"
-  "memoria.out" 1715948682 256 439e0f438b24d3b63656d1719a072e04 "pdflatex"
-  "memoria.tex" 1715948635 1490 aabca820d472e9196f7ca0c85e8c56aa ""
-  "memoria.toc" 1715948682 182 826c6f27f3de16b83f29421944cde664 "pdflatex"
-  "portada/escudo_etsiinf.png" 1715867899 55460 efc92f5d7c1d01d9a33625c4fa1166b2 ""
-  "portada/escudo_upm.png" 1715867899 56439 cc6dc7bde7cb39dedfb359691b3bdeb3 ""
-  "portada/portada.tex" 1715948677 1251 8a0aa18c52c3c80992f7d5eb9a0f40d2 ""
+  "c:/Users/TP420/Desktop/FuzzyCountries/Memoria/memoria.tex" 1716116784 3882 c00531303107e562eeacb3aba6e9eaa6 ""
+  "front-page/escudo_etsiinf.png" 1715867899 55460 efc92f5d7c1d01d9a33625c4fa1166b2 ""
+  "front-page/escudo_upm.png" 1715867899 56439 cc6dc7bde7cb39dedfb359691b3bdeb3 ""
+  "front-page/front-page.tex" 1716116147 1257 72a3fa8dc662f711722d611d2421f117 ""
+  "memoria.aux" 1716116790 2451 d05272c4ebf04418ddd98a488ef4cd13 "pdflatex"
+  "memoria.ind" 1716116786 0 d41d8cd98f00b204e9800998ecf8427e "makeindex memoria.idx"
+  "memoria.out" 1716116790 2822 d5c369c6eb22753e673e56f4cf0989cc "pdflatex"
+  "memoria.tex" 1716116784 3882 c00531303107e562eeacb3aba6e9eaa6 ""
+  "memoria.toc" 1716116790 1501 2496dc116fce574e6da2b1f932fdc464 "pdflatex"
   (generated)
   "memoria.aux"
   "memoria.idx"
