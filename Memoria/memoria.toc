@@ -8,12 +8,12 @@
 \contentsline {section}{\numberline {4}Database Design and Development}{4}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Data Collection}{4}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Data Description}{4}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Data Analysis}{4}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Data Preprocessing}{4}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Implementation of the Fuzzy System}{4}{section.5}%
-\contentsline {section}{\numberline {6}Results and Discussion}{4}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Querys}{4}{subsection.6.1}%
-\contentsline {section}{\numberline {7}Challenges and Solutions}{4}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Identified Difficulties}{4}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Overcoming Difficulties}{4}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Conclusions and Future Work}{4}{section.8}%
+\contentsline {subsection}{\numberline {4.3}Data Preprocessing}{4}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Data Analysis}{5}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Implementation of the Fuzzy System}{5}{section.5}%
+\contentsline {section}{\numberline {6}Results and Discussion}{5}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Querys}{5}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Challenges and Solutions}{5}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Identified Difficulties}{5}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Overcoming Difficulties}{5}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Conclusions and Future Work}{5}{section.8}%
