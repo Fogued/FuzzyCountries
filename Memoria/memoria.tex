@@ -49,28 +49,17 @@
 \section{Introduction}
 
 \subsection{Background and motivation for the study}
-The motivation for this study comes from the need to better understand and model the complex socioeconomic dynamics of different countries.
-Traditional economic models often can't handle the uncertainty and vagueness in real-world data.
-Fuzzy logic theory is well-suited for this task, providing a way to deal with these uncertainties.
-This study aims to create a more accurate and reliable socioeconomic model, which will be compared with real data to ensure its credibility.
+The motivation for this study comes from the need to better understand and model the complex socioeconomic dynamics of different countries. Traditional economic models often can't handle the uncertainty and vagueness in real-world data. Fuzzy logic theory is well-suited for this task, providing a way to deal with these uncertainties. This study aims to create a more accurate and reliable socioeconomic model, which will be compared with real data to ensure its credibility.
 
-At the beginning, when we started thinking about the project, we were looking for a topic that could be both fascinating and challenging, while also fitting well with the principles of fuzzy logic. We aimed to choose a topic applicable to real life, allowing us to draw conclusions that we might not have realized without applying these tools.
+At the beginning, we were looking for a project that could be both fascinating and challenging, while also fitting well with the principles of fuzzy logic. We aimed to choose a topic applicable to real life, allowing us to draw conclusions that we might not have realized without applying these tools.
 
-The first thought was about the possibility of focusing on psychological analysis or something related to human mental health because we thought it would be interesting to apply fuzzy logic to this field. However, we quickly realized that this topic was too broad and complex for the scope of our project and also that it would be difficult to find reliable data to work with.
+Initially, we considered focusing on psychological analysis or human mental health, as it seemed an interesting application of fuzzy logic. However, we quickly realized that this topic was too broad and complex for our project's scope and that finding reliable data would be difficult.
 
-Without giving up on the idea of working with human behavior, we decided to focus on a topic that would allow us to analyze human behavior in a more indirect way. We thought about the possibility of analyzing the relationship between socio-economic and environmental indicators and how these factors can influence the happiness of a country's population. We believe that this topic is relevant and interesting because it allows us to explore the relationship between different aspects of human life and how they can affect people's well-being.
-
-Moreover, this idea of analyzing the happiness of a country's population gives us the opportunity to contrast the results obtained with the World Happiness Report, which is a well-known study that ranks countries based on their happiness levels. This will allow us to validate our results and compare them with those obtained by other researchers, thereby assessing the credibility of this approach.
+Instead, we decided to analyze human behavior in a more indirect way by examining the relationship between socio-economic and environmental indicators and the happiness of a country's population. This topic is relevant and interesting because it explores how different aspects of life affect well-being. Moreover, analyzing the happiness of a country's population allows us to compare our results with the World Happiness Report, a well-known study that ranks countries based on happiness levels. This comparison will help us validate our results and assess the credibility of our approach.
 \subsection{Research objectives}
-The main objective of this research is to develop a socioeconomic model that gives relevant insights into the economic and environmental conditions of different countries, which would not be possible with traditional models and classical logic
-Additionally, the research seeks to use Uflese for visualizing the outcomes, ensuring that the model's findings are both understandable and useful for further analysis. 
-Ultimately, the goal is to establish a credible model that can provide valuable insights into the socioeconomic conditions of various countries.
+The main objective of this research is to develop a socioeconomic model that provides relevant insights into the economic and environmental conditions of different countries, which traditional models and classical logic cannot achieve. Additionally, the research seeks to use Uflese for visualizing the outcomes, ensuring that the model's findings are both understandable and useful for further analysis. Ultimately, the goal is to establish a credible model that can provide valuable insights into the socioeconomic conditions of various countries that may not be immediately apparent.
 
-As mentioned above, the main objective of this project is to analyze the relationship between socio-economic and environmental indicators and the happiness of a country's population. To achieve this, we will develop a fuzzy logic system with functions and rules to model this relationship and draw conclusions from the available data.
-
-We will use data from reputable sources like the World Happiness Report and the World Bank. Our fuzzy logic system, with functions and rules will process this data to reveal patterns and insights that may not be immediately apparent, and we will find the credibility of our results by comparing the happiness scores we obtain with those in the World Happiness Report.
-
-
+To achieve this, we will develop a fuzzy logic system with functions and rules to analyze the relationship between socio-economic and environmental indicators and the happiness of a country's population. We will use data from reputable sources like the World Happiness Report and the World Bank. By comparing the happiness scores we obtain with those in the World Happiness Report, we will validate our results and assess the credibility of our model.
 \section{Theorical Framework}
 
 \subsection{Fuzzy Logic}
@@ -111,15 +100,34 @@ First of all, we started by collecting data from different sources.
 
 \subsection{Data Description}
 The variables in the database include a mix of socio-economic and environmental indicators, which are:
-\begin{itemize}  %TODO: COMPLETAR Y EXPlICAR QUE SON CADA UNA DE LAS VARIABLES Y SUS UNIDADES
-	\item GDP per capita
-	\item Renewable energy consumption
-	\item Minimum wage
-	\item Population density
-	\item Economic freedom index
-	\item Mean temperature
-	\item Life expectancy
-	\item Happiness index
+
+\begin{itemize}
+    \item \textbf{high\_economic\_freedom}: Economic Freedom, measured through indexes such as the Index of Economic Freedom.
+    \item \textbf{risk\_high\_temperature}: Average Surface Temperature, measured in degrees Celsius.
+    \item \textbf{alarming\_suicide\_rate}: Suicide Rate, measured in suicides per 100,000 inhabitants.
+    \item \textbf{high\_corruption\_concern}: Perception of Corruption, measured through corruption perception surveys.
+    \item \textbf{dangerous\_population\_density}: Population Density, measured in people per square kilometer (P/Km\(^2\)).
+    \item \textbf{huge\_agricultural\_land\_percentage}: Agricultural Land, measured as a percentage of total land area.
+    \item \textbf{extensive\_surface}: Land Area, measured in square kilometers (Km\(^2\)).
+    \item \textbf{strong\_armed\_forces\_rate}: Armed Forces Size, measured by the number of active military personnel.
+    \item \textbf{high\_birth\_rate}: Birth Rate, measured in births per 1,000 inhabitants.
+    \item \textbf{critical\_co2}: CO2 Emissions, measured in metric tons of CO2 per capita.
+    \item \textbf{high\_cpi\_rate}: Consumer Price Index (CPI), measured as an index.
+    \item \textbf{high\_fertility\_rate}: Fertility Rate, measured in births per woman.
+    \item \textbf{vast\_forested\_area\_percentage}: Forested Area, measured as a percentage of total land area.
+    \item \textbf{wealthy\_gdp\_per\_capita}: Gross Domestic Product (GDP), measured in USD per capita.
+    \item \textbf{high\_education\_primary}: Gross Primary Education Enrollment, measured as a percentage of the relevant age group.
+    \item \textbf{high\_education\_tertiary}: Gross Tertiary Education Enrollment, measured as a percentage of the relevant age group.
+    \item \textbf{high\_infant\_mortality\_rate}: Infant Mortality Rate, measured in deaths of infants under one year old per 1,000 live births.
+    \item \textbf{long\_life\_expectancy}: Life Expectancy, measured in years.
+    \item \textbf{big\_population\_size}: Population Size, measured in number of inhabitants.
+    \item \textbf{numerous\_active\_workers}: Labor Force Participation, measured as a percentage of the working-age population.
+    \item \textbf{high\_tax\_revenue\_percentage}: Tax Revenue, measured as a percentage of GDP.
+    \item \textbf{significant\_population\_unemployed}: Unemployment Rate, measured as a percentage of the labor force.
+    \item \textbf{large\_urban\_population}: Urban Population, measured as a percentage of the total population.
+    \item \textbf{abundant\_renewable\_energy}: Renewables, measured as a percentage of equivalent primary energy.
+    \item \textbf{high\_min\_wage}: Minimum Wage, measured in USD per month.
+    \item \textbf{high\_median\_age}: Median Age, measured in years.
 \end{itemize}
 
 \subsection{Data Preprocessing}
