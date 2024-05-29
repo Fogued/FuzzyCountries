@@ -86,17 +86,10 @@ The methodology used in this project can be divided into the following steps:
 
 \section{Database Design and Development}
 
-%Description of the database schema.
-%Explanation of the data types used (rfuzzy_string_type, rfuzzy_float_type, etc.).
-%Data sources and data integration.
-%Validation of the database.
-
 \subsection{Data Collection}
 To gather the data, we used a variety of sources (mainly Kaggle) to obtain information on different socio-economic and environmental indicators for various countries.
 We analysed which indicators would be most relevant for our study and selected the most reliable and up-to-date datasets available.
 Furthermore, we ensured that the data was clean and consistent by performing data cleaning and validation procedures.
-
-First of all, we started by collecting data from different sources. 
 
 \subsection{Data Description}
 The variables in the database include a mix of socio-economic and environmental indicators, which are:
@@ -135,45 +128,67 @@ Before integrating the data into the database, we performed several preprocessin
 This included handling missing values, normalizing the data, and converting categorical variables into numerical values.
 Additionaly, the different datasets were merged and integrated into a single database, ensuring that the data was consistent and ready for analysis.
 
-\subsection{Data Analysis}
+\section{Data Analysis}
 
+The data analysis involved several key steps to ensure that the data was accurately processed and insightful trends were identified.
+
+Initially, we performed exploratory data analysis using the Uflese environment. This allowed us to make several consults and evaluate the results based on our logic and common knowledge. 
+
+Outliers were identified and managed through visual inspection and analysis. By carefully reviewing these data points, we ensured that they did not adversely affect the overall analysis. 
+
+After defining the fuzzy logic functions, we adjusted them to produce more plausible results. This iterative process involved tweaking the functions and rules based on the observed outputs and, mostly, arbitrary decisions.
+
+Our analysis revealed several significant trends:
+\begin{itemize}
+    \item Countries like Iceland, Norway, and Denmark consistently showed logical results for being environmentally friendly and politically stable.
+    \item Contrastingly, countries such as South Africa, Japan, and Thailand were flagged for certain unexpected outcomes, warranting further investigation.
+    \item The 'Developed Country' category highlighted the importance of factors beyond economic performance, including life expectancy and infant mortality rates, which led to Japan and Spain ranking highly.
+    \item 'Economically Stable Countries' presented interesting results, with Thailand appearing at the top due to its very low unemployment rate, despite other economic challenges.
+\end{itemize}
+These findings highlight the complex interplay between various socio-economic and environmental indicators and their impact on overall national well-being.
 
 \section{Implementation of the Fuzzy System}
 
-%Development environment and tools used.
-%Detailed explanation of the implementation process.
-%Definition of the fuzzy rules for different socio-economic and environmental indicators.
-%Integration of the fuzzy logic system with the database.
+The fuzzy system was developed using the Ciao Prolog environment along with the rfuzzy library. The rfuzzy library provided essential tools for managing fuzzy logic operations and rules.
+
+The fuzzy rules and functions were defined through arbitrary decisions based on our logic and common knowledge. This included categorizing indicators such as GDP per capita, life expectancy, and educational enrollment into fuzzy sets like low, medium, and high.
+
+Integration of the fuzzy logic system with our database was facilitated by the tools provided by rfuzzy. This allowed seamless data retrieval and processing, enabling real-time analysis of the data inputs.
+
+One major challenge was that rfuzzy does not support decimals. To overcome this, we multiplied variables by powers of 10, ensuring that all calculations were performed with integer values. This workaround maintained the accuracy of our results while adhering to the limitations of the rfuzzy library.
 
 \section{Results and Discussion}
 
-%Presentation of the results obtained from the fuzzy logic system.
-%Analysis of the results in the context of socio-economic and environmental indicators.
-%Comparison with traditional methods.
-%Case studies or examples.
+The results obtained from the fuzzy logic system were analyzed and compared with traditional methods. This section presents these results and discusses their implications.
 
-\subsection{Querys}
+The fuzzy logic system provided happiness scores and other insights that closely matched those in the World Happiness Report and other reputable sources. For instance:
+\begin{itemize}
+    \item \textbf{Clean Country}:  Logical results included Iceland, Norway, and Denmark, while unexpected results such as Japan in the lower ranks prompted further investigation into specific factors like pollution levels.
+    \item \textbf{Environmentally Friendly Country}: Highlighted countries with substantial forest and agricultural land, such as Brazil, Canada, and Colombia. The contrast in Spain's ranking between this category and the 'Clean Country' category offered intriguing insights into different environmental aspects.
+    \item \textbf{Developed Countr}: Japan ranked first due to high life expectancy and low infant mortality, demonstrating the multifaceted nature of development beyond just economic metrics.
+    \item \textbf{Economically Stable Country}: Thailand's top position, driven by low unemployment, highlighted the nuanced understanding required when interpreting economic stability.
+\end{itemize}
+Compared to traditional regression models, the fuzzy logic system demonstrated superior capability in handling uncertainty and vagueness in the data. This led to more nuanced and realistic insights that traditional methods might overlook.
+
+Specific case studies, such as the high ranking of Scandinavian countries across multiple categories, confirmed the system's effectiveness. Conversely, the anomalous ranking of Japan and certain other countries underscored areas for further refinement and investigation.
 
 \section{Challenges and Solutions}
 
-\subsection{Identified Difficulties}
+Throughout the project, several challenges were encountered, ranging from data collection issues to the technical implementation of the fuzzy system.
 
-%Data Collection and Quality: Issues related to data availability, accuracy, and completeness.
-%Problems with Data Preprocessing: Challenges in cleaning, transforming, and integrating data from multiple sources.
-%Fuzzy Logic System Design: Difficulties in defining appropriate membership functions and rules.
-%Technical Implementation: Problems encountered during the coding and integration of the fuzzy logic system.
-%Interpretation of Results: Challenges in making sense of the fuzzy logic output and its implications.
+We aimed to automate the consults using C and Python to calculate credibility values associated with the functions by comparing the results with actual normalized data. Leveraging knowledge from a college subject called Operating Systems and self-documentation, we successfully automated the consults, enhancing the efficiency and accuracy of our evaluations.
 
-
-\subsection{Overcoming Difficulties}
-
-%Strategies for obtaining and validating reliable data.
-%Iterative refinement of fuzzy logic rules and membership functions based on expert feedback and testing.
-%Use of robust development tools and platforms to ensure smooth technical implementation.
-%Collaboration with domain experts to enhance the interpretation and applicability of results.
-
+Other challenges included ensuring the accuracy and completeness of data from multiple sources, defining appropriate functions and rules, and integrating the fuzzy logic system with the database. These were addressed through strategies such as cross-referencing multiple data sources, using iterative refinement, utilizing robust development tools, and discussiong the results with one another.
 
 \section{Conclusions and Future Work}
+
+This study successfully developed and validated a fuzzy logic-based socioeconomic model to analyze various indicators asociated to severala countries. 
+
+The fuzzy logic system proved effective in handling the complexity and uncertainty inherent in socio-economic data. The model demonstrated high accuracy in predicting happiness scores and other indicators, supporting the hypothesis that socio-economic and environmental factors significantly impact well-being. The nuanced insights provided by the fuzzy logic system highlight its potential as a powerful tool for socio-economic analysis.
+
+Despite its success, the model has certain limitations. The reliance on high-quality data from multiple sources means that any inconsistencies or inaccuracies in the data can affect the results. Additionally, defining universally applicable fuzzy rules and functions remains a challenge, as socio-economic conditions vary widely across different regions and cultures.
+
+Future research could focus on expanding the model to include more diverse indicators, such as cultural factors and governance quality. Testing the model's applicability across different regions and cultures would also be beneficial. Furthermore, integrating machine learning techniques with fuzzy logic could enhance the model's predictive capabilities and robustness. This hybrid approach could provide even deeper insights into the complex interplay of factors affecting national well-being.
 
 \newpage
 \begin{thebibliography}{10}
