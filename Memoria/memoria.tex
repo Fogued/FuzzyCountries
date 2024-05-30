@@ -88,7 +88,7 @@ The methodology used in this project can be divided into the following steps:
 
 \subsection{Data Collection}
 To gather the data, we used a variety of sources (mainly Kaggle) to obtain information on different socio-economic and environmental indicators for various countries.
-We analysed which indicators would be most relevant for our study and selected the most reliable and up-to-date datasets available.
+We analyzed which indicators would be most relevant for our study and selected the most reliable and up-to-date datasets available.
 Furthermore, we ensured that the data was clean and consistent by performing data cleaning and validation procedures.
 
 \subsection{Data Description}
@@ -129,6 +129,7 @@ Before integrating the data into the database, we performed several preprocessin
 This included handling missing values, normalizing the data, and converting categorical variables into numerical values.
 Additionally, the different datasets were merged and integrated into a single database, ensuring that the data was consistent and ready for analysis.
 
+\newpage
 \section{Data Analysis}
 
 The data analysis involved several key steps to ensure that the data was accurately processed and insightful trends were identified.
@@ -148,7 +149,7 @@ Our analysis revealed several significant trends:
 \end{itemize}
 These findings highlight the complex interplay between various socio-economic and environmental indicators and their impact on overall national well-being.
 
-\section{Implementation of the Fuzzy System}
+\subsection{Implementation of the Fuzzy System}
 
 The fuzzy system was developed using the Ciao Prolog environment along with the rfuzzy library. The rfuzzy library provided essential tools for managing fuzzy logic operations and rules.
 
@@ -158,6 +159,21 @@ Integration of the fuzzy logic system with our database was facilitated by the t
 
 One major challenge was that rfuzzy does not support decimals. To overcome this, we multiplied variables by powers of 10, ensuring that all calculations were performed with integer values. This workaround maintained the accuracy of our results while adhering to the limitations of the rfuzzy library.
 
+\subsection{Calculating Fuzzy Function's Credibilities}
+
+In this section, I will explain how we determined and automated the calculations of credibility for fuzzy functions.
+
+Firstly, we defined two simple algorithms in Python: one to normalize data, and another to compare two sets of normalized data (knowing that one contains normalized real data and the other contains the truth values of our fuzzy functions) to see how the truth values deviate from the real data using MAE (Mean Absolute Error), a common metric used in machine learning.
+
+Secondly, we faced a significant problem: we needed to have the real data in the correct format for the normalization algorithm to work correctly. This led us to apply various transformations to our CSV file using the Pandas library in Python.
+
+Additionally, there were too many fuzzy functions, making it tedious to manually process all the queries. Moreover, if there were changes in the functions or the database, all that work would be futile. Therefore, given that we couldn't find another way to automate the queries, we implemented a program in C that executed the Ciao interpreter in a process, passed the queries through standard input, and collected and processed the query results through standard output.
+
+In this way, we could effectively collect a set of normalized real data and a set of truth values for each of our fuzzy functions. What remained was trivial: to create a Python script that used the implementations we had previously developed to gather all the results into a text file that we could easily consult.
+
+In summary, we applied a criterion such as MAE to compare the results of our fuzzy functions with real values. This way, we obtained credibility values with a logical basis and possibly a way to test the validity of our results in a given sample space.
+
+\newpage
 \section{Results and Discussion}
 
 The results obtained from the fuzzy logic system were analyzed and compared with traditional methods. This section presents these results and discusses their implications.
@@ -166,14 +182,16 @@ The fuzzy logic system provided happiness scores and other insights that closely
 \begin{itemize}
     \item \textbf{Clean Country}:  Logical results included Iceland, Norway, and Denmark, while unexpected results such as Japan in the lower ranks prompted further investigation into specific factors like pollution levels.
     \item \textbf{Environmentally Friendly Country}: Highlighted countries with substantial forest and agricultural land, such as Brazil, Canada, and Colombia. The contrast in Spain's ranking between this category and the 'Clean Country' category offered intriguing insights into different environmental aspects.
-    \item \textbf{Developed Countr}: Japan ranked first due to high life expectancy and low infant mortality, demonstrating the multifaceted nature of development beyond just economic metrics.
+    \item \textbf{Developed Country}: Japan ranked first due to high life expectancy and low infant mortality, demonstrating the multifaceted nature of development beyond just economic metrics.
     \item \textbf{Economically Stable Country}: Thailand's top position, driven by low unemployment, highlighted the nuanced understanding required when interpreting economic stability.
 \end{itemize}
 Compared to traditional regression models, the fuzzy logic system demonstrated superior capability in handling uncertainty and vagueness in the data. This led to more nuanced and realistic insights that traditional methods might overlook.
 
 Specific case studies, such as the high ranking of Scandinavian countries across multiple categories, confirmed the system's effectiveness. Conversely, the anomalous ranking of Japan and certain other countries underscored areas for further refinement and investigation.
 
-\section{Challenges and Solutions}
+\newpage
+\section{Project Review and Outcomes}
+\subsection{Challenges and Solutions}
 
 Throughout the project, several challenges were encountered, ranging from data collection issues to the technical implementation of the fuzzy system.
 
@@ -182,7 +200,7 @@ We aimed to automate the consults using C and Python to calculate credibility va
 Other challenges included ensuring the accuracy and completeness of data from multiple sources,
 defining appropriate functions and rules, and integrating the fuzzy logic system with the database. These were addressed through strategies such as cross-referencing multiple data sources, using iterative refinement, utilizing robust development tools, and discussing the results with one another.
 
-\section{Conclusions and Future Work}
+\subsection{Conclusions and Future Work}
 
 This study successfully developed and validated a fuzzy logic-based socioeconomic model to analyze various indicators associated to several countries. 
 
@@ -191,6 +209,8 @@ The fuzzy logic system proved effective in handling the complexity and uncertain
 Despite its success, the model has certain limitations. The reliance on high-quality data from multiple sources means that any inconsistencies or inaccuracies in the data can affect the results. Additionally, defining universally applicable fuzzy rules and functions remains a challenge, as socio-economic conditions vary widely across different regions and cultures.
 
 Future research could focus on expanding the model to include more diverse indicators, such as cultural factors and governance quality. Testing the model's applicability across different regions and cultures would also be beneficial. Furthermore, integrating machine learning techniques with fuzzy logic could enhance the model's predictive capabilities and robustness. This hybrid approach could provide even deeper insights into the complex interplay of factors affecting national well-being.
+
+Additionally, the automation of credibility calculations could be extrapolated to design methods that could help in modeling more accurate fuzzy functions, potentially employing more different criteria in addition to MAE.
 
 \newpage
 \begin{thebibliography}{10}
