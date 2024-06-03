@@ -1,0 +1,56 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usepackage[spanish]{babel}
+
+\title{Fuzzy Countries}
+\author{Javier Comyn, Diego Fogued y Francisco J. González}
+\institute{Universidad Polotécnica de Madrid}
+\date{Curso 2023/2024}
+
+% Define a command to set the author for each slide
+\newcommand{\slideauthor}[1]{\def\insertslideauthor{#1}}
+\newcommand{\insertslideauthor}{}
+
+% Set color for footline
+\setbeamercolor{author in head/foot}{fg=white, bg=blue}
+
+% Customize the footline
+\setbeamertemplate{footline}
+{
+    \leavevmode%
+    \hbox{%
+    \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
+        \usebeamerfont{author in head/foot}\insertshortauthor\hspace*{2em}
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,right]{title in head/foot}%
+        \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{2em}
+    \end{beamercolorbox}}%
+    \vskip0pt%
+}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Índice de contenidos}
+\tableofcontents
+\end{frame}
+
+\section{Introducción}
+\begin{frame}
+\frametitle{Background y motivación}
+Este es un texto en la primera diapositiva. Este es un texto en la primera diapositiva. Este es un texto en la primera diapositiva.
+\end{frame}
+\begin{frame}
+\frametitle{Objetivos}
+texto
+\end{frame}
+\section{Sección 2}
+\begin{frame}
+\frametitle{Otro título de diapositiva}
+\slideauthor{Autor 2}
+Este es un texto en la segunda diapositiva. Este es un texto en la segunda diapositiva. Este es un texto en la segunda diapositiva.
+\end{frame}
+
+\end{document}
