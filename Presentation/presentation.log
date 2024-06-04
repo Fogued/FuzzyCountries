@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.1.30)  3 JUN 2024 13:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.1.30)  4 JUN 2024 19:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -560,34 +560,85 @@ Package babel Info: Making > an active character on input line 722.
 )) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box76
+) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen295
+\pgf@nodesepend=\dimen296
+) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen297
+\pgffor@skip=\dimen298
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count339
+\pgfplotmarksize=\dimen299
+)
+\tikz@lastx=\dimen300
+\tikz@lasty=\dimen301
+\tikz@lastxsaved=\dimen302
+\tikz@lastysaved=\dimen303
+\tikz@lastmovetox=\dimen304
+\tikz@lastmovetoy=\dimen305
+\tikzleveldistance=\dimen306
+\tikzsiblingdistance=\dimen307
+\tikz@figbox=\box77
+\tikz@figbox@bg=\box78
+\tikz@tempbox=\box79
+\tikz@tempbox@bg=\box80
+\tikztreelevel=\count340
+\tikznumberofchildren=\count341
+\tikznumberofcurrentchild=\count342
+\tikz@fig@count=\count343
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count344
+\pgfmatrixcurrentcolumn=\count345
+\pgf@matrix@numberofcolumns=\count346
+)
+\tikz@expandcount=\count347
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count339
-\l__pdf_internal_box=\box76
+\l__color_backend_stack_int=\count348
+\l__pdf_internal_box=\box81
 ) (presentation.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -625,83 +676,77 @@ LaTeX Font Info:    ... okay on input line 31.
 
 (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count340
-\scratchdimen=\dimen295
-\scratchbox=\box77
-\nofMPsegments=\count341
-\nofMParguments=\count342
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count343
-\MPscratchDim=\dimen296
-\MPnumerator=\count344
-\makeMPintoPDFobject=\count345
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count349
+\scratchdimen=\dimen308
+\scratchbox=\box82
+\nofMPsegments=\count350
+\nofMParguments=\count351
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count352
+\MPscratchDim=\dimen309
+\MPnumerator=\count353
+\makeMPintoPDFobject=\count354
+\everyMPtoPDFconversion=\toks50
 ) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 31.
+Package hyperref Info: Link coloring OFF on input line 45.
  (presentation.out) (presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 31.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 31.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 45.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 31.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 31.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 31.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 31.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 31.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 31.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 31.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 31.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 31.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 31.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 31.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 31.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 31.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 31.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 31.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 31.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 31.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 45.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 31.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 31.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 31.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 45.
  (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-bibliography-dictionary-English.dict
@@ -715,15 +760,15 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
+LaTeX Info: Redefining \. on input line 45.
+LaTeX Info: Redefining \% on input line 45.
  (presentation.nav)
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 31--31
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 45--45
 [][]|   
  []
 
 
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 33--33
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 46--46
 [][]|   
  []
 
@@ -735,7 +780,7 @@ Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 [1
 
 {C:/Users/TP420/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 38--38
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 51--51
 [][]|   
  []
 
@@ -750,19 +795,14 @@ Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 [2
 
 ]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 44--44
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 53--53
 [][]|   
  []
 
 [3
 
 ]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 48--48
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 70--70
 [][]|   
  []
 
@@ -774,7 +814,7 @@ Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 [4
 
 ]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 54--54
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 86--86
 [][]|   
  []
 
@@ -784,6 +824,216 @@ Overfull \hbox (8.63435pt too wide) has occurred while \output is active
  []
 
 [5
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 88--88
+[][]|   
+ []
+
+[6
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 97--97
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[7
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 99--99
+[][]|   
+ []
+
+[8
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 119--119
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[9
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 121--121
+[][]|   
+ []
+
+[10
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 131--131
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[11
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 150--150
+[][]|   
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 150.
+(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[12
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 169--169
+[][]|   
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 169.
+(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 169.
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 169.
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+)
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[13
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 179--179
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[14
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 181--181
+[][]|   
+ []
+
+[15
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 195--195
+[][]|   
+ []
+
+<Images/co2_1.png, id=486, 286.06876pt x 16.56187pt>
+File: Images/co2_1.png Graphic file (type png)
+<use Images/co2_1.png>
+Package pdftex.def Info: Images/co2_1.png  used on input line 195.
+(pdftex.def)             Requested size: 342.2953pt x 19.81728pt.
+<Images/co2_2.png, id=488, 421.575pt x 12.7978pt>
+File: Images/co2_2.png Graphic file (type png)
+<use Images/co2_2.png>
+Package pdftex.def Info: Images/co2_2.png  used on input line 195.
+(pdftex.def)             Requested size: 342.2953pt x 10.39134pt.
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[16
+
+ <./Images/co2_1.png> <./Images/co2_2.png>]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 200--200
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[17
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 210--210
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[18
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 216--216
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[19
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 218--218
+[][]|   
+ []
+
+[20
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 223--223
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[21
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 225--225
+[][]|   
+ []
+
+[22
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 230--230
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[23
 
 ]
 \tf@nav=\write6
@@ -804,20 +1054,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 9ADB314AD58D10BFA9998292FDEDEC00;200.
+(rerunfilecheck)             Checksum: 420A613A6DF4B86B6CF8FB32F36B2B0B;929.
  ) 
 Here is how much of TeX's memory you used:
- 22956 strings out of 474542
- 447276 string characters out of 5744446
- 1934978 words of memory out of 5000000
- 44718 multiletter control sequences out of 15000+600000
- 559881 words of font info for 42 fonts, out of 8000000 for 9000
+ 26281 strings out of 474542
+ 525286 string characters out of 5744446
+ 1937978 words of memory out of 5000000
+ 47937 multiletter control sequences out of 15000+600000
+ 566719 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,123p,455b,873s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on presentation.pdf (5 pages, 71915 bytes).
+ 128i,16n,123p,455b,869s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\TP420\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
+Output written on presentation.pdf (23 pages, 209774 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 742 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
