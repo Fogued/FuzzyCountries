@@ -2,6 +2,20 @@
 \usetheme{Madrid}
 \usepackage[spanish]{babel}
 
+\usepackage{tikz}
+
+% Esto crea la portada de cada section
+\AtBeginSection[]{
+  \begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[structure.fg] (current page.south west) rectangle (current page.north east);
+    \node at (current page.center) {
+\Huge\color{white}\textbf{\insertsection}
+    };
+  \end{tikzpicture}
+  \end{frame}
+}
+
 \title{Fuzzy Countries}
 \author{Javier Comyn, Diego Fogued y Francisco J. González}
 \institute{Universidad Polotécnica de Madrid}
@@ -29,7 +43,6 @@
 }
 
 \begin{document}
-
 \frame{\titlepage}
 
 \begin{frame}
@@ -46,11 +59,110 @@ Este es un texto en la primera diapositiva. Este es un texto en la primera diapo
 \frametitle{Objetivos}
 texto
 \end{frame}
-\section{Sección 2}
+
+\section{Marco teórico}
 \begin{frame}
-\frametitle{Otro título de diapositiva}
+\frametitle{Marco teórico}
 \slideauthor{Autor 2}
-Este es un texto en la segunda diapositiva. Este es un texto en la segunda diapositiva. Este es un texto en la segunda diapositiva.
+
+\end{frame}
+
+\section{Metodología}
+\begin{frame}
+\frametitle{Metodología}
+\slideauthor{Autor 2}
+texto
+\end{frame}
+
+\section{Diseño de la Base de Datos}
+\begin{frame}
+\frametitle{Recopilación}
+\slideauthor{Autor 2}
+\begin{itemize}
+    \item Consultar fuentes: Banco Mundial, OMS, Kaggle...
+    \item Escoger indicadores más relevantes para un análisis socioeconómico.
+    \item Elección de los conjuntos de datos más confiables y actualizados.
+    \item Asegurarse de la consistencia y veracidad.
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Descripción}
+\slideauthor{Autor 2}
+\begin{itemize}
+    \item Índice de libertad económica
+    \item Temperatura media (ºC)
+    \item Tasa suicidios por 100.000 habitantes
+    \item Percepción de la corrupción
+    \item Densidad de población
+    \item Porcentaje de terreno agrícola
+    \item Superficie
+    \item Tamaño del ejército
+    \item Tasa de natalidad
+    \item CO2
+    \item Índice de Precios al Consumidor (IPC)
+    \item Tasa de fertilidad
+    \item Porcentaje de área forestal
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Descripción}
+\slideauthor{Autor 2}
+\begin{itemize}
+    \item PIB per cápita
+    \item Alumnos en educación primaria
+    \item Alumnos en educación post-obligatoria
+    \item Mortalidad infantil
+    \item Esperanza de vida
+    \item Tamaño de la población
+    \item Población activa
+    \item Ingresos fiscales (\% del PIB)
+    \item Tasa de paro
+    \item Población urbana
+    \item Energías renovables
+    \item Salario mínimo
+    \item Edad media
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Preprocesamiento y limpieza}
+\slideauthor{Autor 2}
+\begin{itemize}
+    \item Integrar todas las variables en una única base de datos
+    \item Eliminar inconsistencias
+    \item Tratar valores faltantes
+    \item Convertir todos los valores en enteros
+\end{itemize}
+\end{frame}
+
+\section{Análisis de datos}
+\begin{frame}
+\frametitle{Sistema de Lógica difusa}
+\slideauthor{Autor 2}
+Explicar functions y rules, mostar ejemplos...
+\end{frame}
+\begin{frame}
+\frametitle{Consultas}
+\slideauthor{Autor 2}
+Fotos de consultas
+\end{frame}
+\begin{frame}
+\frametitle{Resultados notables}
+\slideauthor{Autor 2}
+Fotos de consultas
+\end{frame}
+
+\section{Optimización}
+\begin{frame}
+\frametitle{Optimización}
+\slideauthor{Autor 2}
+
+\end{frame}
+
+\section{Resultados y Conclusiones}
+\begin{frame}
+\frametitle{Resultados}
+\slideauthor{Autor 2}
+texto
 \end{frame}
 
 \end{document}
