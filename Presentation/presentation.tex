@@ -183,7 +183,7 @@
 \begin{frame}
 \frametitle{Funciones Difusas}
 \slideauthor{Javier Comyn}
-Para cada variable, definimos una función difusa basándonos en nuestro propio criterio. Los valores se van ajustando progresivamente al ir probando y revisando cada una de ellas.
+Para cada variable, usando la librería Rfuzzy para Ciao Prolog, definimos una función difusa basándonos en nuestro propio criterio. Los valores se van ajustando progresivamente al ir probando y revisando cada una de ellas.
 \vspace*{+5mm} % Ajusta este valor para cambiar el espacio entre las figuras
 \begin{figure}
 \includegraphics[width=\textwidth]{Images/co2_1.png} 
@@ -192,27 +192,72 @@ Para cada variable, definimos una función difusa basándonos en nuestro propio 
 \begin{figure}
 \includegraphics[width=\textwidth]{Images/co2_2.png} 
 \end{figure}
+\begin{figure}
+\includegraphics[width=\textwidth]{Images/lifeexp_1.png} 
+\end{figure}
+\vspace*{-5mm} % Espacio entre figuras
+\begin{figure}
+\includegraphics[width=\textwidth]{Images/lifeexp_2.png} 
+\end{figure}
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Reglas Difusas}
 \slideauthor{Javier Comyn}
+Definimos reglas que nos permiten relacionar las distintas funciones, logrando modelizar un sistema complejo de conocimientos socioeconómicos.\\
+Inicialmente, establecemos credibilidad 1 en todas ellas.
+\vspace*{+5mm}
+\begin{figure}
+\includegraphics[width=\textwidth]{Images/developed_1.png} 
+\end{figure}
+\vspace*{-5mm} % Espacio entre figuras
+\begin{figure}
+\includegraphics[width=\textwidth]{Images/developed_2.png} 
+\end{figure}
+\begin{figure}
+\includegraphics[width=\textwidth]{Images/clean_1.png} 
+\end{figure}
+\vspace*{-5mm} % Espacio entre figuras
+\begin{figure}
+\includegraphics[width=0.8\textwidth]{Images/clean_2.png} 
+\end{figure}
 \end{frame}
 
 \begin{frame}
 \frametitle{Consultas}
 \slideauthor{Javier Comyn}
-Fotos de consultas
-%\begin{figure}
-%\includegraphics[width=\textwidth]{ruta/a/tu/imagen.jpg} % Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta a tu imagen
-%\caption{Descripción de la imagen}
-%\end{figure}
+\begin{figure}
+\includegraphics[width=\textwidth]{Images/developed_country (1).png} 
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Consultas}
+\slideauthor{Javier Comyn}
+\begin{figure}
+\includegraphics[width=\textwidth]{Images/clean_countries.png} 
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Consultas}
+\slideauthor{Javier Comyn}
+\begin{figure}
+\includegraphics[width=\textwidth]{Images/tourism destinations.png} 
+\end{figure}
 \end{frame}
 
 \begin{frame}
 \frametitle{Resultados Notables}
 \slideauthor{Javier Comyn}
-Fotos de consultas
+    \begin{itemize}
+    \item \textbf{Clean Country}: Resultados lógicos :Islandia, Noruega, Dinamarca... Fue inesperado ver a Japón en los puestos más bajos, descubrimos que era por el CO2.
+    \item \textbf{Developed Country}: España por encima de economías mejores, demostrando que no sólo eso define el desarrollo de un país.
+    \item \textbf{Environmentally Friendly Country}: Se destacaron países con grandes áreas forestales y agrícolas, como Brasil, Canadá y Colombia. 
+    \item \textbf{Economically Stable Country}: Tailandia en primera posición, por su bajísmo desempleo. Comprendemos la importancia de la interpretación humana de los resultados.
+\end{itemize}
+Comparado con modelos tradicionales, la lógica difusa permite hacer interpretaciones más matizadas y completas de la realidad.
 \end{frame}
 
 \section{Optimización}
