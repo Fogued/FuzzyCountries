@@ -1,29 +1,29 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.1.30)  4 JUN 2024 19:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.29)  6 JUN 2024 11:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/TP420/Desktop/FuzzyCountries/Presentation/presentation.tex
-(c:/Users/TP420/Desktop/FuzzyCountries/Presentation/presentation.tex
+**c:/Users/frngo/Desktop/FuzzyCountries/Presentation/presentation.tex
+(c:/Users/frngo/Desktop/FuzzyCountries/Presentation/presentation.tex
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
-(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
+L3 programming layer <2024-01-04>
+(C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
 Document Class: beamer 2024/01/06 v3.71 A class for typesetting presentations
-(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemodes.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+(C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemodes.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count187
 )
 \beamer@tempbox=\box51
 \beamer@tempcount=\count188
 \c@beamerpauses=\count189
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasedecode.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasedecode.sty
 \beamer@slideinframe=\count190
 \beamer@minimum=\count191
 \beamer@decode@box=\box52
 )
 \beamer@commentbox=\box53
 \beamer@modecount=\count192
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
 \headdp=\dimen140
@@ -69,15 +69,15 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \beamer@sectionadjust=\count276
 \beamer@toclastsection=\count277
 \beamer@tocsectionnumber=\count278
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoptions.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoptions.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 ))
 \beamer@paperwidth=\skip49
 \beamer@paperheight=\skip50
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count279
@@ -92,20 +92,20 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen162
 \Gm@layoutvoffset=\dimen163
 \Gm@dimlist=\toks18
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks19
 \pgfutil@tempdima=\dimen164
 \pgfutil@tempdimb=\dimen165
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box60
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
-)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks20
 \pgfkeys@temptoks=\toks21
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks22
-))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex
+))) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex
 \pgf@x=\dimen166
 \pgf@xa=\dimen167
 \pgf@xb=\dimen168
@@ -118,33 +118,33 @@ Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 \c@pgf@countb=\count283
 \c@pgf@countc=\count284
 \c@pgf@countd=\count285
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen174
 \pgfmath@count=\count286
 \pgfmath@box=\box61
 \pgfmath@toks=\toks23
 \pgfmath@stack@operand=\toks24
 \pgfmath@stack@operation=\toks25
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count287
-))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+))) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
 File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen175
 \Gin@req@width=\dimen176
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \pgf@x=\dimen177
 \pgf@y=\dimen178
@@ -166,27 +166,27 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \t@pgf@tokb=\toks27
 \t@pgf@tokc=\toks28
 \pgf@sys@id@count=\count292
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+))) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@smallbuffer@items=\count293
 \pgfsyssoftpath@bigbuffer@items=\count294
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
 Package xcolor Info: Model `RGB' extended on input line 1366.
@@ -196,9 +196,9 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen187
 \pgf@picmaxx=\dimen188
@@ -214,91 +214,92 @@ File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yy=\dimen198
 \pgf@zx=\dimen199
 \pgf@zy=\dimen256
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@path@lastx=\dimen257
 \pgf@path@lasty=\dimen258
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@shorten@end@additional=\dimen259
 \pgf@shorten@start@additional=\dimen260
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box62
 \pgf@hbox=\box63
 \pgf@layerbox@main=\box64
 \pgf@picture@serial@count=\count295
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen261
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@pt@x=\dimen262
 \pgf@pt@y=\dimen263
 \pgf@pt@temp=\dimen264
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowsep=\dimen265
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen266
 \pgf@sys@shading@range@num=\count296
 \pgf@shadingcount=\count297
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box65
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\xxcolor.sty
+))) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
 \XC@nummixins=\count298
 \XC@countmixins=\count299
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count300
@@ -306,51 +307,51 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 \@linkdim=\dimen267
 \Hy@linkcounter=\count301
 \Hy@pagecounter=\count302
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count303
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `bookmarks' set `true' on input line 4062.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 4062.
-Package hyperref Info: Option `implicit' set `false' on input line 4062.
-Package hyperref Info: Hyper figures OFF on input line 4179.
-Package hyperref Info: Link nesting OFF on input line 4184.
-Package hyperref Info: Hyper index ON on input line 4187.
-Package hyperref Info: Plain pages OFF on input line 4194.
-Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4064.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4064.
+Package hyperref Info: Option `implicit' set `false' on input line 4064.
+Package hyperref Info: Hyper figures OFF on input line 4181.
+Package hyperref Info: Link nesting OFF on input line 4186.
+Package hyperref Info: Hyper index ON on input line 4189.
+Package hyperref Info: Plain pages OFF on input line 4196.
+Package hyperref Info: Backreferencing OFF on input line 4201.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
-Package hyperref Info: Bookmarks ON on input line 4446.
+Package hyperref Info: Bookmarks ON on input line 4448.
 \c@Hy@tempcnt=\count304
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4784.
+LaTeX Info: Redefining \url on input line 4786.
 \XeTeXLinkMargin=\dimen268
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count305
 \Field@Width=\dimen269
 \Fld@charsize=\dimen270
-Package hyperref Info: Hyper figures OFF on input line 6063.
-Package hyperref Info: Link nesting OFF on input line 6068.
-Package hyperref Info: Hyper index ON on input line 6071.
-Package hyperref Info: backreferencing OFF on input line 6078.
-Package hyperref Info: Link coloring OFF on input line 6083.
-Package hyperref Info: Link coloring with OCG OFF on input line 6088.
-Package hyperref Info: PDF/A mode OFF on input line 6093.
+Package hyperref Info: Hyper figures OFF on input line 6065.
+Package hyperref Info: Link nesting OFF on input line 6070.
+Package hyperref Info: Hyper index ON on input line 6073.
+Package hyperref Info: backreferencing OFF on input line 6080.
+Package hyperref Info: Link coloring OFF on input line 6085.
+Package hyperref Info: Link coloring with OCG OFF on input line 6090.
+Package hyperref Info: PDF/A mode OFF on input line 6095.
 \Hy@abspage=\count306
 
 
@@ -358,23 +359,23 @@ Package hyperref Message: Stopped early.
 
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
 \Fld@listcount=\count307
 \c@bookmark@seq@number=\count308
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
-)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaserequires.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecompatibility.sty) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasefont.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaserequires.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecompatibility.sty) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasefont.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks29
 \symAMSa=\mathgroup4
@@ -382,27 +383,27 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\sansmathaccent.sty
+)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\sansmathaccent.sty
 Package: sansmathaccent 2020/01/31
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
 Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
 Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
 Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
-))))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetranslator.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator.sty
+))))) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetranslator.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator.sty
 Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
-)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemisc.sty) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetwoscreens.sty) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoverlay.sty
+)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemisc.sty) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetwoscreens.sty) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoverlay.sty
 \beamer@argscount=\count309
 \beamer@lastskipcover=\skip51
 \beamer@trivlistdepth=\count310
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetitle.sty) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasesection.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetitle.sty) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasesection.sty
 \c@lecture=\count311
 \c@part=\count312
 \c@section=\count313
 \c@subsection=\count314
 \c@subsubsection=\count315
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframe.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframe.sty
 \beamer@framebox=\box66
 \beamer@frametitlebox=\box67
 \beamer@zoombox=\box68
@@ -417,21 +418,21 @@ Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 \beamer@envbody=\toks30
 \framewidth=\dimen272
 \c@framenumber=\count319
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseverbatim.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseverbatim.sty
 \beamer@verbatimfileout=\write4
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframesize.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframesize.sty
 \beamer@splitbox=\box69
 \beamer@autobreakcount=\count320
 \beamer@autobreaklastheight=\dimen273
 \beamer@frametitletoks=\toks31
 \beamer@framesubtitletoks=\toks32
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframecomponents.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframecomponents.sty
 \beamer@footins=\box70
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecolor.sty) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenotes.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecolor.sty) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenotes.sty
 \beamer@frameboxcopy=\box71
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetoc.sty) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetemplates.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetoc.sty) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetemplates.sty
 \beamer@sbttoks=\toks33
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseauxtemplates.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseboxes.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseauxtemplates.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseboxes.sty
 \bmb@box=\box72
 \bmb@colorbox=\box73
 \bmb@boxwidth=\dimen274
@@ -443,7 +444,7 @@ Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 \bmb@prevheight=\dimen280
 )
 \beamer@blockheadheight=\dimen281
-)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaselocalstructure.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
+)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaselocalstructure.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
 Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
 \@enLab=\toks34
 )
@@ -452,23 +453,23 @@ Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
 \c@table=\count322
 \abovecaptionskip=\skip57
 \belowcaptionskip=\skip58
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenavigation.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenavigationsymbols.tex)
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenavigation.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenavigationsymbols.tex)
 \beamer@section@min@dim=\dimen282
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetheorems.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetheorems.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip59
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks35
 \ex@=\dimen283
-)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen284
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count323
@@ -518,7 +519,7 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks39
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks40
 \thm@bodyfont=\toks41
@@ -531,15 +532,15 @@ Package: amsthm 2020/05/29 v2.20.6
 \dth@everypar=\toks45
 )
 \c@theorem=\count335
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasethemes.sty)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemedefault.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfontthemedefault.sty) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemedefault.sty) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemedefault.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasethemes.sty)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemedefault.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfontthemedefault.sty) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemedefault.sty) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemedefault.sty
 \beamer@dima=\dimen292
 \beamer@dimb=\dimen293
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthemedefault.sty))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemeMadrid.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemewhale.sty) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemeorchid.sty) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemerounded.sty) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthemeinfolines.sty)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthemedefault.sty))) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemeMadrid.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemewhale.sty) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemeorchid.sty) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemerounded.sty) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthemeinfolines.sty)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2024/01/07 v24.1 The Babel package
 \babel@savecnt=\count336
 \U@D=\dimen294
 \l@unhyphenated=\language79
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read3
 LaTeX Info: Redefining \textlatin on input line 3986.
 \bbl@dirlevel=\count337
@@ -547,9 +548,9 @@ LaTeX Info: Redefining \textlatin on input line 3986.
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks46
 \es@quotdepth=\count338
@@ -557,31 +558,31 @@ Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
-)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
+)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box76
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
 \pgf@nodesepstart=\dimen295
 \pgf@nodesepend=\dimen296
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen297
 \pgffor@skip=\dimen298
 \pgffor@stack=\toks47
 \pgffor@toks=\toks48
-)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+)) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count339
 \pgfplotmarksize=\dimen299
@@ -602,16 +603,16 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikznumberofchildren=\count341
 \tikznumberofcurrentchild=\count342
 \tikz@fig@count=\count343
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfmatrixcurrentrow=\count344
 \pgfmatrixcurrentcolumn=\count345
 \pgf@matrix@numberofcolumns=\count346
 )
 \tikz@expandcount=\count347
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+))) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count348
 \l__pdf_internal_box=\box81
@@ -674,7 +675,7 @@ LaTeX Font Info:    ... okay on input line 45.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count349
 \scratchdimen=\dimen308
@@ -687,10 +688,10 @@ LaTeX Font Info:    ... okay on input line 45.
 \MPnumerator=\count353
 \makeMPintoPDFobject=\count354
 \everyMPtoPDFconversion=\toks50
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 45.
@@ -747,17 +748,17 @@ LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 45.
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-basic-dictionary-English.dict
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-bibliography-dictionary-English.dict
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-bibliography-dictionary-English.dict
 Dictionary: translator-bibliography-dictionary, Language: English 
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-environment-dictionary-English.dict
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-environment-dictionary-English.dict
 Dictionary: translator-environment-dictionary, Language: English 
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-months-dictionary-English.dict
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-months-dictionary-English.dict
 Dictionary: translator-months-dictionary, Language: English 
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-numbers-dictionary-English.dict
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-numbers-dictionary-English.dict
 Dictionary: translator-numbers-dictionary, Language: English 
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
+) (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \. on input line 45.
@@ -779,7 +780,7 @@ Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 
 [1
 
-{C:/Users/TP420/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+{C:/Users/frngo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 Overfull \hbox (8.63435pt too wide) in paragraph at lines 51--51
 [][]|   
  []
@@ -888,7 +889,7 @@ Overfull \hbox (8.63435pt too wide) in paragraph at lines 150--150
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 150.
-(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+(C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 Overfull \hbox (8.63435pt too wide) has occurred while \output is active
@@ -903,15 +904,15 @@ Overfull \hbox (8.63435pt too wide) in paragraph at lines 169--169
  []
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 169.
-(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 169.
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 169.
- (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd
+ (C:\Users\frngo\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
 Overfull \hbox (8.63435pt too wide) has occurred while \output is active
@@ -940,20 +941,30 @@ Overfull \hbox (8.63435pt too wide) in paragraph at lines 181--181
 [15
 
 ]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 195--195
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 203--203
 [][]|   
  []
 
 <Images/co2_1.png, id=486, 286.06876pt x 16.56187pt>
 File: Images/co2_1.png Graphic file (type png)
 <use Images/co2_1.png>
-Package pdftex.def Info: Images/co2_1.png  used on input line 195.
+Package pdftex.def Info: Images/co2_1.png  used on input line 203.
 (pdftex.def)             Requested size: 342.2953pt x 19.81728pt.
 <Images/co2_2.png, id=488, 421.575pt x 12.7978pt>
 File: Images/co2_2.png Graphic file (type png)
 <use Images/co2_2.png>
-Package pdftex.def Info: Images/co2_2.png  used on input line 195.
+Package pdftex.def Info: Images/co2_2.png  used on input line 203.
 (pdftex.def)             Requested size: 342.2953pt x 10.39134pt.
+<Images/lifeexp_1.png, id=489, 336.50719pt x 18.82031pt>
+File: Images/lifeexp_1.png Graphic file (type png)
+<use Images/lifeexp_1.png>
+Package pdftex.def Info: Images/lifeexp_1.png  used on input line 203.
+(pdftex.def)             Requested size: 342.2953pt x 19.14418pt.
+<Images/lifeexp_2.png, id=490, 320.69812pt x 17.31468pt>
+File: Images/lifeexp_2.png Graphic file (type png)
+<use Images/lifeexp_2.png>
+Package pdftex.def Info: Images/lifeexp_2.png  used on input line 203.
+(pdftex.def)             Requested size: 342.2953pt x 18.48106pt.
 
 Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 [][]|   
@@ -961,11 +972,31 @@ Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 
 [16
 
- <./Images/co2_1.png> <./Images/co2_2.png>]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 200--200
+ <./Images/co2_1.png> <./Images/co2_2.png> <./Images/lifeexp_1.png> <./Images/lifeexp_2.png>]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 225--225
 [][]|   
  []
 
+<Images/developed_1.png, id=522, 543.53062pt x 24.09pt>
+File: Images/developed_1.png Graphic file (type png)
+<use Images/developed_1.png>
+Package pdftex.def Info: Images/developed_1.png  used on input line 225.
+(pdftex.def)             Requested size: 342.2953pt x 15.17162pt.
+<Images/developed_2.png, id=523, 529.22719pt x 19.57312pt>
+File: Images/developed_2.png Graphic file (type png)
+<use Images/developed_2.png>
+Package pdftex.def Info: Images/developed_2.png  used on input line 225.
+(pdftex.def)             Requested size: 342.2953pt x 12.65964pt.
+<Images/clean_1.png, id=524, 371.13657pt x 15.80907pt>
+File: Images/clean_1.png Graphic file (type png)
+<use Images/clean_1.png>
+Package pdftex.def Info: Images/clean_1.png  used on input line 225.
+(pdftex.def)             Requested size: 342.2953pt x 14.58092pt.
+<Images/clean_2.png, id=525, 290.58563pt x 17.31468pt>
+File: Images/clean_2.png Graphic file (type png)
+<use Images/clean_2.png>
+Package pdftex.def Info: Images/clean_2.png  used on input line 225.
+(pdftex.def)             Requested size: 273.83728pt x 16.31778pt.
 
 Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 [][]|   
@@ -973,9 +1004,18 @@ Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 
 [17
 
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 210--210
+ <./Images/developed_1.png> <./Images/developed_2.png> <./Images/clean_1.png> <./Images/clean_2.png>]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 233--233
 [][]|   
+ []
+
+<Images/developed_country (1).png, id=557, 590.95781pt x 431.36156pt>
+File: Images/developed_country (1).png Graphic file (type png)
+<use Images/developed_country (1).png>
+Package pdftex.def Info: Images/developed_country (1).png  used on input line 233.
+(pdftex.def)             Requested size: 342.2953pt x 249.86078pt.
+
+Overfull \vbox (28.79019pt too high) detected at line 233
  []
 
 
@@ -985,11 +1025,16 @@ Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 
 [18
 
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 216--216
+ <./Images/developed_country (1).png>]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 241--241
 [][]|   
  []
 
+<Images/clean_countries.png, id=586, 554.82281pt x 356.0803pt>
+File: Images/clean_countries.png Graphic file (type png)
+<use Images/clean_countries.png>
+Package pdftex.def Info: Images/clean_countries.png  used on input line 241.
+(pdftex.def)             Requested size: 342.2953pt x 219.68083pt.
 
 Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 [][]|   
@@ -997,15 +1042,29 @@ Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 
 [19
 
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 218--218
+ <./Images/clean_countries.png>]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 249--249
+[][]|   
+ []
+
+<Images/tourism destinations.png, id=616, 585.68813pt x 435.87843pt>
+File: Images/tourism destinations.png Graphic file (type png)
+<use Images/tourism destinations.png>
+Package pdftex.def Info: Images/tourism destinations.png  used on input line 249.
+(pdftex.def)             Requested size: 342.2953pt x 254.75174pt.
+
+Overfull \vbox (33.68115pt too high) detected at line 249
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 [][]|   
  []
 
 [20
 
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 223--223
+ <./Images/tourism destinations.png>]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 261--261
 [][]|   
  []
 
@@ -1017,14 +1076,14 @@ Overfull \hbox (8.63435pt too wide) has occurred while \output is active
 [21
 
 ]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 225--225
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 263--263
 [][]|   
  []
 
 [22
 
 ]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 230--230
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 274--274
 [][]|   
  []
 
@@ -1034,6 +1093,85 @@ Overfull \hbox (8.63435pt too wide) has occurred while \output is active
  []
 
 [23
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 289--289
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[24
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 303--303
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[25
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 316--316
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[26
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 318--318
+[][]|   
+ []
+
+[27
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 335--335
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[28
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 350--350
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[29
+
+]
+Overfull \hbox (8.63435pt too wide) in paragraph at lines 365--365
+[][]|   
+ []
+
+
+Overfull \hbox (8.63435pt too wide) has occurred while \output is active
+[][]|   
+ []
+
+[30
 
 ]
 \tf@nav=\write6
@@ -1051,23 +1189,23 @@ LaTeX Info: Redefining \% on input line 11.
 )
  ***********
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
+L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 420A613A6DF4B86B6CF8FB32F36B2B0B;929.
+(rerunfilecheck)             Checksum: 00D9965C8283CE9D51AD94381351E3D5;990.
  ) 
 Here is how much of TeX's memory you used:
- 26281 strings out of 474542
- 525286 string characters out of 5744446
- 1937978 words of memory out of 5000000
- 47937 multiletter control sequences out of 15000+600000
- 566719 words of font info for 66 fonts, out of 8000000 for 9000
+ 26490 strings out of 474486
+ 531410 string characters out of 5743755
+ 1941542 words of memory out of 5000000
+ 48184 multiletter control sequences out of 15000+600000
+ 567026 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,123p,455b,869s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\TP420\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on presentation.pdf (23 pages, 209774 bytes).
+ <C:\Users\frngo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk><C:/Users/frngo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/frngo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/frngo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/frngo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/frngo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
+Output written on presentation.pdf (30 pages, 371715 bytes).
 PDF statistics:
- 742 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1098 PDF objects out of 1200 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 658 words of extra memory for PDF output out of 10000 (max. 10000000)
 

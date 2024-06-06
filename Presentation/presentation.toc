@@ -4,5 +4,5 @@
 \beamer@sectionintoc {3}{Metodología}{8}{0}{3}
 \beamer@sectionintoc {4}{Diseño de la Base de Datos}{10}{0}{4}
 \beamer@sectionintoc {5}{Análisis de Datos}{15}{0}{5}
-\beamer@sectionintoc {6}{Optimización}{20}{0}{6}
-\beamer@sectionintoc {7}{Resultados y Conclusiones}{22}{0}{7}
+\beamer@sectionintoc {6}{Optimización del modelo}{22}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones y Resultados}{27}{0}{7}

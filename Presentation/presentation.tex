@@ -260,18 +260,108 @@ Inicialmente, establecemos credibilidad 1 en todas ellas.
 Comparado con modelos tradicionales, la lógica difusa permite hacer interpretaciones más matizadas y completas de la realidad.
 \end{frame}
 
-\section{Optimización}
-\begin{frame}
-\frametitle{Optimización}
-\slideauthor{Autor 2}
+\section{Optimización del modelo}
 
+\begin{frame}{Cálculo de Credibilidad}
+    \begin{block}{Introducción}
+        En esta sección se explica cómo se determinaron y automatizaron los cálculos de credibilidad para funciones difusas.
+    \end{block}
+    \begin{itemize}
+        \item Algoritmos en Python para normalizar datos.
+        \item Comparación de conjuntos de datos normalizados utilizando MAE (Error Absoluto Medio).
+        \item Automatización de consultas en Ciao Prolog
+    \end{itemize}
 \end{frame}
 
-\section{Resultados y Conclusiones}
-\begin{frame}
-\frametitle{Resultados}
-\slideauthor{Autor 2}
-texto
+\begin{frame}{Transformación de Datos}
+    \begin{block}{Problemas}
+        \begin{itemize}
+            \item Necesidad de tener datos reales en el formato correcto para el algoritmo de normalización.
+            \item Obtener y procesar resultados de las consultas.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Soluciones}
+        \begin{itemize}
+            \item Aplicación de transformaciones a archivos CSV usando Pandas.
+            \item Implementación de un programa en C que ejecuta el intérprete Ciao.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Implementación en C}
+    \begin{block}{Objetivo}
+        Crear un programa en C que ejecute el intérprete de Ciao Prolog, automatizando las consultas para las funciones difusas.
+    \end{block}
+    \begin{itemize}
+        \item Ejecución del intérprete Ciao Prolog desde un programa en C.
+        \item Envío de consultas a través de la entrada estándar.
+        \item Recopilación y procesamiento de resultados a través de la salida estándar.
+    \end{itemize}
+    \begin{block}{Resultado}
+        Automatización completa de las consultas y recolección de datos para el análisis de credibilidad.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Automatización y Recolección de Datos}
+    \begin{block}{Objetivo}
+        Automatizar todo el proceso de consultas y cálculo de credibilidades.
+    \end{block}
+    \begin{itemize}
+        \item Recolección de datos normalizados y valores de verdad para funciones difusas.
+        \item Script en Python para consolidar resultados en un archivo de texto.
+    \end{itemize}
+    \begin{block}{Resultado}
+        Comparación de valores de verdad con valores reales para obtener valores de credibilidad de forma automática.
+    \end{block}
+\end{frame}
+
+\section{Conclusiones y Resultados}
+
+\begin{frame}{Desafíos y Soluciones}
+    \begin{block}{Desafíos}
+        \begin{itemize}
+            \item Recopilación y precisión de datos de múltiples fuentes.
+            \item Definición de funciones y reglas apropiadas.
+            \item Integración del sistema de lógica difusa con la base de datos.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Soluciones}
+        \begin{itemize}
+            \item Referencia cruzada de fuentes.
+            \item Refinamiento iterativo.
+            \item Uso de herramientas robustas y discusiones en equipo.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Conclusiones}
+    \begin{block}{Éxitos}
+        \begin{itemize}
+            \item Desarrollo y validación de un modelo socioeconómico basado en lógica difusa.
+            \item Precisión considerable en las predicciones dadas por los indicadores.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Limitaciones}
+        \begin{itemize}
+            \item Dependencia de datos de alta calidad.
+            \item Definición de reglas difusas universalmente aplicables.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Trabajo Futuro}
+    \begin{block}{Mejoras Propuestas}
+        \begin{itemize}
+            \item Expandir el modelo para incluir más indicadores diversos.
+            \item Aplicar el modelo en diferentes regiones y culturas.
+            \item Integrar técnicas de aprendizaje automático con lógica difusa.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Potencial}
+        \begin{itemize}
+            \item Extrapolar la automatización de cálculos de credibilidad para diseñar métodos más precisos en el modelado de funciones difusas.
+        \end{itemize}
+    \end{block}
 \end{frame}
 
 \end{document}
