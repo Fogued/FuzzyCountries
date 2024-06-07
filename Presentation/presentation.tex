@@ -1,6 +1,8 @@
 \documentclass{beamer}
 \usetheme{Madrid}
 \usepackage[spanish]{babel}
+\usepackage{multicol} % for multiple columns
+\usepackage{pgfplots}
 
 \usepackage{tikz}
 
@@ -16,31 +18,29 @@
   \end{frame}
 }
 
-\title{Fuzzy Countries}
+\title{Estudio Socioeconómico de Países usando Lógica Difusa}
 \author{Diego Fogued, Javier Comyn y Francisco J. González}
 \institute{Universidad Politécnica de Madrid}
 \date{Curso 2023/2024}
 
-% Define a command to set the author for each slide
-\newcommand{\slideauthor}[1]{\def\insertslideauthor{#1}}
-\newcommand{\insertslideauthor}{}
+% Define a command to set the slide author
+\newcommand{\slideauthor}[1]{\gdef\insertslideauthor{#1}}
 
-% Set color for footline
-\setbeamercolor{author in head/foot}{fg=white, bg=blue}
-
-% Customize the footline
-\setbeamertemplate{footline}
-{
-    \leavevmode%
-    \hbox{%
-    \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
-        \usebeamerfont{author in head/foot}\insertshortauthor\hspace*{2em}
+% Customize the footline to include only the slide author and slide number
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=3mm,rightskip=3mm]{footlinecolor}%
+      \insertslideauthor\hfill
+      \insertframenumber{} / \inserttotalframenumber
     \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,right]{title in head/foot}%
-        \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{2em}
-    \end{beamercolorbox}}%
-    \vskip0pt%
+  }%
+  \vskip0pt%
 }
+
+% Set the color for the footline
+\definecolor{footlinebg}{RGB}{0, 51, 102} % Dark blue color
+\setbeamercolor{footlinecolor}{bg=footlinebg, fg=white}
 
 \begin{document}
 \frame{\titlepage}
@@ -53,7 +53,7 @@
 \section{Introducción}
 \begin{frame}
 \frametitle{Background y Motivación}
-
+\slideauthor{Diego Fogued}
 \begin{itemize}
     \item Motivación: Mejorar la comprensión y modelado de las complejas dinámicas socioeconómicas de los países.
     \item Problema: Los modelos económicos tradicionales tienen dificultades con las incertidumbres y vaguedades de los datos reales.
@@ -70,6 +70,7 @@
 \end{frame}
 \begin{frame}
 \frametitle{Objetivos del Proyecto}
+\slideauthor{Diego Fogued}
 \begin{itemize}
     \item Objetivo Principal: Desarrollar un modelo socioeconómico que proporcione información sobre las condiciones económicas y ambientales.
     \item Visualización: Usar Uflese para visualizar los resultados y asegurar su comprensibilidad y utilidad.
@@ -88,6 +89,7 @@
 \section{Marco teórico}
 \begin{frame}
 \frametitle{Marco teórico}
+\slideauthor{Diego Fogued}
 \begin{itemize}
     \item Definición: Lógica multievaluada donde los valores de verdad oscilan entre 0 y 1.
     \item Propósito: Manejar el concepto de \textit{fuzzy}, a diferencia de la lógica booleana con valores solo de 0 o 1.
@@ -99,6 +101,7 @@
 \section{Metodología}
 \begin{frame}
 \frametitle{Metodología}
+\slideauthor{Diego Fogued}
 \begin{itemize}
     \item \textbf{Recolección de Datos}
     \begin{itemize}
@@ -123,15 +126,18 @@
 \frametitle{Recopilación}
 \slideauthor{Javier Comyn}
 \begin{itemize}
-    \item Consultar fuentes: Banco Mundial, OMS, Kaggle...
+    \item Consultar fuentes: Banco Mundial\footnote{\url{https://datos.bancomundial.org/}}, OMS\footnote{\url{https://data.who.int/es/indicators}}, Kaggle\footnote{\url{www.kaggle.com/datasets/nelgiriyewithana/countries-of-the-world-2023}}...
     \item Escoger indicadores más relevantes para un análisis socioeconómico.
     \item Elección de los conjuntos de datos más confiables y actualizados.
     \item Asegurarse de la consistencia y veracidad.
 \end{itemize}
 \end{frame}
 \begin{frame}
-\frametitle{Descripción}
+\frametitle{Variables}
 \slideauthor{Javier Comyn}
+
+\begin{multicols}{2} % Two columns
+\footnotesize % Smaller font size
 \begin{itemize}
     \item Índice de libertad económica
     \item Temperatura media (ºC)
@@ -147,10 +153,7 @@
     \item Tasa de fertilidad
     \item Porcentaje de área forestal
 \end{itemize}
-\end{frame}
-\begin{frame}
-\frametitle{Descripción}
-\slideauthor{Javier Comyn}
+\columnbreak % Break to next column
 \begin{itemize}
     \item PIB per cápita
     \item Alumnos en educación primaria
@@ -166,15 +169,16 @@
     \item Salario mínimo
     \item Edad media
 \end{itemize}
+\end{multicols}
 \end{frame}
 \begin{frame}
 \frametitle{Preprocesamiento y Limpieza}
 \slideauthor{Javier Comyn}
 \begin{itemize}
-    \item Integrar todas las variables en una única base de datos
-    \item Eliminar inconsistencias
-    \item Tratar valores faltantes
-    \item Convertir todos los valores en enteros
+    \item Integrar todas las variables en una única base de datos.
+    \item Eliminar inconsistencias.
+    \item Tratar valores faltantes.
+    \item Convertir todos los valores en enteros.
 \end{itemize}
 \end{frame}
 
@@ -183,8 +187,6 @@
 \begin{frame}
 \frametitle{Funciones Difusas}
 \slideauthor{Javier Comyn}
-Para cada variable, usando la librería Rfuzzy para Ciao Prolog, definimos una función difusa basándonos en nuestro propio criterio. Los valores se van ajustando progresivamente al ir probando y revisando cada una de ellas.
-\vspace*{+5mm} % Ajusta este valor para cambiar el espacio entre las figuras
 \begin{figure}
 \includegraphics[width=\textwidth]{Images/co2_1.png} 
 \end{figure}
@@ -192,6 +194,34 @@ Para cada variable, usando la librería Rfuzzy para Ciao Prolog, definimos una f
 \begin{figure}
 \includegraphics[width=\textwidth]{Images/co2_2.png} 
 \end{figure}
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={CO2},
+    ylabel={  },
+    grid=both, % Muestra una rejilla
+    grid style={line width=.1pt, draw=gray!10}, % Estilo de la rejilla
+    major grid style={line width=.2pt,draw=gray!50}, % Estilo de las líneas principales de la rejilla
+    width=12cm, % Ancho del gráfico
+    height=6cm, % Altura del gráfico
+    % Puedes ajustar más opciones según tus necesidades
+]
+% Datos para el eje x y el eje y
+\addplot[mark=*,blue] coordinates {
+    (0,0)
+    (2000,0.1)
+    (50000,0.3)
+    (100000,0.45)
+    (200000,0.6)
+    (300000,0.8)
+    (600000,1)
+};
+\end{axis}
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Funciones Difusas}
+\slideauthor{Javier Comyn}
 \begin{figure}
 \includegraphics[width=\textwidth]{Images/lifeexp_1.png} 
 \end{figure}
@@ -199,14 +229,35 @@ Para cada variable, usando la librería Rfuzzy para Ciao Prolog, definimos una f
 \begin{figure}
 \includegraphics[width=\textwidth]{Images/lifeexp_2.png} 
 \end{figure}
-
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={Life expectancy (years)},
+    ylabel={  },
+    grid=both, % Muestra una rejilla
+    grid style={line width=.1pt, draw=gray!10}, % Estilo de la rejilla
+    major grid style={line width=.2pt,draw=gray!50}, % Estilo de las líneas principales de la rejilla
+    width=12cm, % Ancho del gráfico
+    height=6cm, % Altura del gráfico
+    % Puedes ajustar más opciones según tus necesidades
+]
+% Datos para el eje x y el eje y
+\addplot[mark=*,blue] coordinates {
+    (350,0)
+    (400,0.2)
+    (550,0.4)
+    (600,0.6)
+    (750,0.8)
+    (900,1)
+};
+\end{axis}
+\end{tikzpicture}
 \end{frame}
+
 
 \begin{frame}
 \frametitle{Reglas Difusas}
 \slideauthor{Javier Comyn}
-Definimos reglas que nos permiten relacionar las distintas funciones, logrando modelizar un sistema complejo de conocimientos socioeconómicos.\\
-Inicialmente, establecemos credibilidad 1 en todas ellas.
+Definimos reglas que nos permiten relacionar las distintas funciones, logrando modelizar un sistema complejo de conocimientos socioeconómicos.
 \vspace*{+5mm}
 \begin{figure}
 \includegraphics[width=\textwidth]{Images/developed_1.png} 
@@ -216,11 +267,11 @@ Inicialmente, establecemos credibilidad 1 en todas ellas.
 \includegraphics[width=\textwidth]{Images/developed_2.png} 
 \end{figure}
 \begin{figure}
-\includegraphics[width=\textwidth]{Images/clean_1.png} 
+\includegraphics[width=0.85\textwidth]{Images/clean_1.png} 
 \end{figure}
 \vspace*{-5mm} % Espacio entre figuras
 \begin{figure}
-\includegraphics[width=0.8\textwidth]{Images/clean_2.png} 
+\includegraphics[width=0.65\textwidth]{Images/clean_2.png} 
 \end{figure}
 \end{frame}
 
@@ -263,6 +314,7 @@ Comparado con modelos tradicionales, la lógica difusa permite hacer interpretac
 \section{Optimización del modelo}
 
 \begin{frame}{Cálculo de Credibilidad}
+\slideauthor{Francisco J. González}
     \begin{block}{Introducción}
         En esta sección se explica cómo se determinaron y automatizaron los cálculos de credibilidad para funciones difusas.
     \end{block}
@@ -274,6 +326,7 @@ Comparado con modelos tradicionales, la lógica difusa permite hacer interpretac
 \end{frame}
 
 \begin{frame}{Transformación de Datos}
+\slideauthor{Francisco J. González}
     \begin{block}{Problemas}
         \begin{itemize}
             \item Necesidad de tener datos reales en el formato correcto para el algoritmo de normalización.
@@ -289,6 +342,7 @@ Comparado con modelos tradicionales, la lógica difusa permite hacer interpretac
 \end{frame}
 
 \begin{frame}{Implementación en C}
+\slideauthor{Francisco J. González}
     \begin{block}{Objetivo}
         Crear un programa en C que ejecute el intérprete de Ciao Prolog, automatizando las consultas para las funciones difusas.
     \end{block}
@@ -303,6 +357,7 @@ Comparado con modelos tradicionales, la lógica difusa permite hacer interpretac
 \end{frame}
 
 \begin{frame}{Automatización y Recolección de Datos}
+\slideauthor{Francisco J. González}
     \begin{block}{Objetivo}
         Automatizar todo el proceso de consultas y cálculo de credibilidades.
     \end{block}
@@ -318,6 +373,7 @@ Comparado con modelos tradicionales, la lógica difusa permite hacer interpretac
 \section{Conclusiones y Resultados}
 
 \begin{frame}{Desafíos y Soluciones}
+\slideauthor{Francisco J. González}
     \begin{block}{Desafíos}
         \begin{itemize}
             \item Recopilación y precisión de datos de múltiples fuentes.
@@ -335,6 +391,7 @@ Comparado con modelos tradicionales, la lógica difusa permite hacer interpretac
 \end{frame}
 
 \begin{frame}{Conclusiones}
+\slideauthor{Francisco J. González}
     \begin{block}{Éxitos}
         \begin{itemize}
             \item Desarrollo y validación de un modelo socioeconómico basado en lógica difusa.
@@ -350,6 +407,7 @@ Comparado con modelos tradicionales, la lógica difusa permite hacer interpretac
 \end{frame}
 
 \begin{frame}{Trabajo Futuro}
+\slideauthor{Francisco J. González}
     \begin{block}{Mejoras Propuestas}
         \begin{itemize}
             \item Expandir el modelo para incluir más indicadores diversos.
