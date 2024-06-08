@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.1.30)  7 JUN 2024 12:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.1.30)  8 JUN 2024 23:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -560,85 +560,198 @@ Package babel Info: Making > an active character on input line 722.
 )) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
-) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count339
+\mult@box=\box76
+\multicol@leftmargin=\dimen295
+\c@unbalance=\count340
+\c@collectmore=\count341
+\doublecol@number=\count342
+\multicoltolerance=\count343
+\multicolpretolerance=\count344
+\full@width=\dimen296
+\page@free=\dimen297
+\premulticols=\dimen298
+\postmulticols=\dimen299
+\multicolsep=\skip65
+\multicolbaselineskip=\skip66
+\partial@page=\box77
+\last@line=\box78
+\mc@boxedresult=\box79
+\maxbalancingoverflow=\dimen300
+\mult@rightbox=\box80
+\mult@grightbox=\box81
+\mult@firstbox=\box82
+\mult@gfirstbox=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\c@minrows=\count345
+\c@columnbadness=\count346
+\c@finalcolumnbadness=\count347
+\last@try=\dimen301
+\multicolovershoot=\dimen302
+\multicolundershoot=\dimen303
+\mult@nat@firstbox=\box120
+\colbreak@box=\box121
+\mc@col@check@num=\count348
+) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box76
+\pgfnodeparttextbox=\box122
 ) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen295
-\pgf@nodesepend=\dimen296
+\pgf@nodesepstart=\dimen304
+\pgf@nodesepend=\dimen305
 ) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 )) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen297
-\pgffor@skip=\dimen298
+\pgffor@iter=\dimen306
+\pgffor@skip=\dimen307
 \pgffor@stack=\toks47
 \pgffor@toks=\toks48
 )) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count339
-\pgfplotmarksize=\dimen299
+\pgf@plot@mark@count=\count349
+\pgfplotmarksize=\dimen308
 )
-\tikz@lastx=\dimen300
-\tikz@lasty=\dimen301
-\tikz@lastxsaved=\dimen302
-\tikz@lastysaved=\dimen303
-\tikz@lastmovetox=\dimen304
-\tikz@lastmovetoy=\dimen305
-\tikzleveldistance=\dimen306
-\tikzsiblingdistance=\dimen307
-\tikz@figbox=\box77
-\tikz@figbox@bg=\box78
-\tikz@tempbox=\box79
-\tikz@tempbox@bg=\box80
-\tikztreelevel=\count340
-\tikznumberofchildren=\count341
-\tikznumberofcurrentchild=\count342
-\tikz@fig@count=\count343
+\tikz@lastx=\dimen309
+\tikz@lasty=\dimen310
+\tikz@lastxsaved=\dimen311
+\tikz@lastysaved=\dimen312
+\tikz@lastmovetox=\dimen313
+\tikz@lastmovetoy=\dimen314
+\tikzleveldistance=\dimen315
+\tikzsiblingdistance=\dimen316
+\tikz@figbox=\box123
+\tikz@figbox@bg=\box124
+\tikz@tempbox=\box125
+\tikz@tempbox@bg=\box126
+\tikztreelevel=\count350
+\tikznumberofchildren=\count351
+\tikznumberofcurrentchild=\count352
+\tikz@fig@count=\count353
  (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count344
-\pgfmatrixcurrentcolumn=\count345
-\pgf@matrix@numberofcolumns=\count346
+\pgfmatrixcurrentrow=\count354
+\pgfmatrixcurrentcolumn=\count355
+\pgf@matrix@numberofcolumns=\count356
 )
-\tikz@expandcount=\count347
+\tikz@expandcount=\count357
  (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks49
+\t@pgfplots@tokb=\toks50
+\t@pgfplots@tokc=\toks51
+\pgfplots@tmpa=\dimen317
+\c@pgfplots@coordindex=\count358
+\c@pgfplots@scanlineindex=\count359
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks52
+\t@pgf@tokb=\toks53
+\t@pgf@tokc=\toks54
+(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count360
+) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count361
+\t@pgfplotstable@a=\toks55
+) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count362
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen318
+\pgfdecoratedremainingdistance=\dimen319
+\pgfdecoratedinputsegmentcompleteddistance=\dimen320
+\pgfdecoratedinputsegmentremainingdistance=\dimen321
+\pgf@decorate@distancetomove=\dimen322
+\pgf@decorate@repeatstate=\count363
+\pgfdecorationsegmentamplitude=\dimen323
+\pgfdecorationsegmentlength=\dimen324
+)
+\tikz@lib@dec@box=\box127
+) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count364
+\pgfplots@xmin@reg=\dimen325
+\pgfplots@xmax@reg=\dimen326
+\pgfplots@ymin@reg=\dimen327
+\pgfplots@ymax@reg=\dimen328
+\pgfplots@zmin@reg=\dimen329
+\pgfplots@zmax@reg=\dimen330
+) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count348
-\l__pdf_internal_box=\box81
+\l__color_backend_stack_int=\count365
+\l__pdf_internal_box=\box128
 ) (presentation.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -676,77 +789,77 @@ LaTeX Font Info:    ... okay on input line 45.
 
 (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count349
-\scratchdimen=\dimen308
-\scratchbox=\box82
-\nofMPsegments=\count350
-\nofMParguments=\count351
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count352
-\MPscratchDim=\dimen309
-\MPnumerator=\count353
-\makeMPintoPDFobject=\count354
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count366
+\scratchdimen=\dimen331
+\scratchbox=\box129
+\nofMPsegments=\count367
+\nofMParguments=\count368
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count369
+\MPscratchDim=\dimen332
+\MPnumerator=\count370
+\makeMPintoPDFobject=\count371
+\everyMPtoPDFconversion=\toks57
 ) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 44.
  (presentation.out) (presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 45.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 45.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 44.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 45.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 45.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 45.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 45.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 45.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 45.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 45.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 45.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 45.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 45.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 45.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 45.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 45.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 45.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 45.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 45.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 45.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 44.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 45.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 45.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 45.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 44.
  (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-bibliography-dictionary-English.dict
@@ -760,417 +873,167 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 45.
-LaTeX Info: Redefining \% on input line 45.
- (presentation.nav)
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 45--45
-[][]|   
- []
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
 
 
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 46--46
-[][]|   
- []
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
+ on input line 44.
 
+(presentation.nav) [1
 
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[1
-
-{C:/Users/TP420/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 51--51
-[][]|   
- []
-
-(presentation.toc
+{C:/Users/TP420/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (presentation.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
+) [2
 
-[2
+] [3
 
 ]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 53--53
-[][]|   
- []
+<Images/image-Photoroom.png, id=141, 1044.90375pt x 292.09125pt>
+File: Images/image-Photoroom.png Graphic file (type png)
+<use Images/image-Photoroom.png>
+Package pdftex.def Info: Images/image-Photoroom.png  used on input line 65.
+(pdftex.def)             Requested size: 96.11954pt x 26.86647pt.
+ [4
 
-[3
+ <./Images/image-Photoroom.png>]
+<Images/ciao.png, id=169, 281.05pt x 281.05pt>
+File: Images/ciao.png Graphic file (type png)
+<use Images/ciao.png>
+Package pdftex.def Info: Images/ciao.png  used on input line 78.
+(pdftex.def)             Requested size: 32.04147pt x 32.03917pt.
+<Images/Sklearn.jpg, id=170, 1204.5pt x 648.4225pt>
+File: Images/Sklearn.jpg Graphic file (type jpg)
+<use Images/Sklearn.jpg>
+Package pdftex.def Info: Images/Sklearn.jpg  used on input line 78.
+(pdftex.def)             Requested size: 48.05733pt x 25.86322pt.
+<Images/C_Logo.png, id=171, 271.0125pt x 304.88907pt>
+File: Images/C_Logo.png Graphic file (type png)
+<use Images/C_Logo.png>
+Package pdftex.def Info: Images/C_Logo.png  used on input line 78.
+(pdftex.def)             Requested size: 32.04147pt x 36.04544pt.
+ [5
 
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 70--70
-[][]|   
- []
+ <./Images/ciao.png> <./Images/Sklearn.jpg> <./Images/C_Logo.png>] [6
 
+] [7
 
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[4
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 86--86
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[5
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 88--88
-[][]|   
- []
-
-[6
+] [8
 
 ]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 97--97
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[7
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 99--99
-[][]|   
- []
-
-[8
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 119--119
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[9
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 121--121
-[][]|   
- []
-
-[10
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 131--131
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[11
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 150--150
-[][]|   
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 150.
-(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
-File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[12
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 169--169
-[][]|   
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 169.
-(C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 113.
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 169.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 113.
  (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 169.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 113.
  (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[13
+) [9
 
 ]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 179--179
-[][]|   
- []
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 152.
+ (C:\Users\TP420\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [10
 
+] [11
 
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
+] [12
 
-[14
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 181--181
-[][]|   
- []
-
-[15
+] [13
 
 ]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 203--203
-[][]|   
- []
-
-<Images/co2_1.png, id=486, 286.06876pt x 16.56187pt>
-File: Images/co2_1.png Graphic file (type png)
-<use Images/co2_1.png>
-Package pdftex.def Info: Images/co2_1.png  used on input line 203.
-(pdftex.def)             Requested size: 342.2953pt x 19.81728pt.
-<Images/co2_2.png, id=488, 421.575pt x 12.7978pt>
-File: Images/co2_2.png Graphic file (type png)
-<use Images/co2_2.png>
-Package pdftex.def Info: Images/co2_2.png  used on input line 203.
-(pdftex.def)             Requested size: 342.2953pt x 10.39134pt.
-<Images/lifeexp_1.png, id=489, 336.50719pt x 18.82031pt>
+<Images/lifeexp_1.png, id=412, 336.50719pt x 18.82031pt>
 File: Images/lifeexp_1.png Graphic file (type png)
 <use Images/lifeexp_1.png>
-Package pdftex.def Info: Images/lifeexp_1.png  used on input line 203.
+Package pdftex.def Info: Images/lifeexp_1.png  used on input line 232.
 (pdftex.def)             Requested size: 342.2953pt x 19.14418pt.
-<Images/lifeexp_2.png, id=490, 320.69812pt x 17.31468pt>
+<Images/lifeexp_2.png, id=413, 320.69812pt x 17.31468pt>
 File: Images/lifeexp_2.png Graphic file (type png)
 <use Images/lifeexp_2.png>
-Package pdftex.def Info: Images/lifeexp_2.png  used on input line 203.
+Package pdftex.def Info: Images/lifeexp_2.png  used on input line 232.
 (pdftex.def)             Requested size: 342.2953pt x 18.48106pt.
+ [14
 
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
+ <./Images/lifeexp_1.png> <./Images/lifeexp_2.png>]
+<Images/developed_1.png, id=441, 543.53062pt x 24.09pt>
+File: Images/developed_1.png Graphic file (type png)
+<use Images/developed_1.png>
+Package pdftex.def Info: Images/developed_1.png  used on input line 254.
+(pdftex.def)             Requested size: 342.2953pt x 15.17162pt.
+<Images/developed_2.png, id=442, 529.22719pt x 19.57312pt>
+File: Images/developed_2.png Graphic file (type png)
+<use Images/developed_2.png>
+Package pdftex.def Info: Images/developed_2.png  used on input line 254.
+(pdftex.def)             Requested size: 342.2953pt x 12.65964pt.
+<Images/clean_1.png, id=443, 371.13657pt x 15.80907pt>
+File: Images/clean_1.png Graphic file (type png)
+<use Images/clean_1.png>
+Package pdftex.def Info: Images/clean_1.png  used on input line 254.
+(pdftex.def)             Requested size: 273.83728pt x 11.66473pt.
+<Images/clean_2.png, id=444, 290.58563pt x 17.31468pt>
+File: Images/clean_2.png Graphic file (type png)
+<use Images/clean_2.png>
+Package pdftex.def Info: Images/clean_2.png  used on input line 254.
+(pdftex.def)             Requested size: 205.37926pt x 12.23775pt.
+ [15
+
+ <./Images/developed_1.png> <./Images/developed_2.png> <./Images/clean_1.png> <./Images/clean_2.png>]
+<Images/developed_country (1).png, id=474, 590.95781pt x 431.36156pt>
+File: Images/developed_country (1).png Graphic file (type png)
+<use Images/developed_country (1).png>
+Package pdftex.def Info: Images/developed_country (1).png  used on input line 262.
+(pdftex.def)             Requested size: 342.2953pt x 249.86078pt.
+
+Overfull \vbox (28.79019pt too high) detected at line 262
  []
 
 [16
 
- <./Images/co2_1.png> <./Images/co2_2.png> <./Images/lifeexp_1.png> <./Images/lifeexp_2.png>]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 225--225
-[][]|   
- []
+ <./Images/developed_country (1).png>]
+<Images/clean_countries.png, id=501, 554.82281pt x 356.0803pt>
+File: Images/clean_countries.png Graphic file (type png)
+<use Images/clean_countries.png>
+Package pdftex.def Info: Images/clean_countries.png  used on input line 270.
+(pdftex.def)             Requested size: 342.2953pt x 219.68083pt.
+ [17
 
-<Images/developed_1.png, id=522, 543.53062pt x 24.09pt>
-File: Images/developed_1.png Graphic file (type png)
-<use Images/developed_1.png>
-Package pdftex.def Info: Images/developed_1.png  used on input line 225.
-(pdftex.def)             Requested size: 342.2953pt x 15.17162pt.
-<Images/developed_2.png, id=523, 529.22719pt x 19.57312pt>
-File: Images/developed_2.png Graphic file (type png)
-<use Images/developed_2.png>
-Package pdftex.def Info: Images/developed_2.png  used on input line 225.
-(pdftex.def)             Requested size: 342.2953pt x 12.65964pt.
-<Images/clean_1.png, id=524, 371.13657pt x 15.80907pt>
-File: Images/clean_1.png Graphic file (type png)
-<use Images/clean_1.png>
-Package pdftex.def Info: Images/clean_1.png  used on input line 225.
-(pdftex.def)             Requested size: 342.2953pt x 14.58092pt.
-<Images/clean_2.png, id=525, 290.58563pt x 17.31468pt>
-File: Images/clean_2.png Graphic file (type png)
-<use Images/clean_2.png>
-Package pdftex.def Info: Images/clean_2.png  used on input line 225.
-(pdftex.def)             Requested size: 273.83728pt x 16.31778pt.
+ <./Images/clean_countries.png>]
+<Images/tourism destinations.png, id=528, 585.68813pt x 435.87843pt>
+File: Images/tourism destinations.png Graphic file (type png)
+<use Images/tourism destinations.png>
+Package pdftex.def Info: Images/tourism destinations.png  used on input line 278.
+(pdftex.def)             Requested size: 342.2953pt x 254.75174pt.
 
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[17
-
- <./Images/developed_1.png> <./Images/developed_2.png> <./Images/clean_1.png> <./Images/clean_2.png>]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 233--233
-[][]|   
- []
-
-<Images/developed_country (1).png, id=557, 590.95781pt x 431.36156pt>
-File: Images/developed_country (1).png Graphic file (type png)
-<use Images/developed_country (1).png>
-Package pdftex.def Info: Images/developed_country (1).png  used on input line 233.
-(pdftex.def)             Requested size: 342.2953pt x 249.86078pt.
-
-Overfull \vbox (28.79019pt too high) detected at line 233
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
+Overfull \vbox (33.68115pt too high) detected at line 278
  []
 
 [18
 
- <./Images/developed_country (1).png>]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 241--241
-[][]|   
- []
+ <./Images/tourism destinations.png>] [19
 
-<Images/clean_countries.png, id=586, 554.82281pt x 356.0803pt>
-File: Images/clean_countries.png Graphic file (type png)
-<use Images/clean_countries.png>
-Package pdftex.def Info: Images/clean_countries.png  used on input line 241.
-(pdftex.def)             Requested size: 342.2953pt x 219.68083pt.
+] [20
 
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
+] [21
 
-[19
+] [22
 
- <./Images/clean_countries.png>]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 249--249
-[][]|   
- []
+] [23
 
-<Images/tourism destinations.png, id=616, 585.68813pt x 435.87843pt>
-File: Images/tourism destinations.png Graphic file (type png)
-<use Images/tourism destinations.png>
-Package pdftex.def Info: Images/tourism destinations.png  used on input line 249.
-(pdftex.def)             Requested size: 342.2953pt x 254.75174pt.
+] [24
 
-Overfull \vbox (33.68115pt too high) detected at line 249
- []
+] [25
 
+] [26
 
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
+] [27
 
-[20
-
- <./Images/tourism destinations.png>]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 261--261
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[21
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 263--263
-[][]|   
- []
-
-[22
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 274--274
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[23
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 289--289
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[24
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 303--303
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[25
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 316--316
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[26
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 318--318
-[][]|   
- []
-
-[27
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 335--335
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[28
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 350--350
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[29
-
-]
-Overfull \hbox (8.63435pt too wide) in paragraph at lines 365--365
-[][]|   
- []
-
-
-Overfull \hbox (8.63435pt too wide) has occurred while \output is active
-[][]|   
- []
-
-[30
+] [28
 
 ]
 \tf@nav=\write6
@@ -1191,20 +1054,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 00D9965C8283CE9D51AD94381351E3D5;990.
+(rerunfilecheck)             Checksum: ECB934C01846039A74DE57CF3024F4B2;734.
  ) 
 Here is how much of TeX's memory you used:
- 26451 strings out of 474542
- 530406 string characters out of 5744446
- 1939978 words of memory out of 5000000
- 48093 multiletter control sequences out of 15000+600000
- 567026 words of font info for 67 fonts, out of 8000000 for 9000
+ 36945 strings out of 474542
+ 883651 string characters out of 5744446
+ 1944978 words of memory out of 5000000
+ 58446 multiletter control sequences out of 15000+600000
+ 572612 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,123p,455b,869s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\TP420\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on presentation.pdf (30 pages, 371757 bytes).
+ 128i,15n,123p,776b,1954s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\TP420\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss0900.pk><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/TP420/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on presentation.pdf (28 pages, 563272 bytes).
 PDF statistics:
- 1098 PDF objects out of 1200 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 658 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1011 PDF objects out of 1200 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 646 words of extra memory for PDF output out of 10000 (max. 10000000)
 
