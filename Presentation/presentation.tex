@@ -1,3 +1,4 @@
+
 \documentclass{beamer}
 \usetheme{Madrid}
 \usepackage[spanish]{babel}
@@ -25,12 +26,15 @@
 % Define a command to set the slide author
 \newcommand{\slideauthor}[1]{\gdef\insertslideauthor{#1}}
 
+% Initialize \insertslideauthor to an empty value
+\newcommand{\insertslideauthor}{}
+
 % Customize the footline to include only the slide author and slide number
 \setbeamertemplate{footline}{
   \leavevmode%
   \hbox{%
     \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=3mm,rightskip=3mm]{footlinecolor}%
-      \insertauthor\hfill
+      \insertslideauthor\hfill
       \insertframenumber{} / \inserttotalframenumber
     \end{beamercolorbox}%
   }%
@@ -169,7 +173,7 @@
 \texttt{critical\_co2(country) :$\thicksim$ function(co2\_emissions(country))}
 
 \vspace{0.25cm}
-\small\texttt{[(0,0), (2000,0.1), (50000,0.3), (100000,0.45), (200000,0.6), (300000,0.8), (1300000,1)]}
+\small\texttt{[(0,0), (2000,0.1), (50000,0.3), (100000,0.45), (200000,0.6), (300000,0.8), (1300000,1)].}
 
 \vspace{0.5cm}
 \begin{tikzpicture}
@@ -200,13 +204,13 @@
 \begin{frame}
 \frametitle{Funciones Difusas}
 \slideauthor{Javier Comyn}
-\begin{figure}
-\includegraphics[width=\textwidth]{Images/lifeexp_1.png} 
-\end{figure}
-\vspace*{-5mm} % Espacio entre figuras
-\begin{figure}
-\includegraphics[width=\textwidth]{Images/lifeexp_2.png} 
-\end{figure}
+
+\small\texttt{long\_life\_expectancy(country) :$\thicksim$ function(long\_life\_expectancy(country))}
+
+\vspace{0.25cm}
+\small\texttt{[(350,0), (400,0.2), (550,0.4), (600,0.6), (750,0.8), (900,1)].}
+
+\vspace{0.5cm}
 \begin{tikzpicture}
 \begin{axis}[
     xlabel={Life expectancy (years)},
@@ -235,21 +239,14 @@
 \begin{frame}
 \frametitle{Reglas Difusas}
 \slideauthor{Javier Comyn}
-Definimos reglas que nos permiten relacionar las distintas funciones, logrando modelizar un sistema complejo de conocimientos socioeconómicos.
-\vspace*{+5mm}
+Definimos reglas que nos permiten relacionar las distintas funciones.
 \begin{figure}
-\includegraphics[width=\textwidth]{Images/developed_1.png} 
-\end{figure}
-\vspace*{-5mm} % Espacio entre figuras
-\begin{figure}
-\includegraphics[width=\textwidth]{Images/developed_2.png} 
+    \centering
+    \includegraphics[width=\linewidth]{Images/developed_country.png}
 \end{figure}
 \begin{figure}
-\includegraphics[width=0.80\textwidth]{Images/clean_1.png} 
-\end{figure}
-\vspace*{-5mm} % Espacio entre figuras
-\begin{figure}
-\includegraphics[width=0.60\textwidth]{Images/clean_2.png} 
+    \centering
+    \includegraphics[width=\linewidth]{Images/clean_country.png}
 \end{figure}
 \end{frame}
 
