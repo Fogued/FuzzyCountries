@@ -19,6 +19,12 @@
 \usepackage{cancel}
 \usepackage{titlesec}
 \usepackage{mathtools}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{float} % for H placement option
+\usepackage{lipsum} % for dummy text
 \setcounter{secnumdepth}{4}
 \renewcommand{\baselinestretch}{1.2}
 \usepackage{hyperref}
@@ -30,6 +36,7 @@
 	citecolor=green,
 	pdfpagemode=FullScreen
 }
+
 \makeindex
 
 \usepackage[a4paper,textheight=24cm,textwidth=16cm]{geometry}
@@ -122,6 +129,7 @@ The variables in the database include a mix of socio-economic and environmental 
     \item \textbf{high\_min\_wage}: Minimum Wage, measured in USD per month.
     \item \textbf{high\_median\_age}: Median Age, measured in years.
 \end{itemize}
+Note that all the variables here are presented with the names of its corresponding fuzzy functions, which will be explained in detail later.
 
 \subsection{Data Preprocessing}
 
@@ -129,50 +137,207 @@ Before integrating the data into the database, we performed several preprocessin
 This included handling missing values, normalizing the data, and converting categorical variables into numerical values.
 Additionally, the different datasets were merged and integrated into a single database, ensuring that the data was consistent and ready for analysis.
 
+One major challenge was that the visualization tool we wanted to use, Uflese, does not support decimals, which meant we were forced to transform all our data to integer values. To overcome this, we multiplied variables by powers of 10, ensuring that all calculations were performed with integer values. Then, when interpreting the results of the different consultations, we remember to reverse this change so the analysis being performed is coherent with reality. This workaround maintained the accuracy of our results while adhering to the limitations of the software we used.
+
 \newpage
 \section{Data Analysis}
-
-The data analysis involved several key steps to ensure that the data was accurately processed and insightful trends were identified.
-
-Initially, we performed exploratory data analysis using the Uflese environment. This allowed us to make several consults and evaluate the results based on our logic and common knowledge. 
-
-Outliers were identified and managed through visual inspection and analysis. By carefully reviewing these data points, we ensured that they did not adversely affect the overall analysis. 
-
-After defining the fuzzy logic functions, we adjusted them to produce more plausible results. This iterative process involved tweaking the functions and rules based on the observed outputs and, mostly, arbitrary decisions.
-
-Our analysis revealed several significant trends:
-\begin{itemize}
-    \item Countries like Iceland, Norway, and Denmark consistently showed logical results for being environmentally friendly and politically stable.
-    \item Contrastingly, countries such as South Africa, Japan, and Thailand were flagged for certain unexpected outcomes, warranting further investigation.
-    \item ``Developed Country'' category highlighted the importance of factors beyond economic performance, including life expectancy and infant mortality rates, which led to Japan and Spain ranking highly.
-    \item ``Economically Stable Countries'' presented interesting results, with Thailand appearing at the top due to its very low unemployment rate, despite other economic challenges.
-\end{itemize}
-These findings highlight the complex interplay between various socio-economic and environmental indicators and their impact on overall national well-being.
 
 \subsection{Implementation of the Fuzzy System}
 
 The fuzzy system was developed using the Ciao Prolog environment along with the rfuzzy library. The rfuzzy library provided essential tools for managing fuzzy logic operations and rules.
 
-The fuzzy rules and functions were defined through arbitrary decisions based on our logic and common knowledge. This included categorizing indicators such as GDP per capita, life expectancy, and educational enrollment into fuzzy sets like low, medium, and high.
+The first step to implement our Fuzzy model was to define fuzzy functions for each of our variables. This allows us to analyze data in a more flexible and realistic manner, as we are able to determine to what extent is a particular value of a variable high or low. This step ensures that we can accurately interpret and process the data, ultimately leading to more reliable and insightful results.
 
-Integration of the fuzzy logic system with our database was facilitated by the tools provided by rfuzzy. This allowed seamless data retrieval and processing, enabling real-time analysis of the data inputs.
+To illustrate this, consider the following examples (remember that the values are turned into integers):
+\begin{itemize}
+    \item \small\texttt{long\_life\_expectancy(country) :$\thicksim$ function(long\_life\_expectancy(country))} \newline
+    \small\texttt{[(350,0), (400,0.2), (550,0.4), (600,0.6), (750,0.8), (900,1)].}
 
-One major challenge was that rfuzzy does not support decimals. To overcome this, we multiplied variables by powers of 10, ensuring that all calculations were performed with integer values. This workaround maintained the accuracy of our results while adhering to the limitations of the rfuzzy library.
+\vspace{0.7cm}
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={Life expectancy (years)},
+    ylabel={  },
+    grid=both, % Muestra una rejilla
+    grid style={line width=.1pt, draw=gray!10}, % Estilo de la rejilla
+    major grid style={line width=.2pt,draw=gray!50}, % Estilo de las líneas principales de la rejilla
+    width=12cm, % Ancho del gráfico
+    height=6cm, % Altura del gráfico
+    % Puedes ajustar más opciones según tus necesidades
+]
+% Datos para el eje x y el eje y
+\addplot[mark=*,blue] coordinates {
+    (350,0)
+    (400,0.2)
+    (550,0.4)
+    (600,0.6)
+    (750,0.8)
+    (900,1)
+};
+\end{axis}
+\end{tikzpicture}
+
+
+    \item \texttt{critical\_co2(country) :$\thicksim$ function(co2\_emissions(country))}\newline
+\small\texttt{[(0,0), (2000,0.1), (50000,0.3), (100000,0.45), (200000,0.6), (300000,0.8), (1300000,1)].}
+
+\vspace{0.7cm}
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={CO2},
+    ylabel={  },
+    grid=both, % Muestra una rejilla
+    grid style={line width=.1pt, draw=gray!10}, % Estilo de la rejilla
+    major grid style={line width=.2pt,draw=gray!50}, % Estilo de las líneas principales de la rejilla
+    width=12cm, % Ancho del gráfico
+    height=6cm, % Altura del gráfico
+    % Puedes ajustar más opciones según tus necesidades
+]
+% Datos para el eje x y el eje y
+\addplot[mark=*,blue] coordinates {
+    (0,0)
+    (2000,0.1)
+    (50000,0.3)
+    (100000,0.45)
+    (200000,0.6)
+    (300000,0.8)
+    (600000,1)
+};
+\end{axis}
+\end{tikzpicture}
+
+
+    \item \texttt{abundant\_renewable\_energy(country) :$\thicksim$ function(renewables(country))}\newline
+\small\texttt{[(0,0), (100000,0.1),(300000,0.2),(1000000,0.4),(1800000,0.6),(3500000,0.8),(8500000,0.9), (10000000,1)].}
+
+\vspace{0.7cm}
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={Renewable energies (\% of total)},
+    ylabel={  },
+    grid=both, % Muestra una rejilla
+    grid style={line width=.1pt, draw=gray!10}, % Estilo de la rejilla
+    major grid style={line width=.2pt,draw=gray!50}, % Estilo de las líneas principales de la rejilla
+    width=12cm, % Ancho del gráfico
+    height=6cm, % Altura del gráfico
+    % Puedes ajustar más opciones según tus necesidades
+]
+% Datos para el eje x y el eje y
+\addplot[mark=*,blue] coordinates {
+    (0,0)
+    (100000,0.1)
+    (300000,0.2)
+    (1000000,0.4)
+    (1800000,0.6)
+    (3500000,0.8)
+    (8500000,0.9)
+    (10000000,1)
+};
+\end{axis}
+\end{tikzpicture}
+
+    \item \texttt{high\_economic\_freedom(country) :$\thicksim$ function(economic\_freedom\_index(country))}\newline
+\small\texttt{[(400,0),(500,0.2),(600,0.4),(700,0.6),(800,0.8),(900,1)]).}
+
+\vspace{0.7cm}
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={Index of Economic Freedom},
+    ylabel={  },
+    grid=both, % Muestra una rejilla
+    grid style={line width=.1pt, draw=gray!10}, % Estilo de la rejilla
+    major grid style={line width=.2pt,draw=gray!50}, % Estilo de las líneas principales de la rejilla
+    width=12cm, % Ancho del gráfico
+    height=6cm, % Altura del gráfico
+    % Puedes ajustar más opciones según tus necesidades
+]
+% Datos para el eje x y el eje y
+\addplot[mark=*,blue] coordinates {
+    (400,0)
+    (500,0.2)
+    (600,0.4)
+    (700,0.6)
+    (800,0.8)
+    (900,1)
+};
+\end{axis}
+\end{tikzpicture}
+\end{itemize}
+The criteria followed to establish the different ranges for the truth values in these functions was mainly common sense and arbitrary decisions. However, as we tried them, when we found results that were strange or did not make sense, we adjusted the functions accordingly. Additionaly, we developed a more complex system to analyze how effective each of the functions is, that will be explained in detail in the Optimization section. 
+
+Afterwards, the defined functions are combined to create a comprehensive set of fuzzy rules. These rules are designed to capture the intricate relationships between various socioeconomic factors, allowing us to model the features of different countries accurately. By integrating the rules, we can model a complex socioeconomic model, providing insights into how different variables interact and influence each other. This approach enables us to handle the inherent uncertainties and complexities in socioeconomic data, leading to a more robust and realistic representation of countries' characteristics and their interdependencies.
+
+Here are the definitions of all the rules:
+\begin{itemize}
+    \raggedright
+    \item \texttt{\textbf{clean\_country(country)}} : rule(mean, (abundant\_renewable\_energy(country), fnot(critical\_co2(country))) with\_credibility (min, 1).
+    \item \texttt{\textbf{environmentally\_friendly\_country(country)}} : rule(mean, ((abundant\_renewable\_energy(country)), (critical\_co2(country), (vast\_forested\_area\_percentage(country)), (huge\_agricultural\_land\_percentage(country))))) with\_credibility (min, 1).
+    \item \texttt{\textbf{developed\_country(country)}} : rule(mean, ((wealthy\_gdp\_per\_capita(country)), (long\_life\_expectancy(country)), fnot((high\_infant\_mortality\_rate(country))), (high\_economic\_freedom(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{political\_stable\_country(country)}} : rule(mean, ((high\_economic\_freedom(country)), fnot(high\_corruption\_concern(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{strong\_education\_system(country)}} : rule(mean, ((high\_education\_primary(country)), (high\_education\_tertiary(country)), fnot(significant\_population\_unemployed(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{low\_population\_growth\_country(country)}} : rule(mean, (fnot(high\_birth\_rate(country)), fnot(high\_fertility\_rate(country)), (high\_infant\_mortality\_rate(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{urbanized\_country(country)}} : rule(mean, ((large\_urban\_population(country)), fnot(huge\_agricultural\_land\_percentage(country)), (dangerous\_population\_density(country)), fnot(vast\_forested\_area\_percentage(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{economically\_stable\_country(country)}} : rule(mean, (fnot(high\_cpi\_rate(country)), fnot(significant\_population\_unemployed(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{high\_income\_country(country)}} : rule(mean, ((wealthy\_gdp\_per\_capita(country)), (high\_min\_wage(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{aging\_population\_country(country)}} : rule(mean, (high\_median\_age(country), fnot(high\_birth\_rate(country)), long\_life\_expectancy(country))) with\_credibility (min, 1).
+    \item \texttt{\textbf{quality\_healthcare\_country(country)}} : rule(mean, (fnot(high\_infant\_mortality\_rate(country)), (long\_life\_expectancy(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{attractive\_tourism\_destination(country)}} : rule(mean, ((risk\_high\_temperature(country)), (vast\_forested\_area\_percentage(country)), (long\_life\_expectancy(country)), fnot(high\_infant\_mortality\_rate(country)), wealthy\_gdp\_per\_capita(country), large\_urban\_population(country))) with\_credibility (min, 1).
+    \item \texttt{\textbf{active\_civic\_participation\_country(country)}} : rule(mean, ((high\_tax\_revenue\_percentage(country)), (high\_economic\_freedom(country)), fnot(high\_corruption\_concern(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{high\_wellbeing\_country(country)}} : rule(mean, (high\_economic\_freedom(country), long\_life\_expectancy(country), fnot(high\_corruption\_concern(country)), fnot(alarming\_suicide\_rate(country)), (high\_education\_primary(country)), fnot(high\_infant\_mortality\_rate(country)), (wealthy\_gdp\_per\_capita(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{good\_education\_and\_future\_country(country)}} : rule(mean, (high\_education\_primary(country), high\_education\_tertiary(country), fnot(high\_infant\_mortality\_rate(country)), (wealthy\_gdp\_per\_capita(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{strong\_labor\_market(country)}} : rule(mean, (numerous\_active\_workers(country), fnot(significant\_population\_unemployed(country)), (high\_tax\_revenue\_percentage(country)))) with\_credibility (min, 1).
+    \item \texttt{\textbf{big\_economy(country)}} : rule(mean, (big\_population\_size(country), fnot(significant\_population\_unemployed(country)), high\_tax\_revenue\_percentage(country), (wealthy\_gdp\_per\_capita(country)))) with\_credibility (min, 1).
+\end{itemize}
+
+As it can be noted, the credibility of every rule, meaning how accurately it describes reality, is initially set to 1. We assume all the rules to be true, however we must acknowledge that they have limitations and not all of them have to be completely credible.
+
+\subsection{Analysis}
+
+The data analysis involved several key steps to ensure that the data was accurately processed and insightful trends were identified.
+
+Initially, we performed exploratory data analysis using the Uflese environment. This allowed us to make several consults and evaluate the results based on our logic and common knowledge. These tool, using the Rfuzzy library, given a rule assigns a truth value from 0 to 1 to each of the countries in our database, and the orders from higher to lower. 
+
+Here are some examples of consultations we made and their results:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Images/clean_countries.png}
+    \caption{Cleanest countries}
+\end{figure}
+\vspace{-10mm}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Images/developed_country (1).png}
+    \caption{Developed countries}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Images/tourism destinations.png}
+    \caption{Attractive tourism destinations}
+\end{figure}
+
+Outliers were identified and managed through visual inspection and analysis. By carefully reviewing this, we improved both our functions and rules until we got coherent results. 
+
 
 \subsection{Results and Discussion}
 
 The results obtained from the fuzzy logic system were analyzed and compared with traditional methods. This section presents these results and discusses their implications.
 
-The fuzzy logic system provided happiness scores and other insights that closely matched those in the World Happiness Report and other reputable sources. For instance:
+For instance:
 \begin{itemize}
-    \item \textbf{Clean Country}:  Logical results included Iceland, Norway, and Denmark, while unexpected results such as Japan in the lower ranks prompted further investigation into specific factors like pollution levels.
-    \item \textbf{Environmentally Friendly Country}: Highlighted countries with substantial forest and agricultural land, such as Brazil, Canada, and Colombia. The contrast in Spain's ranking between this category and the 'Clean Country' category offered intriguing insights into different environmental aspects.
-    \item \textbf{Developed Country}: Japan ranked first due to high life expectancy and low infant mortality, demonstrating the multifaceted nature of development beyond just economic metrics.
-    \item \textbf{Economically Stable Country}: Thailand's top position, driven by low unemployment, highlighted the nuanced understanding required when interpreting economic stability.
+    \item \textbf{Clean Country}: Logical results identified Iceland, Norway, and Denmark as the top-ranking countries in terms of cleanliness. These nations have well-established environmental policies and low pollution levels. However, the inclusion of Japan in the lower ranks was unexpected and prompted further investigation. Upon closer examination, factors such as a quite high CO2 rate due to being a mostly urban country, were found to affect Japan's ranking despite its overall cleanliness efforts.
+    \item \textbf{Environmentally Friendly Country}: The fuzzy logic system highlighted countries with substantial forest cover and sustainable agricultural practices, such as Brazil, Canada, and Colombia. Interestingly, Spain's ranking differed significantly between this category and the 'Clean Country' category, suggesting varying strengths and weaknesses in different aspects of environmental sustainability.
+    \item \textbf{Developed Country}: Japan emerged as the top-ranking country in terms of development, primarily due to high life expectancy and low infant mortality rates. This highlights the multifaceted nature of development beyond traditional economic indicators. Spain is also in a very high position, above some countries with stronger economies. This helps us to understand how development is not only measured in economic terms, but social factors like life expectancy or having a good public health system are also important and must be taken into account.
+    \item \textbf{Economically Stable Country}: Thailand ranked first in this category, which was obviously a big surprise. This result is interesting as it highlights the limitations of our model and the importance of a good human interpretation of the results that takes into account context and common sense. Further more, after some analysis, we discovered that Thailand's unemployment rate is less than 1\%, but that due to its political situation this data is probably biased or manipulated, so it cannot be trusted. Even though our data comes from official sources, not everything is necessarily true, so it is important to be aware of that before making any conclusion.
 \end{itemize}
-Compared to traditional regression models, the fuzzy logic system demonstrated superior capability in handling uncertainty and vagueness in the data. This led to more nuanced and realistic insights that traditional methods might overlook.
 
-Specific case studies, such as the high ranking of Scandinavian countries across multiple categories, confirmed the system's effectiveness. Conversely, the anomalous ranking of Japan and certain other countries underscored areas for further refinement and investigation.
+These findings highlight the complex interplay between various socio-economic and environmental indicators and their impact. Compared to traditional regression models, the fuzzy logic system demonstrated superior capability in handling uncertainty and vagueness in the data. This led to more nuanced and realistic insights that traditional methods might overlook.
+
+Specific case studies, such as the high ranking of Scandinavian countries across multiple categories, confirmed the system's effectiveness. Conversely, the anomalous ranking of Japan and Thailand and certain other countries underscored areas for further refinement and investigation.
+
+Moreover, delving deeper into the results revealed intriguing patterns that were previously unnoticed. For instance, the fuzzy logic approach unveiled subtle correlations between seemingly unrelated variables, shedding light on previously unrecognized factors influencing the outcomes.
+
+Additionally, the fuzzy logic system offered valuable insights into outlier behavior, highlighting cases where conventional models might fail to provide accurate predictions. Understanding these outliers can lead to better-targeted interventions and policy adjustments.
 
 \newpage
 \section{Optimization}
@@ -241,6 +406,9 @@ Future research could focus on expanding the model to include more diverse indic
 
 \bibitem{Singh2021} \textsc{Singh, A. P.}, \textit{World Happiness Report 2021} [Notebook]. (2021). Kaggle. \newline
 \small{\url{https://www.kaggle.com/code/ajaypalsinghlo/world-happiness-report-2021-world/notebook}}
+
+\bibitem{10} \textsc{Diego Fogued, Javier Comyn, Francisco J. González}, GitHub Repository. \newline
+\small{\url{https://github.com/Fogued/FuzzyCountries}}
 
 \end{thebibliography}
 
