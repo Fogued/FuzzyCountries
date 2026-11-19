@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "FuzzyCountries: a fuzzy-logic socioeconomic model for 49 countries"
+abstract: >-
+  A fuzzy-logic model of 49 countries built with Ciao Prolog and RFuzzy, with a
+  Python reference implementation, data-quality audit, automated tests and a
+  Power BI star-schema export. The model uses 28 socioeconomic indicators, 26
+  piecewise-linear membership functions and 17 rules to produce transparent
+  country scores for concepts such as clean country, developed country,
+  economically stable country and quality healthcare.
+authors:
+  - family-names: Fogued
+    given-names: Diego
+version: 0.2.0
+license: MIT
+repository-code: "https://github.com/Fogued/FuzzyCountries"
+keywords:
+  - fuzzy logic
+  - socioeconomic model
+  - RFuzzy
+  - Ciao Prolog
+  - Power BI
+  - reproducible research
