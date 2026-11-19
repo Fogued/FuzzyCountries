@@ -1,0 +1,76 @@
+// Power BI measures for the FuzzyCountries export.
+// Create a table named `_Measures` and add these as new measures.
+// Table and column names match the CSVs produced by `fuzzy-countries export`.
+
+Countries = COUNTROWS ( dim_country )
+
+Rules = COUNTROWS ( dim_rule )
+
+Indicators = COUNTROWS ( dim_indicator )
+
+Average rule score =
+AVERAGE ( fact_rule_result[truth_value] )
+
+Selected rule score =
+AVERAGE ( fact_rule_result[truth_value] )
+
+Country rank (selected rule) =
+VAR CurrentScore = [Selected rule score]
+RETURN
+    IF (
+        ISBLANK ( CurrentScore ),
+        BLANK (),
+        RANKX (
+            FILTER (
+                ALL ( dim_country[country] ),
+                NOT ISBLANK ( [Selected rule score] )
+            ),
+            [Selected rule score],
+            ,
+            DESC,
+            Dense
+        )
+    )
+
+Top country (selected rule) =
+VAR Ranking =
+    TOPN (
+        1,
+        ALLSELECTED ( dim_country[country] ),
+        [Selected rule score],
+        DESC
+    )
+RETURN
+    CONCATENATEX ( Ranking, dim_country[country], ", " )
+
+Average happiness =
+AVERAGE ( fact_happiness[ladder_score] )
+
+Happiness rank (selected country) =
+MIN ( fact_happiness[rank] )
+
+Data quality flagged rows =
+CALCULATE (
+    COUNTROWS ( fact_indicator_value ),
+    fact_indicator_value[is_consistent] = FALSE ()
+)
+
+Indicator coverage =
+DIVIDE (
+    COUNTROWS ( fact_indicator_value ),
+    COUNTROWS ( dim_country ) * COUNTROWS ( dim_indicator )
+)
+
+Average function credibility =
+AVERAGE ( fact_function_credibility[credibility] )
+
+History points =
+COUNTROWS ( fact_indicator_history )
+
+// Optional: rank gap between the model and the World Happiness Report.
+// Positive means the model ranks the country better (lower number) than WHR.
+Happiness rank gap =
+VAR ModelRank = [Country rank (selected rule)]
+VAR WhrRank = [Happiness rank (selected country)]
+RETURN
+    IF ( ISBLANK ( ModelRank ) || ISBLANK ( WhrRank ), BLANK (), WhrRank - ModelRank )

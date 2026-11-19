@@ -1,0 +1,67 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# ---------------------------------------------------------------------------
+# Generated data and exports
+# ---------------------------------------------------------------------------
+Data/processed/
+exports/
+*.parquet
+*.pbix
+*.pbit
+*.pbip
+*.Report/
+*.SemanticModel/
+.pbi/
+
+# ---------------------------------------------------------------------------
+# LaTeX build artifacts (keep the final PDFs)
+# ---------------------------------------------------------------------------
+*.aux
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.vrb
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.ilg
+*.ind
+*.idx
+*.bbl
+*.blg
+!Memoria/memoria.pdf
+!Presentation/presentation.pdf
+
+# ---------------------------------------------------------------------------
+# OS and editors
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.swp
+*~
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

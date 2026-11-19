@@ -1,39 +1,59 @@
-import os
+"""Turn the ``*_resultados.txt`` files produced by the Ciao binary into a CSV."""
+
+from __future__ import annotations
+
+from pathlib import Path
+
 import pandas as pd
 
-def get_archivos_resultados():
-    archivos_resultados = []
-    # Recorrer todos los archivos en el directorio
-    for raiz, _, archivos in os.walk('data/'):
-        for archivo in archivos:
-            # Comprobar si el archivo termina con '_resultados.txt'
-            if archivo.endswith('_resultados.txt'):
-                # Añadir la ruta completa del archivo a la lista
-                archivos_resultados.append(os.path.join(raiz, archivo))
-    return archivos_resultados
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 
-def leer_archivo_como_diccionario(archivo):
-    diccionario = {}
-    with open(archivo, 'r') as f:
-        for linea in f:
-            clave, valor = linea.strip().split(': ', 1)
-            diccionario[clave] = valor
-    return diccionario
+def get_archivos_resultados(data_dir: str | Path = DATA_DIR) -> list[Path]:
+    """Return the result files in deterministic order."""
+    return sorted(Path(data_dir).glob("*_resultados.txt"))
 
 
-def combinar_diccionarios_en_dataframe(diccionarios, nombres_archivos):
-    df = pd.DataFrame(diccionarios).T  # Transponer para tener claves como filas
-    df.columns = nombres_archivos  # Nombrar columnas según los nombres de archivos
-    df = df.reindex(sorted(df.index))
-    return df
+def leer_archivo_como_diccionario(archivo: str | Path) -> dict[str, str]:
+    """Read a ``key: value`` file, skipping blank or malformed lines."""
+    dictionary: dict[str, str] = {}
+    with Path(archivo).open(encoding="utf-8") as handle:
+        for line in handle:
+            line = line.strip()
+            if not line or ": " not in line:
+                continue
+            key, value = line.split(": ", 1)
+            dictionary[key.strip()] = value.strip()
+    return dictionary
 
 
-def consultas_a_csv():
-    archivos_resultados = get_archivos_resultados()
-    diccionarios = []
-    for archivo in archivos_resultados:
-        diccionarios.append(leer_archivo_como_diccionario(archivo))
-    nombres_columnas = [nombre.removeprefix('data/').removesuffix('_resultados.txt') for nombre in archivos_resultados]
-    df = combinar_diccionarios_en_dataframe(diccionarios, nombres_columnas)
-    df.to_csv('data/valores_verdad.csv')
+def combinar_diccionarios_en_dataframe(
+    diccionarios: list[dict[str, str]],
+    nombres_archivos: list[str],
+) -> pd.DataFrame:
+    """Combine one dictionary per rule into a country x rule table."""
+    frame = pd.DataFrame(diccionarios).T
+    frame.columns = nombres_archivos
+    return frame.reindex(sorted(frame.index))
+
+
+def consultas_a_csv(
+    data_dir: str | Path = DATA_DIR,
+    output: str | Path | None = None,
+) -> Path:
+    """Read every ``*_resultados.txt`` file and write ``valores_verdad.csv``."""
+    data_dir = Path(data_dir)
+    archivos = get_archivos_resultados(data_dir)
+    if not archivos:
+        raise FileNotFoundError(
+            f"No *_resultados.txt files found in {data_dir}. "
+            "Run the Ciao queries first or pass --data-dir."
+        )
+
+    diccionarios = [leer_archivo_como_diccionario(archivo) for archivo in archivos]
+    nombres_columnas = [archivo.name.removesuffix("_resultados.txt") for archivo in archivos]
+    frame = combinar_diccionarios_en_dataframe(diccionarios, nombres_columnas)
+
+    destination = Path(output) if output is not None else data_dir / "valores_verdad.csv"
+    frame.to_csv(destination, encoding="utf-8")
+    return destination
